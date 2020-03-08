@@ -1,0 +1,43 @@
+.custom {
+	background-color: #f2f2f2;
+	max-width: 100%;
+	padding: 30px 0 20px 0;
+}
+
+.custom__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.custom__item {
+	flex: 0 0 50%;
+}
+
+.custom__item:first-child {
+	padding: 50px 0 0 0;
+	max-width: 466px;
+}
+
+/*Custom Article*/
+
+.custom__article {
+
+}
+.custom__des {
+	color: #999999;
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	font-weight: 400;
+	margin: 20px 0 0 0;
+	line-height: 25px;
+}
+
+/*Custom Img */
+
+.custom__imgs {
+	padding: 50px 0 0 0;
+}
+
+.custom__img {
+	max-width: 100%;
+}

@@ -1,0 +1,50 @@
+.like {
+	background-color: #15141a;
+	padding: 60px 0;
+}
+
+.like__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.like__des {
+	font-family: "Source Sans Pro";
+	font-size: 36px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.like__strong {
+	font-weight: 300;
+	opacity: 0.4;	
+}
+
+.like__btn {
+	color: #ffffff;
+	font-family: "Source Sans Pro";
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 48px;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	margin: 0 0 0 20px;
+	transition: all 0.4s;
+}
+
+..like__btn:first-child {
+	margin: 0;
+}
+
+.like__btn.active {
+	box-shadow: 0 0 3px rgba(3, 3, 3, 0.1);
+	background-color: #008ed6;
+}
+
+.like__btn:hover {
+	background-color: #008ed6;
+}

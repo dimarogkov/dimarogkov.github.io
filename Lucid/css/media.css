@@ -1,0 +1,327 @@
+@media (max-width: 1200px) {
+	.container {
+		max-width: 970px;
+	}
+
+	.price__block {
+	    flex-direction: column;
+	}
+
+	.price__item {
+	    margin: 0 0 20px 0;
+	}
+
+	.subprice__block:first-child {
+	    margin: 0;
+	}
+
+	.subprice__block {
+	    margin: 0 15px;
+	    width: 80%; 
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 800px;
+	}
+
+	.slider__comment {
+		height: 160px;
+	}
+
+	.like__block {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.like__des {
+		padding: 0 0 40px 0;
+	}
+
+	.custom {
+		padding: 60px 0;
+	}
+
+	.custom__item:first-child {
+    	padding: 20px 0 0 0;
+	}
+
+	.about {
+		padding: 60px 0;
+	}
+
+	.features__block {
+		justify-content: center;
+	}
+
+	.features__item {
+		flex-direction: column;
+	}
+
+	.subfeatures__block {
+		max-width: 100%;
+	}
+
+	.subfeatures__block:first-child {
+		margin: 0 0 50px 0;
+	}
+
+	.content__imgs {
+		display: none;
+	}
+
+	.content {
+		display: block;
+		text-align: center;
+	}
+
+	.content__info {
+		max-width: 100%;
+	}
+
+	.content__title {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+
+	.content__des {
+		max-width: 50%;
+		margin: 0 auto;
+	}
+
+	.home {
+		padding: 0 0 60px 0;
+	}
+}
+
+@media(max-width: 767px) { 
+	.container {
+		max-width: none;
+		padding: 0;
+	}
+
+	.contact__block {
+		padding: 60px 0;
+	}
+
+	.form {
+		position: inherit;
+		transform: none;
+		width: 100%;
+		left: 0;
+		margin: 50px 0 0 0;
+	}
+
+	.slider {
+		text-align: center;
+	}
+
+	.slider__user {
+		justify-content: center;
+	}
+
+	.slick-dots {
+		padding: 50px 0 0 0;
+	}
+
+	.header {
+	    flex-direction: unset;
+	    width: 100%;
+	    position: fixed;
+	    z-index: 3;
+	    padding: 20px 0;
+	    align-items: center;
+	}
+
+	.header:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		background-color: #1a1a1a;
+		box-shadow: 0 0 10px #1a1a1a;
+		z-index: 3;
+		padding: 20px 0;
+		height: 100%;
+	}
+
+	.header__logo {
+		z-index: 3;
+		padding: 0 15px;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.menu {
+		top: -300%;
+		transition: all 0.5s;
+		text-align: center;
+		opacity: 0.9;
+		padding: 20px 0;
+		position: absolute;
+		left: 50%;
+		transform: translate( -50%, 0%);
+		width: 100%;
+		background-color: #1a1a1a;
+	}
+
+	.menu.active {
+		top: 100%;
+	}
+
+	.menu__item {
+		display: block;
+		margin: 0 0 15px 0;
+		padding: 0;
+	}
+
+	.menu__item:last-child {
+		margin: 0;
+	}
+
+	.about,
+	.custom {
+		padding: 60px 30px;
+	}
+
+	.subcontact__block {
+		padding: 0 30px;
+	}
+
+	.contact__block {
+		padding: 60px 0 0 0;
+	}
+
+	.menu__link.active,
+	.menu__link:hover {
+		border-bottom: none;
+		padding-top: 0;
+	}
+
+	.menu__link {
+		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 600px) {
+	.features__block,
+	.about__block,
+	.custom__block,
+	.subcontact__block,
+	.form__block {
+		flex-direction: column;
+	}
+
+	.about__img,
+	.custom__imgs {
+		display: none;
+	}
+
+	.custom__block {
+		display: block;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.custom__item:first-child {
+		max-width: 100%;
+	}
+
+	.left {
+		text-align: center;
+	}
+
+	.left .top__line {
+		margin: 0 auto;
+	}
+
+	.about__item:last-child {
+		padding: 0 20px;
+	}
+
+	.about__list {
+		text-align: center;
+	}
+
+	.about__st:last-child {
+		justify-content: center;
+	}
+
+	.price__item {
+		flex-direction: column;
+	}
+
+	.subprice__block:first-child,
+	.subprice__block {
+		margin: 10px auto;
+		width: 90%;
+	}
+
+	.form {
+		padding: 30px;
+	}
+
+	.contact__block {
+		padding: 30px 0;
+	}
+
+	.contact__item {
+		margin: 0 0 50px 0;
+	}
+
+	.contact__info {
+		margin: 15px 0 0 0;
+	}
+
+	.content__des {
+		display: none;
+	}
+
+	.like__des {
+		text-align: center;
+	}
+
+	.form__item:first-child {
+		padding: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.content__btn.active,
+	.content__btn:last-child {
+		display: block;
+		width: 50%;
+		margin: 20px auto;
+	}
+
+	.home {
+		padding: 0 0 20px 0;
+	}
+
+	.content__btns {
+		padding: 50px 0 0 0;
+	}
+
+	.content__title {
+		max-width: 90%;
+	}
+
+	.like__btns {
+		width: 100%;
+	}
+
+	.like__btn {
+		display: block;
+		max-width: 60%;
+		margin: 20px auto;
+		text-align: center;
+		padding: 15px 25px;
+		line-height: 20px;
+	}
+
+	.like {
+		padding: 30px 0;
+	}
+}

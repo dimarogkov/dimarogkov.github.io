@@ -1,0 +1,94 @@
+.plans {
+	background-image: url(images/plans.webp);
+	max-width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 60px 0;
+}
+
+.white__color {
+	color: #ffffff;
+}
+
+/*Slider */
+
+.slider {
+	padding: 85px 0 0 0;
+	position: relative;
+}
+
+.slider__comment {
+	color: #ffffff;
+	font-family: "Source Sans Pro";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	font-style: italic;
+}
+
+.slider__user {
+	padding: 20px 0 0 0;
+	display: flex;
+	align-items: center;
+}
+
+.slider__img {
+	max-width: 100%;
+}
+
+.user__info {
+	padding: 0 0 0 25px;
+}
+
+.user__name {
+	font-family: "Source Sans Pro";
+	font-size: 16px;
+	font-weight: 400;
+	color: #ffffff;
+	margin: 0 0 10px 0;
+}
+
+.slider__position {
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+.slick-dots {
+	justify-content: center;
+	display: flex;
+	padding: 135px 0 0 0;
+}
+
+.slick-dots li {
+	margin: 0 10px;
+	list-style: none;
+}
+
+.slick-dots li.slick-active button {
+	width: 14px;
+	height: 14px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.slick-dots li button {
+	font-size: 0;
+	width: 8px;
+	height: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	background-color: transparent;
+}

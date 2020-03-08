@@ -1,0 +1,29 @@
+.footer {
+	padding: 50px 0;
+	background-color: #15141a;
+	max-width: 100%;
+	text-align: center;
+}
+
+.footer__icons {
+	margin: 0 0 20px 0;
+}
+
+.footer__icons .fab {
+	color: #444348;
+	font-size: 19px;
+	transition: all 0.4s;
+	padding: 0 15px;
+}
+
+.footer__icons .fab:hover {
+	color: #008ed6;
+}
+
+.footer__des {
+	color: #444348;
+	font-family: "Source Sans Pro";
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
