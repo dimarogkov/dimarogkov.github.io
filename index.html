@@ -3,41 +3,129 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Dima Rogkov | Portfolio</title>
+		<title>Count</title>
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/sidebar.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/white.css">
+		<link rel="stylesheet" href="css/analutics.css">
 		<!-- Font -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
 		<!-- Иконки -->
 		<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- Контент -->
-
-		<!-- Портфолио -->
-		<div class="portfolio">
-			<div class="container">
-				<div class="portfolio__block">
-					<h1 class="portfolio__title">Портфолио</h1>
-					<p class="portfolio__des">Привет, меня зовут Дмитрий Рожков. Я начинающий Front-end Developer. Хочу работать и развиваться в этой сфере так как это мне по душе. Мне 21. Учусь и живу в Хмельницком. Вы можете глянуть мои работы <a href="https://github.com/dimarogkov?tab=repositories" target="_blank" class="portfolio__git">тут</a></p>
+		<div class="main">
+			<!-- Menu -->
+			<div class="menu">
+				<!-- Logo -->
+				<div class="menu__logos">
+					<a href="#" class="menu__logo"><i class="fab fa-connectdevelop"></i></a>
 				</div>
-
-				<!-- Portfolio Links -->
-				<div class="portfolio__links">
-					<div class="portfolio__link">
-						<a href="https://t.me/DimaZda001" target="_blank"><i class="fab fa-telegram-plane portfolio__icon"></i></a>
+				<!-- Menu -->
+				<div class="menu__block">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="far fa-play-circle menu__icon"></i>
+								<p class="menu__des">Stopwatch</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="far fa-file menu__icon"></i>
+								<p class="menu__des">Invoices</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="fas fa-user menu__icon"></i>
+								<p class="menu__des">Clients</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="fas fa-folder menu__icon"></i>
+								<p class="menu__des">Projects</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="fas fa-chart-line menu__icon"></i>
+								<p class="menu__des">Reports</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="fas fa-cog menu__icon"></i>
+								<p class="menu__des">Settings</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- User -->
+				<div class="menu__down">
+					<div class="menu__user">
+						<a href="#"><img src="css/images/user.webp" class="menu__photo" alt=""></a>
+						<p class="menu__name">Dima Rogkov</p>
 					</div>
-					<div class="portfolio__link">
-						<a href="mailto:webdevs1.dima.rogkov@gmail.com"><i class="fas fa-envelope portfolio__icon"></i></a>
+					<!-- Meta -->
+					<div class="menu__metas">
+						<div class="menu__meta">
+							<a href="#" class="menu__end"><i class="fas fa-search"></i></a>
+						</div>
+						<div class="menu__meta">
+							<a href="#" class="menu__end"><i class="fas fa-bell"></i></a>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<div class="body">
+				<!-- Header -->
+				<header class="header">
+					<div class="header___logo">
+						<h1 class="header__title">Count & Conversion</h1>
+					</div>
+					<div class="header__theme">
+						<input type="checkbox" name="checkbox" class="header__checkbox">
+					</div>
+				</header>
+				<div class="day">
+					<canvas id="day" height="250" width="1300"></canvas>
+				</div>
+				<div class="year">
+					<canvas id="year" height="150" width="1300"></canvas>
+				</div>
+				<div class="dap">
+					<h2 class="dap__title">Dwell and Repeat</h2>
+					<div class="dap__block">
+						<div class="dap__repeats">
+							<h3 class="dap__subtitle">Repeat</h3>
+							<canvas id="repeats" height="200" width="500"></canvas>
+						</div>
+						<div class="dap__dwell">
+							<h3 class="dap__subtitle">Dwell</h3>
+							<canvas id="dwell" height="200" width="500"></canvas>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- Footer  -->
-		<footer class="footer">
-			<p class="footer__des">Copyright © 2020 Dima Rogkov</p>
-		</footer>
+		
+		<!-- JQwery -->
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.js"
+		  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		  crossorigin="anonymous">
+	  	</script>
+	  	<!-- Slick -->
+	  	<script src="js/slick.min.js"></script>
+	  	<!-- Chart JS -->
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
