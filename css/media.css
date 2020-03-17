@@ -1,0 +1,162 @@
+/* Media  */
+
+@media (max-width: 1400px) {
+    .residence__info {
+        padding: 91px 30px 0 0;
+    }
+
+    .content {
+        padding: 56px 0 0 40px;
+    }
+
+    .content__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        flex-direction: column;
+        padding: 70px 0 0 0;
+        text-align: center;
+    }
+
+    .header__line {
+        margin: 20px 0 0 0;
+    }
+
+    .residence__info {
+        flex-direction: column;
+        padding: 91px 0 0 0;
+    }
+
+    .slider {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        padding: 80px 70px 0 70px;
+        text-align: center;
+    }
+
+    .content__submit {
+       margin: 70px auto 0 auto;
+    }
+
+    .number {
+        bottom: 0;
+        top: 50%;
+        transform: translate(-50%, -35%);
+    }
+
+    .residence {
+        padding: 0 0 70px 0;
+    }
+
+    .content__control {
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 58%;
+    }
+
+    .content__btn {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        padding: 30px 0 0 0;
+    }
+
+    .manu__item {
+        display: block;
+        text-align: center;
+        margin: 0 0 60px 0;
+    }
+
+    .residence__info {
+        padding: 40px 0 0 0;
+    }
+
+    .content__des {
+        margin: 0 0 40px 0;
+    }
+
+    .number {
+        transform: translate(-50%, -40%);
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 60px 20px 0 20px;
+    }
+
+    .content__des {
+        text-align: justify;
+    }
+
+    .number {
+       display: none;
+    }
+
+    .number__slider {
+        font-size: 90px;
+        align-items: center;
+    }
+
+    .slick-dots li button {
+        font-size: 90px;
+    }
+
+    .number__num {
+        margin: 30px 0 0 0;
+        font-size: 40px;
+    }
+
+    .content__item {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .content__icons {
+        justify-content: center;
+        margin: 0 0 30px 0;
+        flex-direction: column;
+    }
+
+    .content__name {
+        font-size: 20px;
+        margin: 20px 0 0 0;
+    }
+
+    .content__control {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider__img {
+        height: auto;
+    }
+
+    .content__control {
+        top: 52%;
+    }
+
+    .number__slider,
+    .slick-dots li button {
+        font-size: 60px;
+    }
+
+    .number__num {
+        font-size: 30px;
+    }
+
+    .header__logo {
+        font-size: 45px;
+    }
+}

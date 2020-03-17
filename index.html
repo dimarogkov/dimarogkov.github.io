@@ -3,119 +3,94 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Count</title>
+		<title>TestWork</title>
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/sidebar.css">
 		<link rel="stylesheet" href="css/header.css">
-		<link rel="stylesheet" href="css/white.css">
-		<link rel="stylesheet" href="css/analutics.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/residence.css">
+		<link rel="stylesheet" href="css/number.css">
+		<link rel="stylesheet" href="css/media.css">
 		<!-- Font -->
-		<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
-		<!-- Иконки -->
-		<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<!-- Контент -->
-		<div class="main">
+		
+		<div class="residence">
+			<!-- Header -->
+			<header class="header">
+				<div class="header__logo">Проживание</div>
+				<div class="header__line"></div>
+				<div class="header__des">Комфортные номера премиум-класса, где купеческий шарм сочетается с современным комфортом</div>
+			</header>
 			<!-- Menu -->
-			<div class="menu">
-				<!-- Logo -->
-				<div class="menu__logos">
-					<a href="#" class="menu__logo"><i class="fab fa-connectdevelop"></i></a>
-				</div>
-				<!-- Menu -->
-				<div class="menu__block">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a href="#" class="menu__link">
-								<i class="far fa-play-circle menu__icon"></i>
-								<p class="menu__des">Stopwatch</p>
-							</a>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link">
-								<i class="far fa-file menu__icon"></i>
-								<p class="menu__des">Invoices</p>
-							</a>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link">
-								<i class="fas fa-user menu__icon"></i>
-								<p class="menu__des">Clients</p>
-							</a>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link">
-								<i class="fas fa-folder menu__icon"></i>
-								<p class="menu__des">Projects</p>
-							</a>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link">
-								<i class="fas fa-chart-line menu__icon"></i>
-								<p class="menu__des">Reports</p>
-							</a>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link">
-								<i class="fas fa-cog menu__icon"></i>
-								<p class="menu__des">Settings</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- User -->
-				<div class="menu__down">
-					<div class="menu__user">
-						<a href="#"><img src="css/images/user.webp" class="menu__photo" alt=""></a>
-						<p class="menu__name">Dima Rogkov</p>
-					</div>
-					<!-- Meta -->
-					<div class="menu__metas">
-						<div class="menu__meta">
-							<a href="#" class="menu__end"><i class="fas fa-search"></i></a>
-						</div>
-						<div class="menu__meta">
-							<a href="#" class="menu__end"><i class="fas fa-bell"></i></a>
-						</div>
-					</div>	
-				</div>
-			</div>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="manu__item"><a href="#" class="menu__link">Премиум номера</a></li>
+					<li class="manu__item"><a href="#" class="menu__link">Премьер номера</a></li>
+					<li class="manu__item"><a href="#" class="menu__link">Люкс номера</a></li>
+				</ul>
+			</nav>
+			<!-- Information -->
+			<div class="residence__info">
 
-			<div class="body">
-				<!-- Header -->
-				<header class="header">
-					<div class="header___logo">
-						<h1 class="header__title">Count & Conversion</h1>
-					</div>
-					<div class="header__theme">
-						<input type="checkbox" name="checkbox" class="header__checkbox">
-					</div>
-				</header>
-				<div class="day">
-					<canvas id="day" height="250" width="1300"></canvas>
+				<!-- Slider -->
+				<div class="slider">
+					<img src="images/slider1.png" class="slider__img" alt="">
+					<img src="images/slider1.png" class="slider__img" alt="">
+					<img src="images/slider1.png" class="slider__img" alt="">
+					<img src="images/slider1.png" class="slider__img" alt="">
 				</div>
-				<div class="year">
-					<canvas id="year" height="150" width="1300"></canvas>
-				</div>
-				<div class="dap">
-					<h2 class="dap__title">Dwell and Repeat</h2>
-					<div class="dap__block">
-						<div class="dap__repeats">
-							<h3 class="dap__subtitle">Repeat</h3>
-							<canvas id="repeats" height="200" width="500"></canvas>
+
+				<!-- Content -->
+				<div class="content">
+					<!-- Title -->
+					<h1 class="content__title">Премиум номер 1</h1>
+					<!-- Description -->
+					<p class="content__des">Двухкомнатный номер категории Люкс с видом на Байкал состоит из уютной спальной комнаты и просторной гостиной. Номер располагается на втором этаже Резиденции «Таёжная Усадьба», общая площадь составляет 70 м2. Спальня оснащена кроватью king-size, широкоформатным телевизором с кабельным TV, прикроватными тумбами, рабочей зоной, увлажнителем воздуха, минибаром.</p>
+
+					<!-- Block with Icons -->
+					<div class="content__block">
+						<div class="content__item">
+							<div class="content__icons">
+								<img src="images/icon1.svg" class="content__img" alt="">
+								<p class="content__name">Кровать king-size</p>
+							</div>
+							<div class="content__icons">
+								<img src="images/icon2.svg" class="content__img" alt="">
+								<p class="content__name">Wi-Fi Интернет</p>
+							</div>
 						</div>
-						<div class="dap__dwell">
-							<h3 class="dap__subtitle">Dwell</h3>
-							<canvas id="dwell" height="200" width="500"></canvas>
+						<div class="content__item">
+							<div class="content__icons">
+								<img src="images/icon3.svg" class="content__img" alt="">
+								<p class="content__name">ЖКТ и Интернет-телевидение</p>
+							</div>
+							<div class="content__icons">
+								<img src="images/icon4.svg" class="content__img" alt="">
+								<p class="content__name">70 м.кв</p>
+							</div>
+						</div>
+
+						<!-- Button -->
+						<div class="content__submit">
+							<a href="#" class="content__btn">Забронировать резиденцию<span class="content__arrow"></span></a>
+						</div>
+
+						<!-- Slider Controller -->
+						<div class="content__control"></div>
+
+						<!-- Slider Number -->
+						<div class="number">
+							<p class="number__slider">0</p><p class="number__num">/04</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		
+
 		<!-- JQwery -->
 		<script
 		  src="https://code.jquery.com/jquery-3.4.1.js"
@@ -124,8 +99,6 @@
 	  	</script>
 	  	<!-- Slick -->
 	  	<script src="js/slick.min.js"></script>
-	  	<!-- Chart JS -->
-	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 		<script src="js/app.js"></script>
 	</body>
 </html>

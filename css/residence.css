@@ -1,0 +1,228 @@
+/*Information*/
+
+.residence__info {
+	display: flex;
+	justify-content: space-between;
+	padding: 91px 72px 0 0;
+	position: relative;
+}
+
+/*Slider*/
+
+.slider {
+	flex: 0 0 50%;
+	position: relative;
+	width: 100%;
+}
+.slider__img {
+	width: 100%;
+	height: 675px;
+}
+
+.slick-list {
+	overflow: hidden;
+	max-width: 740px;
+}
+
+.slider .slick-track {
+	display: flex;
+}
+
+/*Content*/
+
+.content {
+	padding: 56px 0 0 80px;
+}
+
+.content__title {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 144.3%;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	margin: 0 0 23px 0;
+}
+.content__des {
+	font-family: Apercu Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 170%;
+	letter-spacing: 0.11em;
+	color: #8E8E8E;
+	margin: 0 0 25px;
+}
+
+/*Icons */
+
+.content__item {
+	display: flex;
+	margin: 0 0 36px 0;
+}
+
+.content__icons {
+	flex: 0 0 50%;
+	display: flex;
+	align-items: center;
+}
+
+
+.content__img {
+	max-width: 37px;
+	height: 32px;
+}
+
+.content__name {
+	font-family: Apercu Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 104.3%;
+	letter-spacing: 0.33em;
+	text-transform: uppercase;
+	color: #8E8E8E;	
+	padding: 0 0 0 28px;
+}
+
+/*Submit*/
+
+.content__submit {
+	margin: 70px 0 0 0;
+}
+
+.content__btn {
+	max-width: 496px;
+	height: 79px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #B4975A;
+	color: #FFFFFF;
+
+	font-family: Apercu Pro;
+	position: relative;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 104.8%;
+	letter-spacing: 0.11em;
+	border: 2px solid #B4975A;
+	transition: all 0.4s;
+}
+
+.content__btn:hover {
+	background-color: transparent;
+	color: #B4975A;
+}
+
+.content__btn:hover .content__arrow:before,
+.content__btn:hover .content__arrow:before {
+	background-color: #B4975A;
+}
+
+.content__arrow {
+	position: absolute;
+	width: 8px;
+	height: 6px;
+	top: 48%;
+	right: 40px;
+}
+
+.content__arrow:before,
+.content__arrow:after {
+	content: '';
+	position: absolute;
+	background-color: #FFFFFF;
+	width: 8px;
+	height: 1px;
+	transition: all 0.4s;
+}
+
+.content__arrow:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.content__arrow:after {
+	bottom: 0; 
+	transform: rotate(-45deg);
+}
+
+/*Controller*/
+
+.content__control {
+	text-align: right;
+	padding: 102px 0 0 0;
+}
+
+.slick-arrow {
+	background-color: transparent;
+	font-size: 0;
+	position: relative;
+	padding: 0 100px 0 0;
+}
+
+.slick-arrow.slick-disabled {
+	opacity: 0.3;
+}
+
+/*Prev Arrow*/
+
+.slick-arrow.slick-prev {
+	position: absolute;
+	width: 30px;
+	height: 22px;
+	right: 50px;
+	cursor: pointer;
+}
+
+.slick-arrow.slick-prev:before,
+.slick-arrow.slick-prev:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 4px;
+	background-color: #FFFFFF;
+}
+
+.slick-arrow.slick-prev:before {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+.slick-arrow.slick-prev:after {
+	bottom: 0;
+	transform: rotate(45deg);
+}
+
+/*Next Arrow*/
+
+.slick-arrow.slick-next {
+	position: absolute;
+	width: 30px;
+	height: 22px;
+	right: 0;
+	cursor: pointer;
+}
+
+.slick-arrow.slick-next:before,
+.slick-arrow.slick-next:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 4px;
+	background-color: #FFFFFF;
+}
+
+.slick-arrow.slick-next:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.slick-arrow.slick-next:after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
