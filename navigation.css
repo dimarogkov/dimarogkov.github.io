@@ -1,0 +1,31 @@
+.navigation {
+	position: absolute;
+	top: 45%;
+	right: 3%;
+	width: 2%;
+	text-align: -webkit-center;
+}
+
+.navigation--second {
+	top: 33%;
+}
+
+.navigation .navigation__circle {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	border: 2px solid #3a30f8;
+	margin-bottom: 10px;
+	z-index: 5;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.navigation .navigation__circle:hover {
+	background-color: #3a30f8;
+}
+
+.navigation .navigation__circle--active {
+	width: 13px;
+	height: 13px;
+}
