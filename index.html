@@ -3,286 +3,129 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Практика</title>
-		<link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="normalize.css"> 
+		<title>Count</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/sidebar.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/white.css">
+		<link rel="stylesheet" href="css/analutics.css">
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+		<!-- Иконки -->
+		<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
 	</head>
-
 	<body>
-
-		<section> 
-			<div class="block-1">  
-				<div class="icon">
-					<div class="header">          
-						<div class="logo">
-							<img src="img/logo.png" alt="">
-						</div>      
-						<div class="navbar-align">
-							<ul class="navbar">       
-								<li><a class="active" href="#">home</a></li>
-								<li><a href="#">about</a></li>
-								<li><a href="#">work</a></li>
-								<li><a href="#">blog</a></li>
-								<li><a href="#">contact</a></li>  
-							</ul>          
-						</div>
-					</div>
-					<h2>Hi there! We are the new kids on the block<br>and we build awesome websites and mobile apps.</h2>
-					<a class="buttom" href="#">work with us!</a>
+		<!-- Контент -->
+		<div class="main">
+			<!-- Menu -->
+			<div class="menu">
+				<!-- Logo -->
+				<div class="menu__logos">
+					<a href="#" class="menu__logo"><i class="fab fa-connectdevelop"></i></a>
 				</div>
-			</div>  
-		</section>
-
-		<section>
-			<div class="block-2">
-				<h3>Services we provide</h3>
-				<div class="line"></div>
-				<p>We are working with both individuals and businesses from all over the glote <br> to create awesome websites and applications</p>
-
-				<div class="icon">
-					
-					<div class="col-1">
-						<div class="img">
-							<img src="img/flag.png" alt="">
-						</div>
-						<p class="p1">Branding</p>
-						<p class="p2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>sed do eiusmod</p>
+				<!-- Menu -->
+				<div class="menu__block">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="far fa-play-circle menu__icon"></i>
+								<p class="menu__des">Stopwatch</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="far fa-file menu__icon"></i>
+								<p class="menu__des">Invoices</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="fas fa-user menu__icon"></i>
+								<p class="menu__des">Clients</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="fas fa-folder menu__icon"></i>
+								<p class="menu__des">Projects</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="fas fa-chart-line menu__icon"></i>
+								<p class="menu__des">Reports</p>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">
+								<i class="fas fa-cog menu__icon"></i>
+								<p class="menu__des">Settings</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- User -->
+				<div class="menu__down">
+					<div class="menu__user">
+						<a href="#"><img src="css/images/user.webp" class="menu__photo" alt=""></a>
+						<p class="menu__name">Dima Rogkov</p>
 					</div>
-
-					<div class="col-1">
-						<div class="img">
-							<img src="img/pencil.png" alt=""> 
+					<!-- Meta -->
+					<div class="menu__metas">
+						<div class="menu__meta">
+							<a href="#" class="menu__end"><i class="fas fa-search"></i></a>
 						</div>
-						<p class="p1">Design</p>
-						<p class="p2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>sed do eiusmod</p>
+						<div class="menu__meta">
+							<a href="#" class="menu__end"><i class="fas fa-bell"></i></a>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<div class="body">
+				<!-- Header -->
+				<header class="header">
+					<div class="header___logo">
+						<h1 class="header__title">Count & Conversion</h1>
 					</div>
-
-					<div class="col-1">
-						<div class="img">
-							<img src="img/gears.png" alt="">
-						</div>
-						<p class="p1">Development</p>
-						<p class="p2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>sed do eiusmod</p>
+					<div class="header__theme">
+						<input type="checkbox" name="checkbox" class="header__checkbox">
 					</div>
-
-					<div class="col-1">
-						<div class="img">
-							<img src="img/rocket.png" alt="">
+				</header>
+				<div class="day">
+					<canvas id="day" height="250" width="1300"></canvas>
+				</div>
+				<div class="year">
+					<canvas id="year" height="150" width="1300"></canvas>
+				</div>
+				<div class="dap">
+					<h2 class="dap__title">Dwell and Repeat</h2>
+					<div class="dap__block">
+						<div class="dap__repeats">
+							<h3 class="dap__subtitle">Repeat</h3>
+							<canvas id="repeats" height="200" width="500"></canvas>
 						</div>
-						<p class="p1">Rocket science</p>
-						<p class="p2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>sed do eiusmod</p>
+						<div class="dap__dwell">
+							<h3 class="dap__subtitle">Dwell</h3>
+							<canvas id="dwell" height="200" width="500"></canvas>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 		
-		<section>
-	    	<div class="block-3">
-		      	<h3>Meet our beautiful people</h3>
-		      	<div class="line"></div><br>
-		      	<p class="text-2">We are a small team of designers and developers, who help brands with big ideas.</p>
-
-			    <div class="icon">
-				    	<div class="col-1">
-						    <div class="circle"></div>
-						    <p class="text-3">Anna Hathaway</p>
-						    <p class="text-4">CEO / Marketing Guru</p>
-						    <p class="text-5">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>sed do eiusmod</p>
-						    <a href="https://uk-ua.facebook.com/" target="_blank"><img src="img/fb.png" alt=""></a>
-						    <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt=""></a>
-						    <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkin.png" alt=""></a>
-						    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="img/mail.png" alt=""></a>
-						</div>
-			   
-
-				   		<div class="col-1">
-						    <div class="circle"></div>
-						    <p class="text-3">Kate Upton</p>
-						    <p class="text-4">Creative Director</p>
-						    <p class="text-5">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>sed do eiusmod</p>
-						    <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt=""></a>
-						    <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkin.png" alt=""></a>
-						    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="img/mail.png" alt=""></a>
-						</div>
-				  
-						<div class="col-1">
-							<div class="circle"></div>
-							<p class="text-3">Ashlee Grinne</p>
-							<p class="text-4">SEO / Developer</p>
-							<p class="text-5">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>sed do eiusmod</p>
-							<a href="https://uk-ua.facebook.com/" target="_blank"><img src="img/fb.png" alt=""></a>
-						    <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt=""></a>
-						    <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkin.png" alt=""></a>
-						    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="img/mail.png" alt=""></a>
-					    </div>
-					
-				   		<div class="col-1">
-						    <div class="circle"></div>
-						    <p class="text-3">Olivia Wilde</p>
-						    <p class="text-4">Lead Designer</p>
-						   	<p class="text-5">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>sed do eiusmod</p>
-							<a href="https://uk-ua.facebook.com/" target="_blank"><img src="img/fb.png" alt=""></a>
-							<a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt=""></a>
-							<a href="https://www.linkedin.com/" target="_blank"><img src="img/linkin.png" alt=""></a>
-							<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="img/mail.png" alt=""></a>
-					    </div>
-	  			</div>
-	  		</div>
-	  	</section>
-		
-		<section>
-			<div class="block-4">
-				<h3>We got skills!</h3>
-		      	<div class="line"></div><br>
-		      	<p class="text1-block4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="icon">
-				<div class="col-1">
-					<div class="box-1">
-						<div class="box-inner-1">
-							<span>90<small>%</small></span>
-						</div>
-					</div>
-					<p class="text2-block4">web design</p>
-				</div>
-				<div class="col-1">
-					<div class="box-2">
-						<div class="box-inner-2">
-							<span>75<small>%</small></span>
-						</div>
-					</div>
-					<p class="text2-block4">html / css</p>
-				</div>
-				<div class="col-1">
-					<div class="box-3">
-						<div class="box-inner-3">
-							<span>70<small>%</small></span>
-						</div>
-					</div>
-					<p class="text2-block4">graphic design</p>
-				</div>
-				<div class="col-1">
-					<div class="box-4">
-						<div class="box-inner-4">
-							<span>85<small>%</small></span>
-						</div>
-					</div>
-					<p class="text2-block4">ui / ux</p>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="block-5">
-				<h3>Our portfolio</h3>
-		      	<div class="line"></div><br>
-		      	<p class="text1-block5">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet<br>consectetur, adipiski veit, sed quia non numquam</p>
-		
-				<div class="navbar-1">
-					<a class="active-1" href="#">all</a>
-					<a href="#">web</a>
-					<a href="#">apps</a>
-					<a href="#">icons</a>			
-				</div>
-				<div class="icon">
-					<div class="col-2">
-						<img src="img/portimg1.png" alt="">
-						<p class="text2-block4">Isometrick perspective mock-up</p>
-					</div>
-					<div class="col-2">
-						<img src="img/portimg2.png" alt="">
-						<p class="text2-block4">Time zone app ui</p>
-					</div>
-					<div class="col-2">
-						<img src="img/portimg3.png" alt="">
-						<p class="text2-block4">Viro media players ui copy 2</p>
-					</div>
-					<div class="col-2">
-						<img src="img/portimg4.png" alt="">
-						<p class="text2-block4">Blog / magazine flat ui kit</p>
-					</div>
-				</div>
-				<a class = "buttom-1" href="#">Load more project</a>	
-			</div>
-		</section>
-
-		<section>
-			<div class="block-6">
-				<h3>What people say about us</h3>
-		      	<div class="line"></div><br>
-		      	<p class="text1-block6">Our clients love us!</p>
-		      	<div class="icon">
-			      	<div class="col-3">
-			      		<div class="text-portfolio">
-			      			<div class="em">
-								<em>"Nullam dapibus blandit orci, viverra <br> gravida dui lobortis eget Moeceos <br> fringilla urna eu nisl scelerisque."</em>
-								<p class="text2-block6">Chamen Iman</p>
-								<p class="text3-block6">CEO of Pinterest</p>
-							</div>
-						</div>
-						<div class="circle-3"></div>
-					</div>
-					<div class="col-3">
-			      		<div class="text-portfolio">
-			      			<div class="em">
-								<em>"Nullam dapibus blandit orci, viverra <br> gravida dui lobortis eget Moeceos <br> fringilla urna eu nisl scelerisque."</em>
-								<p class="text2-block6">Adriana Lima</p>
-								<p class="text3-block6">Founder of instagram</p>
-							</div>
-						</div>
-						<div class="circle-3"></div>
-					</div>
-					<div class="col-3">
-			      		<div class="text-portfolio">
-			      			<div class="em">
-								<em>"Nullam dapibus blandit orci, viverra <br> gravida dui lobortis eget Moeceos <br> fringilla urna eu nisl scelerisque."</em>
-								<p class="text2-block6">Anna Nahnaway</p>
-								<p class="text3-block6">Lead Designer at Behance</p>
-							</div>
-						</div>
-						<div class="circle-3"></div>
-					</div>
-					<div class="col-3">
-			      		<div class="text-portfolio">
-			      			<div class="em">
-								<em>"Nullam dapibus blandit orci, viverra <br> gravida dui lobortis eget Moeceos <br> fringilla urna eu nisl scelerisque."</em>
-								<p class="text2-block6">Emma Stone</p>
-								<p class="text3-block6">Co-Founder of Shazam</p>
-							</div>
-						</div>
-						<div class="circle-3"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="block-7">
-				<h3>Get in touch</h3>
-		      	<div class="line"></div><br>
-		      	<p class="text1-block7">1600 Penssylvania Ave NW, Washington, DC 20500, United States of America. Tel (202) 456-1111</p>
-		      	<form action="#" method="POST">
-			      	<div class="icon">
-			      		<div class="col-2">
-			      			<p><input size="20" name="surname" placeholder="Your Name" required></p>
-					    </div>
-					    <div class="col-2">    
-					        <p> <input size="20" name="name" placeholder="Your Email" required></p>
-				        </div>
-			        		<textarea name="text" rows="8" cols="50" placeholder="Your Message" required></textarea>
-			        </div>
-			      	<p><button class="button" type="submit" name="button">Send Message</button></p>
-		      	</form>
-			      	<ul class="foot">   
-				    	<li><a href="#">Facebook</a></li>
-				    	<li><a class="active-3" href="#">Twitter</a></li>
-					    <li><a href="#">Google+</a></li>
-					    <li><a href="#">LinkedIn</a></li>
-					    <li><a href="#">Behance</a></li>  
-					    <li><a href="#">Dribbble</a></li> 
-					    <li><a href="#">GitHub</a></li> 
-				   </ul>
-			</div>
-		</section>
+		<!-- JQwery -->
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.js"
+		  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		  crossorigin="anonymous">
+	  	</script>
+	  	<!-- Slick -->
+	  	<script src="js/slick.min.js"></script>
+	  	<!-- Chart JS -->
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
