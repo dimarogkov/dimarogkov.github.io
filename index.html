@@ -1,266 +1,270 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
-		<title>Dmitriy Rogkov | Web Dev Developer</title>
-	 	<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="main.css">
-		<!-- Boostrap -->
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-		<!-- Font-aweosome -->
-	    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	    <!-- Font -->
-	    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet"> <!-- Цыфры -->
-	    <!-- Animate css -->
-	    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-	    <!-- jquery -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Nike</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/popular.css">
+		<link rel="stylesheet" href="css/collection.css">
+		<link rel="stylesheet" href="css/slider.css">
+		<link rel="stylesheet" href="css/blog.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/media.css">
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+		<!-- Иконки -->
+		<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
 	</head>
 	<body>
-		<div class="header">
-			<div class="left" data-aos="fade-right">
-				<a href="#">Logo</a>
-			</div>
-			<div class="right" id="menu">
-				<a href="#about"><span>01.</span> About</a>
-				<a href="#expe"><span>02.</span> Experience</a>
-				<a href="#work"><span>03.</span> Work</a>
-				<a href="#contact"><span>04.</span> Contact</a>
-				<a href="#" class="btn_header">Resume</a>
-			</div>
-		</div>
+		<!-- Контент -->
 
-		<div class="media_left" data-aos="fade-up" data-aos-delay="300">
-			<p><a href="https://github.com/dimarogkov?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></p>
-			<p><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></p>
-			<p><a href="https://www.facebook.com/profile.php?id=100014871194282" target="_blank"><i class="fab fa-facebook"></i></a></p>
-			<p><a href="https://www.instagram.com/rogggkov/" target="_blank"><i class="fab fa-instagram"></i></a></p>
-			<p><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></p>
-			<div class="line"></div>
-		</div>
+		<!-- Home -->
+		<div class="home">
+			<div class="container">
 
-		<div class="container">
-			<div class="block_1">
-				<p class="p_one" data-aos="fade-up" data-aos-delay="700">Hi, my name is</p>
-				<h1 data-aos="fade-up" data-aos-delay="900">Dmitriy Rogkov.</h1>
-				<h2 data-aos="fade-up" data-aos-delay="1100">I build things for the web.</h2>
-				<p class="p_two" data-aos="fade-up" data-aos-delay="1300">I'm a Web Developer based in Ukraine, MA specializing in<br> building (and occasionally designing) exceptional, high-quality<br> websites and applications.</p>
-				<a href="#" class="btn" data-aos="fade-up" data-aos-delay="1500">Get in Touch</a>
-			</div>
-
-			<div class="block_2" id="about">
-				<div class="left" data-aos="fade-right">
-					<div class="h">
-						<h2><span class="number">01.</span>About Me</h2><div class="line"></div>
+				<!-- Header -->
+				<header class="header">
+					<div class="header__logo">
+						<a href="#"><img src="css/images/logo.webp" class="header__img" alt=""></a>
 					</div>
-					<p>Hello! I'm Dmitriy, a software engineer based in Boston, MA who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.</p>
-					<p>Shortly after graduating from <a href="#" class="url"><span class="word">Northeastern University</span></a>, I joined the engineering team at <a href="#" class="url"><span class="word">Upstatement</span></a> where I work on a wide variety of interesting and meaningful projects on a daily basis.</p>
-					<p>Here are a few technologies I've been working with recently:</p>
-					<div class="block_icons">
-						<div class="icons">
-							<p class="lan"><i class="fas fa-caret-right"></i> JavaScript</p>
-							<p class="lan"><i class="fas fa-caret-right"></i> React</p>
-							<p class="lan"><i class="fas fa-caret-right"></i> Node.js</p>
-							<p class="lan"><i class="fas fa-caret-right"></i> Ruby on Rails</p>
+					<div class="header__menu">
+						<div class="header__circle"></div>
+						<div class="header__circle"></div>
+						<div class="header__burger">
+							<span></span>
 						</div>
-						<div class="icons">
-							<div class="icon">
-								<p class="lan"><i class="fas fa-caret-right"></i> HTML & (S)CSS</p>
-								<p class="lan"><i class="fas fa-caret-right"></i> Vue.js</p>
-								<p class="lan"><i class="fas fa-caret-right"></i> Python</p>
+					</div>
+				</header>
+
+				<!-- Contectn  -->
+				<div class="home__block">
+					<div class="home__subblock">
+						<h1 class="home__title">Nike</h1>
+						<p class="home__item"><a href="#" class="home__btn">Shop by BRANDS</a></p>
+					</div>
+					<div class="home__imgs">
+						<img src="css/images/sneaker.webp" class="home__sneaker" alt="">
+					</div>
+				</div>
+
+				<!-- Text Rotate -->
+				<p class="home__rotate">Nike, originally known as Blue Ribbon Sports was founded by University of Oregon track athlete Phil Knight.</p>
+
+				<!-- Icons  -->
+				<div class="home__links">
+					<div class="home__icons">
+						<a href="#"><i class="fab fa-twitter home__icon"></i></a>
+					</div>
+					<div class="home__icons">
+						<a href="#"><i class="fab fa-facebook-f home__icon"></i></a>
+					</div>
+					<div class="home__icons">
+						<a href="#"><i class="fab fa-google-plus-g home__icon"></i></a>
+					</div>
+					<div class="home__icons">
+						<a href="#"><i class="fab fa-pinterest-p home__icon"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- About -->
+		<div class="about">
+			<div class="container">
+				<div class="about__block">
+					<div class="about__bg">
+						<div class="about__subbg">
+							<img src="css/images/about.webp" class="about__img" alt="">
+						</div>
+					</div>
+					<div class="about__content">
+						<h2 class="about__title">Nike Air Force One MID id</h2>
+						<p class="about__des">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.</p>
+						<p class="about__item"><a href="#" class="about__link">View Now</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Popular  -->
+		<div class="popular">
+			<div class="container">
+				<h2 class="popular__title">Popular Arrivals</h2>
+				<div class="popular__block">
+					<div class="popular__subblbock">
+						<div class="popular__item">
+							<div class="popular__imgs">
+								<p class="popular__relative"><a  href="#" class="popular__btn">View Details</a></p>
+								<img src="css/images/popular1.webp" class="popular__img" alt="">
 							</div>
+							<span class="popular__des black">Nike shoes</span><span class="popular__des">Shop Outdoors</span>
+							<p class="popular__price">$125</p>
+						</div>
+						<div class="popular__item">
+							<div class="popular__imgs">
+								<p class="popular__relative"><a  href="#" class="popular__btn">View Details</a></p>
+								<img src="css/images/popular2.webp" class="popular__img" alt="">
+							</div>
+							<span class="popular__des black">Nike shoes</span><span class="popular__des">Shop Outdoors</span>
+							<p class="popular__price">$260</p>
+						</div>
+					</div>
+					<div class="popular__subblbock">
+						<div class="popular__item">
+							<div class="popular__imgs">
+								<p class="popular__relative"><a  href="#" class="popular__btn">View Details</a></p>
+								<img src="css/images/popular3.webp" class="popular__img" alt="">
+							</div>
+							<span class="popular__des black">Nike shoes</span><span class="popular__des">Shop Outdoors</span>
+							<p class="popular__price">$145</p>
+						</div>
+						<div class="popular__item">
+							<div class="popular__imgs">
+								<p class="popular__relative"><a  href="#" class="popular__btn">View Details</a></p>
+								<img src="css/images/popular4.webp" class="popular__img" alt="">
+							</div>
+							<span class="popular__des black">Nike shoes</span><span class="popular__des">Shop Outdoors</span>
+							<p class="popular__price">$350</p>
 						</div>
 					</div>
 				</div>
-				<div class="right" data-aos="fade-left">
-					<div class="foto"><a href="#"><img src="images/1.jpg"></a></div>
-					<div class="ramka"></div>
-				</div>
-			</div>
-
-			<div class="block_3" id="expe">
-				<div class="h" data-aos="fade-right">
-					<h2><span class="number">02.</span>Where I've Worked</h2><div class="line"></div>
-				</div>
-				<div class="info_block" data-aos="fade-right">
-					<h3 >Web Developer/Backend Developer <a href="#" class="url">@ MassMedia Group</a></h3>
-					<p class="time">July - Dec 2020</p>
-					<div class="info_p">
-						<div class="i_p">
-							<div class="div_i"><i class="fas fa-caret-right"></i></div>
-							<div class="div_p">Engineered and maintained major features of Starry's customer-facing web app using ES6, Handlebars, Backbone, Marionette and CSS</div>
-						</div>
-						<div class="i_p">
-							<div class="div_i"><i class="fas fa-caret-right"></i></div>
-							<div class="div_p">Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with Starry Station</div>
-						</div>
-						<div class="i_p">
-							<div class="div_i"><i class="fas fa-caret-right"></i></div>
-							<div class="div_p">Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Starry’s iOS and Android mobile apps</div>
-						</div>
-					</div>
-				</div>
-				<div class="info_block" data-aos="fade-right" data-aos-delay="200">
-					<h3>Web Developer/Backend Developer <a href="#" class="url">@ ItSites</a></h3>
-					<p class="time">July - Dec 2019</p>
-					<div class="info_p">
-						<div class="i_p">
-							<div class="div_i"><i class="fas fa-caret-right"></i></div>
-							<div class="div_p">Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</div>
-						</div>
-						<div class="i_p">
-							<div class="div_i"><i class="fas fa-caret-right"></i></div>
-							<div class="div_p">Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</div>
-						</div>
-						<div class="i_p">
-							<div class="div_i"><i class="fas fa-caret-right"></i></div>
-							<div class="div_p">Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more</div>
-						</div>
-					</div>
-				</div>
-				<div class="info_block" data-aos="fade-right" data-aos-delay="200">
-					<h3>Web Developer/Backend Developer <a href="#" class="url">@ OutsourseTeam</a></h3>
-					<p class="time">July - Dec 2019</p>
-					<div class="info_p">
-						<div class="i_p">
-							<div class="div_i"><i class="fas fa-caret-right"></i></div>
-							<div class="div_p">Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</div>
-						</div>
-						<div class="i_p">
-							<div class="div_i"><i class="fas fa-caret-right"></i></div>
-							<div class="div_p">Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</div>
-						</div>
-						<div class="i_p">
-							<div class="div_i"><i class="fas fa-caret-right"></i></div>
-							<div class="div_p">Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="block_4" id="work">
-				<div class="h" data-aos="fade-right">
-					<h2><span class="number">03.</span>Some Things I've Built</h2><div class="line"></div>
-				</div>
-				<p data-aos="fade-right" data-aos-delay="200"><a href="#" class="url">View the archive</a></p>
-				<div class="doc">
-					<div class="doc_block" data-aos="fade-up" data-aos-delay="200">
-						<div class="doc_head">
-							<p><i class="far fa-folder-open"></i></p>
-							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
-						</div>
-						<div class="doc_body">
-							<h3>Building a Headless Mobile App CMS From Scratch</h3>
-							<p>Find out how we built a custom headless CMS with Node, Express, and Firebase for a client project at Upstatement</p>
-						</div>
-						<div class="doc_foot">
-							<span>Node</span>
-							<span>Vue.js</span>
-							<span>Firebase</span>
-						</div>
-					</div>
-					<div class="doc_block" data-aos="fade-up" data-aos-delay="300">
-						<div class="doc_head">
-							<p><i class="far fa-folder-open"></i></p>
-							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
-						</div>
-						<div class="doc_body">
-							<h3>Google Keep Clone</h3>
-							<p>R Project for my Data Science class at Northeastern to analyze the top Spotify tracks of 2017 and their audio features.</p>
-						</div>
-						<div class="doc_foot">
-							<span>Vue.js</span>
-							<span>Ruby on Rails</span>
-						</div>
-					</div>
-					<div class="doc_block" data-aos="fade-up" data-aos-delay="400">
-						<div class="doc_head">
-							<p><i class="far fa-folder-open"></i></p>
-							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
-						</div>
-						<div class="doc_body">
-							<h3>Apple Music Embeddable Web Player Widget</h3>
-							<p>Custom WordPress theme and e-commerce site built with Timber and WooCommerce for blistabloc, a start-up selling the only reactive shoe insert that prevents blisters from forming.</p>
-						</div>
-						<div class="doc_foot">
-							<span>WordPress</span>
-							<span>Vue.js</span>
-							<span>WooCommerce</span>
-						</div>
-					</div>
-				</div>
-				<div class="doc">
-					<div class="doc_block" data-aos="fade-up" data-aos-delay="500">
-						<div class="doc_head">
-							<p><i class="far fa-folder-open"></i></p>
-							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
-						</div>
-						<div class="doc_body">
-							<h3>Building a Headless Mobile App CMS From Scratch</h3>
-							<p>Find out how we built a custom headless CMS with Node, Express, and Firebase for a client project at Upstatement</p>
-						</div>
-						<div class="doc_foot">
-							<span>Node</span>
-							<span>Vue.js</span>
-							<span>Firebase</span>
-						</div>
-					</div>
-					<div class="doc_block" data-aos="fade-up" data-aos-delay="600">
-						<div class="doc_head">
-							<p><i class="far fa-folder-open"></i></p>
-							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
-						</div>
-						<div class="doc_body">
-							<h3>Google Keep Clone</h3>
-							<p>R Project for my Data Science class at Northeastern to analyze the top Spotify tracks of 2017 and their audio features.</p>
-						</div>
-						<div class="doc_foot">
-							<span>Vue.js</span>
-							<span>Ruby on Rails</span>
-						</div>
-					</div>
-					<div class="doc_block" data-aos="fade-up" data-aos-delay="700">
-						<div class="doc_head">
-							<p><i class="far fa-folder-open"></i></p>
-							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
-						</div>
-						<div class="doc_body">
-							<h3>Apple Music Embeddable Web Player Widget</h3>
-							<p>Custom WordPress theme and e-commerce site built with Timber and WooCommerce for blistabloc, a start-up selling the only reactive shoe insert that prevents blisters from forming.</p>
-						</div>
-						<div class="doc_foot">
-							<span>WordPress</span>
-							<span>Vue.js</span>
-							<span>WooCommerce</span>
-						</div>
-					</div>
-				</div>
-				<div class="doc_btn" data-aos="fade-up">
-					<a href="#" class="btn">See More</a>
-				</div>
-			</div>
-
-			<div class="block_5" id="contact">
-				<p class="p_one" data-aos="fade-up">04. What's Next?</p>
-				<h3 data-aos="fade-up" data-aos-delay="200">Get In Touch</h3>
-				<p class="p_two" data-aos="fade-up" data-aos-delay="400">Although I'm not currently looking for freelance opportunities, my inbox is always open. Whether for a potential project or just to say hi, I'll try my best to answer your email!</p>
-				<a href="#" class="btn" data-aos="fade-up" data-aos-delay="600">Say Hello</a>
 			</div>
 		</div>
 
-		<div class="footer">
-			<a href="#">Designed & Built by Dmitriy Rogkov</a>
+		<!-- Collection -->
+		<div class="collection">
+			<div class="container">
+				<div class="collection__block">
+					<div class="collection__item">
+						<h2 class="collection__title">Pre- Fall Collections</h2>
+						<p class="collection__des">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will</p>
+						<p class="collection__btns"><a href="#" class="collection__btn">View Details</a></p>
+					</div>
+					<div class="collection__item">
+						<div class="collection__imgs">
+							<img src="css/images/collection.webp" class="collection__img" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
+		<!-- Slider  -->
+		<div class="slider">
+			<div class="slider__block">
+				<h2 class="slider__title">We Thought of you</h2>
+				<p class="slider__des">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+				<p class="slider__name">Nandy Sweety</p>
+				<p class="slider__position">Ui Designer</p>
+			</div>
+			<div class="slider__block">
+				<h2 class="slider__title">We Do Things</h2>
+				<p class="slider__des">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.Override the digital divide with additional clickthroughs from DevOps.</p>
+				<p class="slider__name">Den Yung</p>
+				<p class="slider__position">Ui Designer</p>
+			</div>
+			<div class="slider__block">
+				<h2 class="slider__title">We Create</h2>
+				<p class="slider__des">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</p>
+				<p class="slider__name">Dmitriy Rogkov</p>
+				<p class="slider__position">CEO</p>
+			</div>
+		</div>
 
-		
+		<!-- Blog -->
+		<div class="blog">
+			<div class="container">
+				<h2 class="blog__title">Latest Blog</h2>
+				<div class="blog__block">		
+					<div class="blog__slider">
+						<img src="css/images/blog.webp" class="blog__img" alt="">
+						<img src="css/images/blog2.webp" class="blog__img" alt="">
+						<img src="css/images/blog3.webp" class="blog__img" alt="">
+						<img src="css/images/blog4.webp" class="blog__img" alt="">
+						<img src="css/images/blog5.webp" class="blog__img" alt="">
+						<img src="css/images/blog6.webp" class="blog__img" alt="">
+					</div>
+					<div class="blog__content">
+						<h3 class="blog__subtitle">Colourful Offer ;</h3>
+						<p class="blog__des">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive</p>
+						<p class="blog__item"><a href="#" class="blog__btn">Read More</a></p>
+						<div class="blog__control">
+							<div class="blog__circles">
+								<p class="blog__circle"></p>
+								<p class="blog__circle"></p>
+								<p class="blog__circle"></p>
+								<p class="blog__line"></p>
+								<p class="blog__bigcircle"></p>
+							</div>
+							<div class="blog__dots"></div>
+							<p class="blog__alldots">/ 6</p>
+							<div class="blog__arrows"></div>
+						</div>
+					</div>						
+				</div>
+			</div>
+		</div>
 
-		<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    	<script src="app.js"></script>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__block">
+					<div class="footer__item">
+						<a href="#"><img src="css/images/logo.webp" class="header__img" alt=""></a>
+					</div>
+					<div class="footer__item">
+						<ul class="footer__list">
+							<li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Man</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Woman</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Popular</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">About</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<ul class="footer__list">
+							<li class="footer__item"><a href="#" class="footer__link">Support</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Advertisement</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Online Shop</a></li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h3 class="footer__title">Sign up for news and events</h3>
+						<form action="#">
+							<input type="email" name="email" class="footer__input" placeholder="Your email address" required>
+							<input type="submit" name="btn" class="footer__btn" value="Submit">
+						</form>
+						<div class="footer__icons">
+							<a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+							<a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="footer__icon"><i class="fab fa-google-plus-g"></i></a>
+							<a href="#" class="footer__icon"><i class="fab fa-pinterest"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__end">
+					<p class="footer__des">Copyrights 2017. Shoe Shop by Dima Rogkov</p>
+					<p class="footer__des"><a href="#">Contact Us</a></p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JQwery -->
+		<script
+		  src="https://code.jquery.com/jquery-3.4.1.js"
+		  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		  crossorigin="anonymous">
+	  	</script>
+	  	<!-- Slick -->
+	  	<script src="js/slick.min.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>

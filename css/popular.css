@@ -1,0 +1,112 @@
+.popular {
+	padding: 0 0 130px 0;
+}
+
+.popular__title {
+	color: #000000;
+	font-family: "Cormorant Garamond";
+	font-size: 45px;
+	font-weight: 500;
+	letter-spacing: 0.45px;
+	margin: 0 0 60px 0;
+}
+
+.popular__block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.popular__subblbock {
+	display: flex;
+	justify-content: space-around;
+}
+
+.popular__item {
+	max-width: 250px;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin: 0 25px;
+}
+
+.popular__item:last-child {
+	padding: 0;
+}
+
+.popular__imgs {
+	background-color: #eeeded;
+	margin: 0 0 50px 0;
+	position: relative;
+	background-color: #82f4d3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popular__relative {
+	position: absolute;
+}
+
+.popular__btn {
+	position: relative;
+	color: #ffffff;
+	font-family: Poppins;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.15px;
+	padding: 10px 28px;
+	border: 1px solid #ffffff;
+	transition: all 0.4s;
+}
+
+.popular__img {
+	max-width: 100%;
+	position: relative;
+	z-index: 1;
+	transition: all 0.4s;
+}
+
+.popular__des {
+	letter-spacing: 0.15px;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 400;
+	color: #bbbbbb;
+	transition: all 0.4s;
+}
+
+.popular__des.black {
+	color: #000000;
+	letter-spacing: 0.15px;
+	font-size: 15px;
+	font-family: Poppins;
+	padding: 0 20px 0 0;
+}
+
+.popular__price {
+	color: #999999;
+	font-family: Roboto;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	margin: 20px 0 0 0;
+	transition: all 0.4s;
+}
+
+/*Hover */
+
+.popular__item:hover .popular__img {
+	opacity: 0.3;
+}
+
+.popular__item:hover .popular__price {
+	color: #82f4d3;
+}
+
+.popular__item:hover .popular__btn {
+	z-index: 2;
+}
+
+.popular__btn:hover {
+	background-color: #ffffff;
+	color: #82f4d3;
+}
