@@ -1,133 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
-		<title>Rizor</title>
-		<meta charset="utf-8">
+		<title>Dmitriy Rogkov | Web Dev Developer</title>
+	 	<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" href="main.css">
-	    <link rel="stylesheet" href="header.css">
-	    <link rel="stylesheet" href="first.css">
-	    <link rel="stylesheet" href="second.css">
-	    <link rel="stylesheet" href="navigation.css">
-	    <link rel="stylesheet" href="three.css">
-	    <link rel="stylesheet" href="footer.css">
-	    <!-- Fonts Logo -->
-	    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-	    <!-- Font all text -->
-	    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<!-- Boostrap -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+		<!-- Font-aweosome -->
+	    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	    <!-- Font -->
+	    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet"> <!-- Цыфры -->
+	    <!-- Animate css -->
+	    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	    <!-- jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	</head>
 	<body>
-		<header class="header">
-			<div class="header__left">
-				<img src="images/logo.png" class="header__img" alt="Logo">
+		<div class="header">
+			<div class="left" data-aos="fade-right">
+				<a href="#">Logo</a>
 			</div>
-			<div class="header__right" id="menu">
-				<ul class="header__menu">
-					<li class="headr_item header__item--active"><a href="#one">Преимущества</a></li>
-					<li class="headr_item"><a href="#two">Характеристики</a></li>
-					<li class="headr_item"><a href="#tree">Для кого</a></li>
-				</ul>
-			</div>
-		</header>
-
-		<div class="first">
-			<img src="images/saw.png" class="first__saw" alt="saw">
-			<div class="first__left">
-				<div class="first__info" id="arrow">
-					<h1 class="first__title">Rizor Hovertrax 4.0</h1>
-					<p class="first__des">Маневренность, легкость,  экологичность</p>
-					<a href="#one"><img src="images/arrow.png" class="first__arrow" alt="arrow"></a>
-					<img src="images/play.png" class="first__play" alt="play">
-				</div>
-			</div>
-			<div class="first__right">
-				<div class="navigation">
-					<div class="navigation__circle navigation__circle--active"></div>
-					<div class="navigation__circle"></div>
-					<div class="navigation__circle"></div>
-					<div class="navigation__circle"></div>
-				</div>
-				<div class="first__back"></div>
+			<div class="right" id="menu">
+				<a href="#about"><span>01.</span> About</a>
+				<a href="#expe"><span>02.</span> Experience</a>
+				<a href="#work"><span>03.</span> Work</a>
+				<a href="#contact"><span>04.</span> Contact</a>
+				<a href="#" class="btn_header">Resume</a>
 			</div>
 		</div>
 
-		<div class="second" id="one">
-			<div class="second__left">
-				<div class="second__img"></div>
-			</div>
-			<div class="second__right">
-				<div class="navigation navigation--second">
-					<div class="navigation__circle"></div>
-					<div class="navigation__circle navigation__circle--active"></div>
-					<div class="navigation__circle"></div>
-					<div class="navigation__circle"></div>
-				</div>
-				<img src="images/name.png" class="second__name" alt="name">
-				<div class="second__info">
-					<p class="second__item">преимущества</p>
-					<h3 class="second__title">дизайн</h3>
-					<p class="second__des">Внешний вид скутера дышит идеями футуризма:</p>
-					<ul>
-						<li>Плавные линии</li>
-						<li>подсветка светодиодными индикаторами</li>
-						<li>рельефные бамперы оснащённые защитными панелями</li>
-					</ul>
-				</div>
-				<div class="second__info second__info--down">
-					<h3 class="second__title">Цвет</h3>
-					<p class="second__des"> Модель предоставлена сразу в нескольких цветах</p>
-					<img src="images/colors.png" class="second__colors" alt="colors">
-					<img src="images/scooter.png" class="second__scooter" alt="scooter">
-				</div>
-			</div>
+		<div class="media_left" data-aos="fade-up" data-aos-delay="300">
+			<p><a href="https://github.com/dimarogkov?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></p>
+			<p><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></p>
+			<p><a href="https://www.facebook.com/profile.php?id=100014871194282" target="_blank"><i class="fab fa-facebook"></i></a></p>
+			<p><a href="https://www.instagram.com/rogggkov/" target="_blank"><i class="fab fa-instagram"></i></a></p>
+			<p><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></p>
+			<div class="line"></div>
 		</div>
 
-		<div class="three" id="two">
-			<img src="images/saw.png" class="three__saw" alt="saw">
-			<div class="three__left">
-				<div class="three__info">
-					<h1 class="three__title">Режимы</h1>
-					<p class="three__des">Помимо «умной» подсветки, <span class="bold">Hovertrax 4.0</span>  снабжён двумя скоростными режимами.</p>
-					<ul>
-						<li>Один для продвинутых пользователей</li>
-						<li>Второй для новичков</li>
-					</ul>
-					<div class="three__modes">
-						<div class="three__item">
-							<h3>13<span class="three__small">км/ч</span></h3>
-							<p>Максимальная<br> скорость</p>
+		<div class="container">
+			<div class="block_1">
+				<p class="p_one" data-aos="fade-up" data-aos-delay="700">Hi, my name is</p>
+				<h1 data-aos="fade-up" data-aos-delay="900">Dmitriy Rogkov.</h1>
+				<h2 data-aos="fade-up" data-aos-delay="1100">I build things for the web.</h2>
+				<p class="p_two" data-aos="fade-up" data-aos-delay="1300">I'm a Web Developer based in Ukraine, MA specializing in<br> building (and occasionally designing) exceptional, high-quality<br> websites and applications.</p>
+				<a href="#" class="btn" data-aos="fade-up" data-aos-delay="1500">Get in Touch</a>
+			</div>
+
+			<div class="block_2" id="about">
+				<div class="left" data-aos="fade-right">
+					<div class="h">
+						<h2><span class="number">01.</span>About Me</h2><div class="line"></div>
+					</div>
+					<p>Hello! I'm Dmitriy, a software engineer based in Boston, MA who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.</p>
+					<p>Shortly after graduating from <a href="#" class="url"><span class="word">Northeastern University</span></a>, I joined the engineering team at <a href="#" class="url"><span class="word">Upstatement</span></a> where I work on a wide variety of interesting and meaningful projects on a daily basis.</p>
+					<p>Here are a few technologies I've been working with recently:</p>
+					<div class="block_icons">
+						<div class="icons">
+							<p class="lan"><i class="fas fa-caret-right"></i> JavaScript</p>
+							<p class="lan"><i class="fas fa-caret-right"></i> React</p>
+							<p class="lan"><i class="fas fa-caret-right"></i> Node.js</p>
+							<p class="lan"><i class="fas fa-caret-right"></i> Ruby on Rails</p>
 						</div>
-						<div class="three__item three__item--left">
-							<h3>2</h3>
-							<p>Скоростных<br> режима</p>
+						<div class="icons">
+							<div class="icon">
+								<p class="lan"><i class="fas fa-caret-right"></i> HTML & (S)CSS</p>
+								<p class="lan"><i class="fas fa-caret-right"></i> Vue.js</p>
+								<p class="lan"><i class="fas fa-caret-right"></i> Python</p>
+							</div>
 						</div>
 					</div>
-					<img src="images/play.png" class="three__play" alt="play">
+				</div>
+				<div class="right" data-aos="fade-left">
+					<div class="foto"><a href="#"><img src="images/1.jpg"></a></div>
+					<div class="ramka"></div>
 				</div>
 			</div>
-			<div class="three__right">
-				<div class="three__back"></div>
+
+			<div class="block_3" id="expe">
+				<div class="h" data-aos="fade-right">
+					<h2><span class="number">02.</span>Where I've Worked</h2><div class="line"></div>
+				</div>
+				<div class="info_block" data-aos="fade-right">
+					<h3 >Web Developer/Backend Developer <a href="#" class="url">@ MassMedia Group</a></h3>
+					<p class="time">July - Dec 2020</p>
+					<div class="info_p">
+						<div class="i_p">
+							<div class="div_i"><i class="fas fa-caret-right"></i></div>
+							<div class="div_p">Engineered and maintained major features of Starry's customer-facing web app using ES6, Handlebars, Backbone, Marionette and CSS</div>
+						</div>
+						<div class="i_p">
+							<div class="div_i"><i class="fas fa-caret-right"></i></div>
+							<div class="div_p">Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with Starry Station</div>
+						</div>
+						<div class="i_p">
+							<div class="div_i"><i class="fas fa-caret-right"></i></div>
+							<div class="div_p">Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Starry’s iOS and Android mobile apps</div>
+						</div>
+					</div>
+				</div>
+				<div class="info_block" data-aos="fade-right" data-aos-delay="200">
+					<h3>Web Developer/Backend Developer <a href="#" class="url">@ ItSites</a></h3>
+					<p class="time">July - Dec 2019</p>
+					<div class="info_p">
+						<div class="i_p">
+							<div class="div_i"><i class="fas fa-caret-right"></i></div>
+							<div class="div_p">Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</div>
+						</div>
+						<div class="i_p">
+							<div class="div_i"><i class="fas fa-caret-right"></i></div>
+							<div class="div_p">Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</div>
+						</div>
+						<div class="i_p">
+							<div class="div_i"><i class="fas fa-caret-right"></i></div>
+							<div class="div_p">Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more</div>
+						</div>
+					</div>
+				</div>
+				<div class="info_block" data-aos="fade-right" data-aos-delay="200">
+					<h3>Web Developer/Backend Developer <a href="#" class="url">@ OutsourseTeam</a></h3>
+					<p class="time">July - Dec 2019</p>
+					<div class="info_p">
+						<div class="i_p">
+							<div class="div_i"><i class="fas fa-caret-right"></i></div>
+							<div class="div_p">Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery</div>
+						</div>
+						<div class="i_p">
+							<div class="div_i"><i class="fas fa-caret-right"></i></div>
+							<div class="div_p">Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</div>
+						</div>
+						<div class="i_p">
+							<div class="div_i"><i class="fas fa-caret-right"></i></div>
+							<div class="div_p">Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block_4" id="work">
+				<div class="h" data-aos="fade-right">
+					<h2><span class="number">03.</span>Some Things I've Built</h2><div class="line"></div>
+				</div>
+				<p data-aos="fade-right" data-aos-delay="200"><a href="#" class="url">View the archive</a></p>
+				<div class="doc">
+					<div class="doc_block" data-aos="fade-up" data-aos-delay="200">
+						<div class="doc_head">
+							<p><i class="far fa-folder-open"></i></p>
+							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
+						</div>
+						<div class="doc_body">
+							<h3>Building a Headless Mobile App CMS From Scratch</h3>
+							<p>Find out how we built a custom headless CMS with Node, Express, and Firebase for a client project at Upstatement</p>
+						</div>
+						<div class="doc_foot">
+							<span>Node</span>
+							<span>Vue.js</span>
+							<span>Firebase</span>
+						</div>
+					</div>
+					<div class="doc_block" data-aos="fade-up" data-aos-delay="300">
+						<div class="doc_head">
+							<p><i class="far fa-folder-open"></i></p>
+							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
+						</div>
+						<div class="doc_body">
+							<h3>Google Keep Clone</h3>
+							<p>R Project for my Data Science class at Northeastern to analyze the top Spotify tracks of 2017 and their audio features.</p>
+						</div>
+						<div class="doc_foot">
+							<span>Vue.js</span>
+							<span>Ruby on Rails</span>
+						</div>
+					</div>
+					<div class="doc_block" data-aos="fade-up" data-aos-delay="400">
+						<div class="doc_head">
+							<p><i class="far fa-folder-open"></i></p>
+							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
+						</div>
+						<div class="doc_body">
+							<h3>Apple Music Embeddable Web Player Widget</h3>
+							<p>Custom WordPress theme and e-commerce site built with Timber and WooCommerce for blistabloc, a start-up selling the only reactive shoe insert that prevents blisters from forming.</p>
+						</div>
+						<div class="doc_foot">
+							<span>WordPress</span>
+							<span>Vue.js</span>
+							<span>WooCommerce</span>
+						</div>
+					</div>
+				</div>
+				<div class="doc">
+					<div class="doc_block" data-aos="fade-up" data-aos-delay="500">
+						<div class="doc_head">
+							<p><i class="far fa-folder-open"></i></p>
+							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
+						</div>
+						<div class="doc_body">
+							<h3>Building a Headless Mobile App CMS From Scratch</h3>
+							<p>Find out how we built a custom headless CMS with Node, Express, and Firebase for a client project at Upstatement</p>
+						</div>
+						<div class="doc_foot">
+							<span>Node</span>
+							<span>Vue.js</span>
+							<span>Firebase</span>
+						</div>
+					</div>
+					<div class="doc_block" data-aos="fade-up" data-aos-delay="600">
+						<div class="doc_head">
+							<p><i class="far fa-folder-open"></i></p>
+							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
+						</div>
+						<div class="doc_body">
+							<h3>Google Keep Clone</h3>
+							<p>R Project for my Data Science class at Northeastern to analyze the top Spotify tracks of 2017 and their audio features.</p>
+						</div>
+						<div class="doc_foot">
+							<span>Vue.js</span>
+							<span>Ruby on Rails</span>
+						</div>
+					</div>
+					<div class="doc_block" data-aos="fade-up" data-aos-delay="700">
+						<div class="doc_head">
+							<p><i class="far fa-folder-open"></i></p>
+							<p class="right"><a href="#" class="git"><i class="fas fa-external-link-alt"></i></a></p>
+						</div>
+						<div class="doc_body">
+							<h3>Apple Music Embeddable Web Player Widget</h3>
+							<p>Custom WordPress theme and e-commerce site built with Timber and WooCommerce for blistabloc, a start-up selling the only reactive shoe insert that prevents blisters from forming.</p>
+						</div>
+						<div class="doc_foot">
+							<span>WordPress</span>
+							<span>Vue.js</span>
+							<span>WooCommerce</span>
+						</div>
+					</div>
+				</div>
+				<div class="doc_btn" data-aos="fade-up">
+					<a href="#" class="btn">See More</a>
+				</div>
+			</div>
+
+			<div class="block_5" id="contact">
+				<p class="p_one" data-aos="fade-up">04. What's Next?</p>
+				<h3 data-aos="fade-up" data-aos-delay="200">Get In Touch</h3>
+				<p class="p_two" data-aos="fade-up" data-aos-delay="400">Although I'm not currently looking for freelance opportunities, my inbox is always open. Whether for a potential project or just to say hi, I'll try my best to answer your email!</p>
+				<a href="#" class="btn" data-aos="fade-up" data-aos-delay="600">Say Hello</a>
 			</div>
 		</div>
 
-		<footer class="footer" id="tree">
-			<div class="footer__left">
-				<div class="footer__info">
-					<h3 class="footer__title">Для кого</h3>
-					<p class="footer__des">При максимально выдерживаемой нагрузке в <span class="bold">100 кг</span> отлично подойдёт, как для подрастающего поколения,
-					так и для более взрослых "наездников"</p>
-					<p class="footer__des">Это единственный гироскутер со специальным детским режимом езды.</p>
-				</div>
-			</div>
-			<div class="footer__right">
-				<img src="images/footer.png" class="footer__img" alt="footer">
-			</div>
-		</footer>
-		<div class="footer__end">
-			<p>© All rights reserved, 2017</p>
+		<div class="footer">
+			<a href="#">Designed & Built by Dmitriy Rogkov</a>
 		</div>
-		<script src="js/app.js"></script>
+
+
+		
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    	<script src="app.js"></script>
 	</body>
 </html>
