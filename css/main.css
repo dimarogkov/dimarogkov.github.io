@@ -23,6 +23,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	min-width: 320px;
 }
 input,button,textarea{font-family:inherit;}
 
@@ -38,6 +39,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 .container {
-	max-width: 1150px;
+	max-width: 1203px;
 	margin: 0 auto;
+	padding: 0 15px;
 }

@@ -1,88 +1,73 @@
 .about {
-	padding: 100px 0;
+	padding: 65px 0 0 0;
+	max-width: 1047px;
+	margin: 0 auto;
 }
 
 .about__block {
 	display: flex;
-	align-items: center;
-	position: relative;
+	justify-content: space-between;
+	max-width: 100%;
 }
 
-/*About Bg */
-
-.about__bg {
-	width: 689px;
-	box-shadow: 4px 3px 19px 1px rgba(223, 220, 220, 0.75);
-	background-color: #eeeded;
-	padding: 7px;
+.about__item {
 	flex: 0 0 50%;
 }
 
-.about__subbg {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #ffffff;
+.about__item:last-child {
+	padding: 50px 0 0 70px;
 }
+
+/*About Img*/
 
 .about__img {
 	max-width: 100%;
 }
 
-/*About Content */
+/*About Info*/
 
-.about__content {
-	position: absolute;
-	left: 40%;
+.left {
+	text-align: left;
 }
 
-.about__title {
-	color: #000000;
-	font-family: "Cormorant Garamond";
-	font-size: 45px;
-	font-weight: 500;
-	letter-spacing: 0.45px;
+.left .top__line {
+	margin: 0;
 }
 
 .about__des {
-	color: #888888;
-	font-family: Poppins;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 30px;
-	letter-spacing: 0.3px;
-	margin: 40px 0;
-}
-
-.about__item {
-	display: flex;
-	justify-content: flex-end;
-	max-width: 50%;
-	margin: 0 0 0 auto;
-	position: relative;
-	transition: all 0.5s;
-}
-
-.about__link {
-	color: #0a0a0a;
-	font-family: Poppins;
-	font-size: 15px;
+	color: #999999;
+	font-family: "Source Sans Pro";
+	font-size: 18px;
 	font-weight: 400;
-	letter-spacing: 0.15px;
-	padding: 18px 35px;
-	background-color: #82f4d3;
-	position: relative;
-	right: 0;
+	margin: 30px 0 0 0;
+	line-height: 25px;
 }
 
-.about__link:before {
-	content: '';
-	position: absolute;
-	width: 143px;
-	height: 57px;
-	border: 1px solid #82f4d3;
-	background-color: transparent;
-	opacity: 0.46; 
-	top: -10px;
-	right: 10px;
+.about__list {
+	margin: 40px 0 0 0;
+}
+
+.about__st {
+	margin: 0 0 25px 0;
+}
+
+.about__st:last-child {
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.about__icon {
+	color: #008ed6;
+	font-size: 16px;
+	text-align: center;
+	width: 20px;
+}
+
+.about__text {
+	padding: 0 0 0 10px;
+	color: #008ed6;
+	font-size: 16px;
+	font-family: "Source Sans Pro";
+	font-weight: 400;
 }

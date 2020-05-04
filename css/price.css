@@ -1,0 +1,140 @@
+.price {
+	padding: 60px 0;
+}
+
+.price__block {
+	display: flex;
+	margin: 70px 0 0 0;
+	justify-content: space-between;
+}
+
+.price__item {
+	display: flex;
+	justify-content: space-around;
+}
+
+.subprice__block {
+	width: 270px;
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.subprice__block:first-child {
+	margin: 0 30px 0 0;
+}
+
+.price__name {
+	color: #1a1a1a;
+	font-family: "Source Sans Pro";
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 25px 40px;
+	border-bottom: 1px solid #e0e0e0;
+	transition: all 0.4s;
+}
+
+.price__costs {
+	padding: 30px 0;
+	border-bottom: 1px solid #e0e0e0;
+	transition: all 0.4s;
+}
+
+.price__cost {
+	font-family: "Source Sans Pro";
+	color: #1a1a1a;
+	font-size: 60px;
+	font-weight: 600;
+	transition: all 0.4s;
+}
+
+.price__sup {
+	color: #1a1a1a;
+	font-family: "Source Sans Pro";
+	font-size: 24px;
+	font-weight: 600;
+	transition: all 0.4s;
+}
+
+.price__info {
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	color: #999999;
+	font-size: 18px;
+	transition: all 0.4s;
+}
+
+.price__article {
+	padding: 50px 0;
+}
+
+.price__des {
+	max-width: 196px;
+	color: #999999;
+	font-family: "Source Sans Pro";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	margin: 0 auto;
+	padding: 0 0 60px 0;
+}
+
+.blue {
+	color: #008ed6;
+}
+
+.price__btn {
+	color: #008ed6;
+	font-family: "Source Sans Pro";
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 16px 40px;
+	border: 1px solid #e0e0e0;
+	transition: all 0.4s;
+	border-radius: 5px;
+}
+
+.price__btn:hover {
+	color: #ffffff;
+	background-color: #008ed6;
+	border: 1px solid #008ed6;
+}
+
+.subprice__block:hover,
+.subprice__block.active {
+	box-shadow: 0 0 10px #999999;
+}
+
+.subprice__block:hover .price__name,
+.subprice__block.active .price__name  {
+	color: #008ed6;
+}
+
+.subprice__block:hover .price__costs,
+.subprice__block.active .price__costs  {
+	background-color: #008ed6;
+}
+
+.subprice__block:hover .price__cost,
+.subprice__block.active .price__cost  {
+	color: #ffffff;
+}
+
+.subprice__block:hover .price__sup,
+.subprice__block.active .price__sup  {
+	color: #ffffff;
+}
+
+.subprice__block:hover .price__info,
+.subprice__block.active .price__info  {
+	color: #ffffff;
+}
+
+.subprice__block:hover .price__btn,
+.subprice__block.active .price__btn  {
+	background-color: #008ed6;
+	color: #ffffff;
+	border: 1px solid #008ed6;
+}

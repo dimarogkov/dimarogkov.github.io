@@ -1,26 +1,41 @@
 $(document).ready(function() {
-	// Header
-	$('.header__burger').click(function(event) {
-		$(this).toggleClass('active');
-	}) 
 
-	// Slider 
+	// Slider
 	$('.slider').slick({
-		slidesToShow:1,			
-		slidesToScroll:1,			
-		infinite:true,		
-		autoplay:true,		
-	});
+		arrows: false,
+		dots: true,
+		slidesToShow:2,
+		adaptiveHeight:true,
+		infinite:true,
+		autoplay:true,
+		draggable: true,
+		slidesToScroll:2,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		],
+	})
+	
 
-	// Blog Slider
-	$('.blog__slider').slick({
-		slidesToShow:1,			
-		slidesToScroll:1,			
-		infinite:false,		
-		fade: true,
-		arrows: true,
-		dots:true,
-		appendArrows: $('.blog__arrows'),
-		appendDots: $('.blog__dots'),		
-	});
+	// Price 
+	$('.subprice__block').click(function(event) {
+		if ($('.subprice__block').hasClass('active')) {
+			$('.subprice__block').not($(this)).removeClass('active');
+		}
+		$(this).toggleClass('active');
+	})
+
+	$('.burger').click(function(event) {
+		$('.burger, .menu').toggleClass('active');
+	}) 
 })
