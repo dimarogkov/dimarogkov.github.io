@@ -1,104 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>OT Test</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>TestWork</title>
-		<!-- CSS -->
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/header.css">
-		<link rel="stylesheet" href="css/menu.css">
-		<link rel="stylesheet" href="css/residence.css">
-		<link rel="stylesheet" href="css/number.css">
-		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="media.css">
+		<!-- Boostrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Font-aweosome -->
+		<link href="file:///home/dima/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
 		<!-- Font -->
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<!-- Контент -->
-		
-		<div class="residence">
-			<!-- Header -->
-			<header class="header">
-				<div class="header__logo">Проживание</div>
-				<div class="header__line"></div>
-				<div class="header__des">Комфортные номера премиум-класса, где купеческий шарм сочетается с современным комфортом</div>
-			</header>
-			<!-- Menu -->
-			<nav class="menu">
-				<ul class="menu__list">
-					<li class="manu__item"><a href="#" class="menu__link">Премиум номера</a></li>
-					<li class="manu__item"><a href="#" class="menu__link">Премьер номера</a></li>
-					<li class="manu__item"><a href="#" class="menu__link">Люкс номера</a></li>
-				</ul>
+		<div class="header">
+			<div class="logo">
+				<a href="index.html">Top Media Tech</a>
+			</div>
+			<nav class="nav">
+			  <input class="menu_check" type="checkbox" id="showmenu"/>
+			  <label class="menu_show" for="showmenu"><span></span></label>
+			  <ul class="menu_active" id="menu">
+			    <li><a class="link_menu" href="#about">About us</a></li>
+			    <li><a class="link_menu" href="#brands">Brands</a></li>
+			    <li><a class="link_menu" href="#contact">Contact Us</a></li>
+			    <li><span class="menu_last">en / de</span></li>
+			    <li><span class="menu_last">+ 380 35 35 625<br>mail@topmediatech.de</span></li>
+			  </ul>
 			</nav>
-			<!-- Information -->
-			<div class="residence__info">
-
-				<!-- Slider -->
-				<div class="slider">
-					<img src="images/slider1.png" class="slider__img" alt="">
-					<img src="images/slider1.png" class="slider__img" alt="">
-					<img src="images/slider1.png" class="slider__img" alt="">
-					<img src="images/slider1.png" class="slider__img" alt="">
+		</div>
+		<div class="block_1">
+			<div class="circle">
+				<img src="images/block_1_b.png" alt="">
+			</div>
+			<div class="content">
+				<h1>Solo<sup>2</sup><br>Wireles</h1>
+				<p>Now avaiable in<br>silver, gold & space gray</p>
+			</div>
+			<div class="volna">
+				<div class="block_1_img">
+			</div>
+			<div class="end_block_1">
+				<div class="prod"><a href="#">Headphones</a></div>
+				<div class="prod"><a href="#">Speakers</a></div>
+				<div class="prod"><a href="#">X-box</a></div>
+			</div>
+		</div>
+		<div class="block_2" id="about">
+			<img src="images/block_2.png" alt="">
+			<div class="block_2_content">
+				<h2>About us</h2>
+				<p>Beats Pro headphones allow you take sound seriously. That means you<span class="font-timesnewroman,">¹</span>re hearing music the way it was originally heard by the artist in the studio. Beats Pro are made of steel and aluminum, giving you an interior sound platform more solid than most. That’s why you’ll feel the kind of bass that resonates deep in your chest when you play your music. Beats Pro headphones allow you take sound seriously. That means you<span class="font-timesnewroman,">¹</span>re hearing music the way it was originally heard by the artist in the studio.designs and engineers connected products and solutions for automakers, consumers, and enterprises worldwide, including connected car systems, audio and visual products, enterprise automation solutions; and services supporting the Internet of Things.<br><span class="text-style">&nbsp;</span></p>
+				<p>With leading brands including AKG®, Harman Kardon®, Infinity®, JBL®, Lexicon®, Mark Levinson® and Revel®, HARMAN is admired by audiophiles, musicians and the entertainment venues where they perform around the world.in the studio.designs and engineers connected products and solutions for automakers, consumers, and enterprises worldwide, including connected car systems, audio and visual products, enterprise automation solutions; and services supporting the Internet of Things. Еith leading brands including AKG®, Harman Kardon®, Infinity®, JBL®, Lexicon®, Mark Levinson® and Revel®, HARMAN is admired by audiophiles, musicians and the entertainment venues where they perform around the world.</p>
+				<div class="more">
+					<a href="#">More</a>
 				</div>
-
-				<!-- Content -->
-				<div class="content">
-					<!-- Title -->
-					<h1 class="content__title">Премиум номер 1</h1>
-					<!-- Description -->
-					<p class="content__des">Двухкомнатный номер категории Люкс с видом на Байкал состоит из уютной спальной комнаты и просторной гостиной. Номер располагается на втором этаже Резиденции «Таёжная Усадьба», общая площадь составляет 70 м2. Спальня оснащена кроватью king-size, широкоформатным телевизором с кабельным TV, прикроватными тумбами, рабочей зоной, увлажнителем воздуха, минибаром.</p>
-
-					<!-- Block with Icons -->
-					<div class="content__block">
-						<div class="content__item">
-							<div class="content__icons">
-								<img src="images/icon1.svg" class="content__img" alt="">
-								<p class="content__name">Кровать king-size</p>
-							</div>
-							<div class="content__icons">
-								<img src="images/icon2.svg" class="content__img" alt="">
-								<p class="content__name">Wi-Fi Интернет</p>
-							</div>
+			</div>
+		</div>
+		<div class="block_3" id="brands">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="info">
+							<h2>Brands</h2>
+						   	<p>&nbsp;&nbsp;&nbsp;Beats Pro headphones allow you take sound seriously. That means you<span class="font-timesnewroman,">¹</span>re hearing music the way it was originally heard by the artist in the studio. Beats Pro are made of steel and aluminum, giving you an interior sound platform more solid than most.</p>
 						</div>
-						<div class="content__item">
-							<div class="content__icons">
-								<img src="images/icon3.svg" class="content__img" alt="">
-								<p class="content__name">ЖКТ и Интернет-телевидение</p>
-							</div>
-							<div class="content__icons">
-								<img src="images/icon4.svg" class="content__img" alt="">
-								<p class="content__name">70 м.кв</p>
-							</div>
+					</div>
+				</div>
+			</div>
+			<div class="anim_volna">
+				<div class="anim"></div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="brand">
+							<a href="#"><img src="images/brand_1.png" alt=""></a>
 						</div>
-
-						<!-- Button -->
-						<div class="content__submit">
-							<a href="#" class="content__btn">Забронировать резиденцию<span class="content__arrow"></span></a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="brand">
+							<a href="#"><img src="images/brand_2.png" alt=""></a>
 						</div>
-
-						<!-- Slider Controller -->
-						<div class="content__control"></div>
-
-						<!-- Slider Number -->
-						<div class="number">
-							<p class="number__slider">0</p><p class="number__num">/04</p>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="brand">
+							<a href="#"><img src="images/brand_3.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="brand">
+							<a href="#"><img src="images/brand_4.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="brand">
+							<a href="#"><img src="images/brand_5.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="brand">
+							<a href="#"><img src="images/brand_6.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="brand">
+							<a href="#"><img src="images/brand_7.png" alt=""></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-
-		<!-- JQwery -->
-		<script
-		  src="https://code.jquery.com/jquery-3.4.1.js"
-		  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		  crossorigin="anonymous">
-	  	</script>
-	  	<!-- Slick -->
-	  	<script src="js/slick.min.js"></script>
-		<script src="js/app.js"></script>
+		<div class="block_4" id="contact">
+			<div class="left">
+				<img src="images/block_4.png" alt="">
+				<h2>Contact</h2>
+				<h3>Us</h3>
+			</div>
+			<div class="right">
+				<div id="form">
+					<label>Name</label><br>
+					<input type="text" name="text" placeholder="Name" required>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" required>
+					<input type="email" name="email" placeholder="Email" required>
+					<input type="text" name="text" placeholder="Text" required>
+					<div class="contact_btn">
+						<button onclick="hideshow();">Send</button>
+					</div>
+				</div>
+				<div class="suc" id="success" style="display:none">
+					<h2>Thanks</h2>
+					<p>We have received your letter and would like to thank you for contacting us. Our manager will reply to you shortly</p>
+					<span> - The Top Media Team</span>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="end_main">
+				<div class="end"></div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="number">
+							<span>+ 380 35 35 625<br> mail@topmediatech.de </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
 	</body>
 </html>
