@@ -1,0 +1,82 @@
+.about {
+	margin: 250px 0 0 0;
+}
+
+/*About Top */
+
+.title__top {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.about__top {
+	max-width: 720px;
+}
+
+.des--mod {
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/*About Down */
+
+.about__down {
+	display: flex;
+	max-width: 100%;
+	justify-content: space-between;
+	margin: 90px 0 0 0;
+	align-items: center;
+}
+
+/*About Info */
+
+.about__info {
+	flex: 0 0 60%;
+	margin: 20px 0 0 0;
+	justify-content: space-between;
+}
+
+.about__block {
+	max-width: 100%;
+	display: flex;
+	margin: 0 0 50px 0; 
+}
+
+.about__item {
+	flex: 0 0 48%;
+	padding: 0 20px 0 0;
+}
+
+.about__icon {
+	color: #60606e;
+	font-size: 36px;
+}
+
+.about__title {
+	color: #60606e;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 10px 0 16px 0;
+}
+
+.about__des {
+	color: #999999;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	text-transform: uppercase;
+	max-width: 275px;
+}
+
+/*About Back */
+
+.about__back {
+	flex: 0 0 40%;
+}
+
+.about__img {
+	max-width: 100%;
+}

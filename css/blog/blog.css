@@ -1,0 +1,287 @@
+.blog {
+	margin: 150px 0 0 0;
+}
+
+.blog__block {
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+}
+
+/*Post */
+
+.post {
+	flex: 0 0 66%;
+}
+
+.post__block {
+	margin: 0 0 100px 0;
+}
+
+.post__block:last-child {
+	margin: 0;
+}
+
+.post__img {
+	width: 100%;
+}
+
+.post__inform {
+	margin: 30px 0 20px 0;
+	display: flex;
+	align-items: center;
+}
+
+.post__datas {
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 9px 18px;
+	background-color: #7beec7;
+}
+
+.post__comment,
+.post__like {
+	color: #cccccc;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 0 0 0 20px;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.post__comment.active {
+	color: #2980B9;
+}
+
+.post__like.active {
+	color: #A93226;
+}
+
+.post__num {
+	color: #cccccc;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0 0 0 5px;
+	font-style: normal;
+}
+
+.post__title {
+	margin: 0 0 20px 0;
+	color: #60606e;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.post__des {
+	margin: 0 0 30px 0;
+	color: #999999;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	max-width: 95%;
+}
+
+.post__link {
+	display: flex;
+	align-items: center;
+}
+
+.post__btn {
+	color: #60606e;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	transition: all 0.4s;
+}
+
+.post__link:hover .post__btn {
+	color: #7beec7;
+}
+
+.post__arrow {
+	font-size: 15px;
+	color: #60606e;
+	transition: all 0.4s;
+	padding: 0 0 0 5px;
+}
+
+.post__link:hover .post__arrow {
+	padding: 0 0 0 20px;
+	color: #7beec7;
+}
+
+/*Bmenu */
+
+.bmenu {
+	flex: 0 0 24%;
+}
+
+.bmenu__block {
+	margin: 0 0 45px 0;
+}
+
+/*Search*/
+
+.search {
+	width: 100%;
+	background-color: #ececec;
+	padding: 13px;
+	display: flex;
+	align-items: center;
+}
+
+.search__input {
+	width: 95%;
+	color: #60606e;
+	background-color: #ececec;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.search__icon {
+	opacity: 0.5;
+	color: #60606e;
+	font-size: 18px;
+}
+
+/*Pos */
+
+.names {
+	color: #60606e;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 0 5px 0;
+}
+
+.pos__name {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 30px 0;
+}
+
+.pos__text {
+	color: #60606e;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 20px;
+	border-bottom: 2px solid #ececec;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.pos__text.active {
+	border-bottom: 2px solid #7beec7;
+}
+
+.pos__info:last-child {
+	margin: 0;
+}
+
+.pos__block {
+	display: flex;
+	align-items: center;
+	margin: 0 0 10px 0;
+}
+
+.pos__imgs {
+	flex: 0 0 27%;
+}
+
+.pos__img {
+	width: 100%;
+}
+
+.pos__item {
+	padding: 0 0 0 20px;
+	flex: 0 0 60%;
+}
+
+.pos__title {
+	color: #60606e;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+}
+
+.pos__des {
+	color: #9a9a9a;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 400;
+}
+
+/*Category */
+
+.category__block {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.category__item {
+	padding: 19px 15px;
+	border-bottom: 1px solid #ececec;
+	color: #60606e;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	width: 100%;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.category__item-mod {
+	text-align: right;
+}
+
+.category__block:hover .category__item  {
+	color: #7beec7;
+	border-bottom: 1px solid #7beec7;
+}
+
+/*Tags */
+
+.tags__block {
+	margin: 40px 0 60px 0;
+}
+
+.tags__item {
+	margin: 0 0 20px 0;
+	display: block;
+}
+
+.tags__text {
+	margin: 0 5px 0 0;
+	color: #999999;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 8px 15px;
+	background-color: #e5e5e5;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.tags__text.active {
+	background-color: #7beec7;
+	color: #ffffff;
+}

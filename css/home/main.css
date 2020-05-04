@@ -1,0 +1,101 @@
+
+.main {
+	max-width: 100%;
+	background-image: url(images/main_back.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -2;
+	background-attachment: fixed;
+}
+/*Info */
+
+.info {
+	max-width: 550px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 247px 0 0 0;
+}
+
+.info__span {
+	color: #60606e;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 6px 20px;
+	background-color: #7beec7;
+	max-width: 99px;
+    margin: 0 auto;
+}
+
+.info__title {
+	color: #60606e;
+	font-family: Montserrat;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 15px 20px;
+	border: 10px solid #60606e;
+	margin-bottom: 25px;
+}
+
+.info__des {
+	color: #60606e;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+/*Down */
+
+.down {
+	padding: 20px 0 0 0;
+	position: relative;
+	bottom: -100px;
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+}
+
+/*Down Left*/
+
+.dowm__left {
+	flex: 0 0 52%;
+}
+
+.down__img {
+	max-width: 100%;
+}
+
+/*Down Right*/
+
+.down__right {
+	flex: 0 0 48%;
+	margin: 29px 0 0 0;
+}
+
+.btn__block {
+	max-width: 100%;
+	text-align: right;
+	margin: 30px 0 0 0;
+}
+
+.down__btn {
+	padding: 19px 39px;
+	background-color: #7beec7;
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: all 0.4s;
+	border: 1px solid transparent;
+}
+
+.down__btn:hover {
+	color: #7beec7;
+	background-color: #ffffff;
+	border: 1px solid #7beec7;
+}
