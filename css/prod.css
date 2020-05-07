@@ -1,0 +1,82 @@
+/*Products*/
+
+.prod {
+	background-color: black;
+	padding: 40px 0 0 0;
+	position: relative;
+}
+
+.prod__block {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 40px 0;
+}
+
+.prod__big {
+	flex: 0 0 40%;
+	margin: 0 10px;
+}
+
+.prod__small {
+	flex: 0 0 30%;
+	margin: 0 10px;
+}
+
+/*Subblock*/
+
+.prod__subblock {
+	padding: 20px;
+	text-align: center;
+	background-color: white;
+}
+
+.prod__imgs {
+	height: 250px;
+}
+
+.prod__img {
+	width: 100%;
+	height: 100%;
+	transform: scale(0.9);
+}
+
+.prod__bigimg {
+	transform: scale(1);
+}
+
+.prod__cont {
+	padding: 30px 0 50px 0;
+}
+
+.prod__title {
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+}
+
+.prod__des {
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	height: 41px;
+}
+
+.prod__btns {
+	background-color: black;
+	padding: 12px 0;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.prod__btn {
+	color: white;
+	letter-spacing: 1px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.prod__btns:hover {
+	background-color: #292929;
+}
+

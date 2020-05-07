@@ -1,0 +1,97 @@
+.major {
+	margin: 20px 0 40px 0;
+}
+
+.major__block {
+	padding: 10px 0;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.major__link {
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	transition: all 0.4s;
+}
+
+.major__link:hover {
+	opacity: 0.6;
+}
+
+.major__icon {
+	padding: 0 0 0 10px;
+	font-size: 18px;
+	position: relative;
+	top: 2px;
+}
+
+/* Слайдер */
+.slick-slider{
+	position: relative;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	transform: translate(0, -50%);
+	font-size: 0;
+}
+
+.slick-arrow.slick-prev{
+	left: 30px;
+	background-image: url(../images/left.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	height: 100%;
+	width: 60px;
+}
+
+.slick-arrow.slick-next{
+	right: 30px;
+	background-image: url(../images/right.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	height: 100%;
+	width: 60px;
+}
+
+.slick-dots{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translate( -50%, 0);
+	z-index: 1;
+}
+
+.slick-dots li{
+	display: inline-block;
+	background-color: transparent;
+}
+
+.slick-dots li button{
+	background-color: transparent;
+	font-size: 0;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 2px solid black;
+	margin: 0 10px;
+}
+
+.slick-dots li.slick-active button {
+	background-color: black;
+}

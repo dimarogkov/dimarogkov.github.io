@@ -1,0 +1,46 @@
+/*Down*/
+
+.down__title {
+	padding: 40px 0;
+	text-align: center;
+}
+
+.down__logo {
+	font-size: 28px;
+	text-transform: uppercase;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+.down__menu {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.down__p {
+	border-right: 1px solid #ccc;
+	padding: 0 30px;
+}
+
+.down__p:last-child {
+	border-right: 1px solid transparent;
+}
+
+.down__link {
+	text-transform: uppercase;
+	color: black;
+	transition: all 0.4s;
+	font-size: 15px;
+}
+
+.down__link:hover {
+	opacity: 0.6;
+}
+
+.down__img {
+	position: relative;
+	bottom: 5px;
+}
