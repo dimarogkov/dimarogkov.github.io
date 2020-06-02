@@ -1,0 +1,67 @@
+.little {
+	position: relative;
+	display: block;
+	padding: 70px 0 70px 40px;
+	background-image: url(../images/spa_bg.webp);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height: auto;
+}
+
+.little__block {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-gap: 20px;
+	align-items: center;
+}
+
+/*Collums*/
+.little__col {
+	display: block;
+	position: relative;
+	text-align: center;
+    color: #ffffff;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+.little__title {
+	font-size: 80px;
+    font-family: Abril Fatface;
+}
+
+.little__des {
+	line-height: 30px;
+    font-size: 18px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.little__bold {
+	font-weight: bold;
+}
+
+.little__btn {
+	font-size: 16px;
+	color: #ffffff;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	padding: 15px 20px;
+	display: block;
+	margin: auto;
+	max-width: 215px;
+	background-color: #282828;
+	border: 1px solid #282828;
+	font-weight: bold;
+	transition: all 0.4s;
+	border-radius: 5px;
+}
+
+.little__btn:hover {
+	color: #282828;
+	background-color: transparent;
+}

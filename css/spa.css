@@ -1,0 +1,55 @@
+.spa {
+	width: 100%;
+	background-image: url(../images/spa_bg.webp);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/*Block*/
+.spa__block {
+	display: block;
+	position: relative;
+	padding: 40px 0 60px 0;
+	text-align: center;
+	color: #ffffff;
+}
+
+.spa__title {
+	font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.spa__des {
+    margin: 40px auto 40px auto;
+    font-size: 19px;
+    line-height: 30px;
+    text-transform: uppercase;
+    max-width: 425px;
+}
+
+.spa__bold {
+	font-weight: bold;
+}
+
+.spa__btn {
+    border-radius: 5px;
+    background-color: rgb(40, 40, 40);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin: 30px auto auto auto;
+    display: block;
+    padding: 15px 20px;
+    max-width: 215px;
+    font-size: 16px;
+    transition: all 0.4s;
+    border: 1px solid rgb(40, 40, 40);
+    font-weight: bold;
+}
+
+.spa__btn:hover {
+    background-color: transparent;
+    color: rgb(40, 40, 40);
+}

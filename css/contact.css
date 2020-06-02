@@ -1,0 +1,114 @@
+.contact {
+	position: relative;
+	display: block;
+	padding: 0 0 0 45px;
+}
+.contact__block {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+}
+
+/*Collums*/
+.contact__col {
+	position: relative;
+	display: block;
+}
+
+.contact__col:first-child {
+	background-image: url(../images/contact_bg.webp);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height: auto;
+	padding: 100px 70px 70px 120px;
+}
+
+/*Content*/
+.contact__cont {
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	color: #ffffff;
+	padding: 0 0 70px 0;
+}
+
+.contact__title {
+	color: #e77785;
+	line-height: 50px;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.conatct__small {
+	font-size: 17px;
+	line-height: 30px;
+}
+
+/*Info*/
+.contact__info {
+	position: relative;
+	display: block;
+}
+
+.contact__item {
+	display: block;
+	position: relative;
+	letter-spacing: .05em;
+	color: #ffffff;
+	margin: 0 0 15px 0;
+}
+
+.contact__item:last-child {
+	margin: 0;
+} 
+
+.contact__item .fas {
+	color: #e77785;
+	font-size: 18px;
+	padding: 0 10px 0 0;
+}
+
+.contact__name,
+.conatct__text {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.contact__tel {
+	color: #ffffff;
+	transition: all 0.4s;
+}
+
+.contact__tel:hover,
+.contact__mail:hover {
+	opacity: 0.6;
+}
+
+.contact__mail,
+.contact__web {
+	color: #e77785;
+}
+
+.contact__mail {
+	transition: all 0.4s;
+}
+
+/*Map*/
+.contact__map {
+	background-color: #777;
+	max-width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact__del {
+	font-weight: bold;
+	font-size: 44px;
+	letter-spacing: .05em;
+	color: #414141;
+}

@@ -1,0 +1,29 @@
+.number {
+	max-width: 100%;
+	padding: 0 0 0 45px;
+}
+.number__block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	position: relative;
+	padding: 35px 21px;
+}	
+
+/*Collum*/
+.number_col {
+	text-align: center;
+	padding: 40px 30px;
+}
+
+.number__title {
+	color: #282828;
+	font-weight: bold;
+	line-height: 69px;
+	font-size: 50px;
+}
+.number__des {
+	color: #282828;
+	line-height: 37px;
+	font-size: 24px;
+	letter-spacing: .05em;
+}

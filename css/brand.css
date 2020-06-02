@@ -1,0 +1,27 @@
+.brand {
+	padding: 100px 0 50px 45px;
+	position: relative;
+	display: block;
+	max-width: 100%;
+	background-image: url(../images/brand_bg.webp);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.brand__block {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 20px;
+	overflow: hidden;
+}
+
+.brand__img {
+	max-width: 100%;
+	transition: all 0.4s;
+}
+
+.brand__img:hover {
+	transform: scale(1.2);
+}

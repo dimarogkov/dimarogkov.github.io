@@ -1,0 +1,76 @@
+.main {
+	max-width: 100%;
+	height: auto;
+	background-image: url(../images/main_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+/*Block*/
+.main__block {
+	padding: 30% 0 5% 0;
+	position: relative;
+}
+
+.main__small {
+	color: #282828;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 30px;
+	font-size: 19px;
+	letter-spacing: .05em;
+}
+.main__title {
+	font-size: 100px;
+    color: #282828;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 0 200px 0;
+}
+
+.main__title_pink {
+	color: #e77785;
+}
+
+/*Flowers*/
+.main__flo_one {
+	top: 134px;
+	transform: rotate(10.3279deg);
+	left: 34%;
+	max-width: 134px;
+	position: absolute;
+}
+
+.main__flo_two {
+	top: 284px;
+    transform: rotate(12.9098deg);
+    left: -20px;
+    position: absolute;
+    max-width: 151px;
+}
+
+.main__flo_tree {
+	top: 500px;
+    transform: rotate(-7.7459deg);
+    left: 45%;
+    position: absolute;
+    max-width: 97px;
+}
+
+.main__flo_four {
+	top: 620px;
+    transform: rotate(3.86503deg);
+    left: 28%;
+    position: absolute;
+    max-width: 121px;
+}
+
+.main__flo_five {
+	top: 700px;
+    transform: rotate(-5.15337deg);
+    left: 20%;
+    position: absolute;
+    max-width: 87px;
+}

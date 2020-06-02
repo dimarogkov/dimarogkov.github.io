@@ -1,0 +1,182 @@
+.about {
+	background-image: url(../images/about_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	max-width: 100%;
+	height: auto;
+}
+.about__container {
+	width: 100%;
+	margin: auto;
+    padding: 35px 130px 0 150px;
+}
+
+.about__block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 135px 0;
+    grid-gap: 50px 0;
+    align-items: center;
+}
+
+/*Collum*/
+.about__col {
+	padding: 0 21px;
+}
+
+.about__small {
+	color: #282828;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 25px;
+	font-size: 16px;
+	letter-spacing: .05em;
+}
+.about__title {
+	margin: 10px 0 40px 0;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #e77785;
+	line-height: 36px;
+	letter-spacing: .05em;
+}
+.about__des {
+	color: #777777;
+	font-size: 15px;
+	line-height: 25px;
+	margin: 0 0 40px 0;
+}
+
+.about__btn {
+	background-color: rgb(243, 128, 148);
+    color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 14px;
+	transition: all 0.4s;
+	border: 1px solid rgb(243, 128, 148);
+	font-weight: bold;
+}
+
+.about__btn:hover {
+	color: rgb(243, 128, 148);
+	background-color: transparent;
+}
+
+/*White*/
+
+.about__white {
+	width: 100%;
+	background-color: white;
+	padding: 40px 40px 53px 40px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.about__imgs {
+	margin: 0 0 1.421em 0;
+	text-align: right;
+}
+
+.about__img {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+}
+
+.about__name {
+	margin: 30px 0;
+	color: #282828;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: normal;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+}
+
+.about__bold {
+	font-weight: bold;
+}
+
+.about__text {
+	font-size: 15px;
+	line-height: 25px;
+	color: #777777;
+}
+
+/*DownBlock*/
+.about__downblock {
+	padding: 180px 0 0 0;
+	margin: 0 0 0 50%;
+	width: 50%;
+}
+
+.about__downcont {
+	display: block;
+	padding: 0 0 0 30px;
+}
+
+.about__downtitle {
+	color: #282828;
+	text-transform: uppercase;
+	line-height: 53px;
+	font-size: 36px;
+	letter-spacing: .05em;
+	margin: 0 0 20px 0;
+}
+.about__downbold {
+	font-weight: bold;
+}
+
+.about__downdes {
+	color: #777777;
+	line-height: 25px;
+	font-size: 15px;
+}
+
+/*Icons block*/
+.about__item {
+	padding: 40px 0 80px 0;
+}
+
+.about__icons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 75px 0 0 0;
+	align-items: center;
+}
+
+.about__icon {
+	padding: 0 21px;
+	text-align: right;
+}
+
+.about__icon .fas {
+	font-size: 500%;
+	color: #e77785;
+}
+
+.about__icon_text {
+	padding: 0 21px;
+}
+
+.about__icons_title {
+	color: #282828;
+	text-transform: uppercase;
+	line-height: 38px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.about__icons_cat {
+	color: #282828;
+	text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 38px;
+	font-size: 24px;
+}
+
