@@ -138,6 +138,19 @@ h6,.h6 {font-size: 20px;line-height: 1.3em;letter-spacing: 1px;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
+/* LOADER */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.loader{position:fixed;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;left:0;top:0;width:100%;height:100%;z-index:999;background:#fff;-webkit-animation: loader 1.4s linear;animation: loader 1.4s linear;-webkit-animation-iteration-count: 1;animation-iteration-count: 1;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;}
+.loader-body {text-align: center;display: block;position: relative;}
+.loader-circle {width: 36px;height: 36px;margin: 0 auto;border: 3px solid #c23616;border-radius: 50%;border-left-color: transparent;border-bottom-color: transparent;-webkit-animation: load .88s linear infinite;animation: load .88s linear infinite;margin-bottom: 10px;}
+.loader-body p {color: #343549;position: relative;right: -4px;}
+/*animation*/
+@-webkit-keyframes load {0%{-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);}100%{-webkit-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);}}
+@keyframes load {0%{-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);}100%{-webkit-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);}}
+@-webkit-keyframes loader {0%{opacity: 1;}70%{opacity: 1;}99%{opacity: 0;}100%{display: none;visibility: hidden;z-index: -10;}}
+@keyframes loader {0%{opacity: 1;}70%{opacity: 1;}99%{opacity: 0;}100%{display: none;visibility: hidden;z-index: -10;}}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
 /* HEADER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 header + * {margin-top: 70px;}
