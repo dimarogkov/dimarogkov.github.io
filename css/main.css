@@ -70,7 +70,7 @@ ul, ol{list-style: none;}
 img{width:100%;height:auto;max-width:100%;}
 sub, sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}
 sup {top: -0.5em;}
-.text,.text p {font-size:18px;line-height: 1.3em;color: #282828;}
+.text,.text p {font-size:18px;line-height: 1.3em;color: #282828;letter-spacing: 1px;}
 .text *{margin-bottom:20px;}
 .text *:last-child{margin-bottom: 0;}
 .text img {max-width: 100%; height: auto; display: block;}
@@ -116,7 +116,21 @@ h6,.h6 {font-size: 20px;line-height: 1.3em;letter-spacing: 1px;}
 @media(min-width: 1200px){
 	.text a:hover::before {width: 0;right: 0;left: auto;}
 }
-@media(max-width: 480px){
+@media(max-width: 1366px){
+	h1,.h1 {font-size: 34px;line-height: 1.3em;letter-spacing: 1px;}
+	h2,.h2 {font-size: 28px;line-height: 1.3em;letter-spacing: 1px;}
+	h3,.h3 {font-size: 24px;line-height: 1.3em;letter-spacing: 1px;}
+	h4,.h4 {font-size: 22px;line-height: 1.3em;letter-spacing: 1px;}
+}
+@media(max-width: 767px){
+	h1,.h1 {font-size: 28px;line-height: 1.3em;letter-spacing: 1px;}
+	h2,.h2 {font-size: 24px;line-height: 1.3em;letter-spacing: 1px;}
+	h3,.h3 {font-size: 22px;line-height: 1.3em;letter-spacing: 1px;}
+	h4,.h4 {font-size: 20px;line-height: 1.3em;letter-spacing: 1px;}
+	h5,.h5,h6,.h6 {font-size: 18px;line-height: 1.3em;letter-spacing: 1px;}
+}
+@media(max-width: 575px){
+	.text, .text p {font-size: 16px;}
 	.title__margin {margin-bottom: 10px;}
 }
 
@@ -166,11 +180,10 @@ header {position: fixed;top: 0;left: 0;display: block;z-index: 2;width: 100%;hei
 .header__inner {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;width: 100%;height: 100%;padding: 0 30px;}
 .header__inner .header__logo {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;letter-spacing: 1px;font-size: 18px;text-decoration: none;color: #282828;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .header__inner .header__logo span {padding: 5px 10px;margin-left: 10px;background-color: #c23616;color: #fff;font-weight: 700;font-size: 12px;text-transform: uppercase;border-radius: 3px;}
-header .btn {color: #fff;background-color: #c23616;}
 /*media*/
 @media(max-width: 767px){
 	header {height: 60px;}
-	header .btn {padding: 10px 25px;}
+	header + * {margin-top: 60px;}
 	.header__inner {padding: 0 20px;}
 }
 @media(max-width: 480px){
@@ -229,6 +242,16 @@ header .btn {color: #fff;background-color: #c23616;}
 @media(min-width: 1200px){
 	.banner__cont .breadcrumbs ul li a:hover {color: #fff;}
 }
+@media(max-width: 1366px){
+	.banner__cont .bold {font-size: 60px;}
+}
+@media(max-width: 767px){
+	.banner__cont .bold {font-size: 50px;}
+}
+@media(max-width: 575px){
+	.banner {padding: 20px 0;}
+	.banner__cont .bold {font-size: 40px;margin-bottom: 5px;}
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* BLOCK */
@@ -236,8 +259,24 @@ header .btn {color: #fff;background-color: #c23616;}
 .block {position: relative;display: block;width: 100%;}
 .block .text {margin-bottom: 20px;}
 .block .text:last-child {margin-bottom: 0;}
-.block .btn {margin-right: 10px;}
+.block .text span {color: #c23616;font-weight: 500;}
+.block .btn {margin-right: 10px;margin-bottom: 10px;}
 .block .btn:last-child {margin-right: 0;}
+/*message*/
+.message {position: relative;display: block;width: calc(100% - 10px);padding: 40px 20px;margin-left: 10px;line-height: 1.3em;background-color: rgba(194, 54, 22, 0.3);font-size: 16px;color: #282828;letter-spacing: 1px;}
+.message::before {position: absolute;content: ''; top: 0;left: -10px;width: 10px;height: 100%;background-color: #c23616;z-index: 1;}
+/*media*/
+@media(max-width: 1366px){
+	.message {padding: 30px 20px;}
+}
+@media(max-width: 767px){
+	.message {padding: 20px;width: calc(100% - 5px);margin-left: 5px;}
+	.message::before {width: 5px;left: -5px;}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* BLOCK */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
 .lightgallery {position: relative;display: flex;flex-wrap: wrap;width: 100%;}
 .lightgallery a {position: relative;display: inline-block;width: 24%;margin-right: 1.333%;margin-top: 20px;overflow: hidden;}
 .lightgallery a:nth-child(1),.lightgallery a:nth-child(2),.lightgallery a:nth-child(3),.lightgallery a:nth-child(4) {margin-top: 0;}
@@ -253,4 +292,26 @@ header .btn {color: #fff;background-color: #c23616;}
 @media(min-width: 1200px){
 	.lightgallery a img:hover {-webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
 	.video__gallery a img:hover {-webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+}
+@media(max-width: 1199px){
+	.lightgallery a,.video__gallery a {width: 32%;margin-right: 2%;}
+	.lightgallery a:nth-child(3n),.video__gallery a:nth-child(3n) {margin-right: 0;}
+	.lightgallery a:nth-child(4n),.video__gallery a:nth-child(4n) {margin-right: 2%;}
+	.lightgallery a:nth-child(4),.video__gallery a:nth-child(4) {margin-right: 2%;margin-top: 20px;}
+}
+@media(max-width: 991px){
+	.lightgallery a img,.video__gallery a img {height: 200px;}
+}
+@media(max-width: 767px){
+	.lightgallery a,.video__gallery a {width: 49%;}
+	.lightgallery a:nth-child(2n),.video__gallery a:nth-child(2n) {margin-right: 0;}
+	.lightgallery a:nth-child(3n),.video__gallery a:nth-child(3n) {margin-right: 2%;}
+	.lightgallery a:nth-child(3),.video__gallery a:nth-child(3) {margin-top: 20px;}
+}
+@media(max-width: 400px){
+	.lightgallery a,.video__gallery a {width: 100%;margin-right: 0;}
+	.lightgallery a:nth-child(3n),.video__gallery a:nth-child(3n) {margin-right: 0;}
+	.lightgallery a:nth-child(2),.video__gallery a:nth-child(2),
+	.lightgallery a:nth-child(3),.video__gallery a:nth-child(3),
+	.lightgallery a:nth-child(4),.video__gallery a:nth-child(4) {margin-top: 10px;}
 }
