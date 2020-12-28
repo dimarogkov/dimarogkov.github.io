@@ -145,18 +145,29 @@ h6,.h6 {font-size: 20px;line-height: 1.3em;letter-spacing: 1px;}
 .label.done {background-color: #27ae60;}
 .label.updated {background-color: #2980b9;}
 .label.notready {background-color: #e74c3c;}
+/*anchor*/
+.anchor {position: fixed;right: 40px;bottom: 40px;width: 40px;height: 40px;border-radius: 50%;z-index: 2;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;background-color: #e74c3c;border: 2px solid #e74c3c;cursor: pointer;opacity: 0;visibility: hidden;-webkit-transform: translateY(50px);-ms-transform: translateY(50px);transform: translateY(50px);-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
+.anchor.active {opacity: 1;visibility: visible;-webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0);}
+.anchor .fas {color: #fff;font-size: 14px;}
 /*media*/
 @media(min-width: 1200px){
 	.btn:hover {background-color: transparent;color: #c23616;}
+	.anchor:hover {background-color: #fff;}
+	.anchor:hover .fas {color: #c23616;}
 }
 @media(max-width: 1366px){
 	.label {top: -5px;right: -5px;}
 }
+@media(max-width: 767px){
+	.anchor {bottom: 30px;right: 30px;}
+}
 @media(max-width: 575px){
 	.label {font-size: 10px;}
+	.anchor {bottom: 20px;right: 20px;}
 }
 @media(max-width: 480px){
 	.label {top: 5px;right: 5px;}
+	.anchor {bottom: 10px;right: 10px;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/

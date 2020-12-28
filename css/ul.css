@@ -1,0 +1,52 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* UL LIST - ONE STYLE */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.ul__one ul {list-style: none;}
+.ul__one ul li {position:relative;color: #282828;font-size: 18px;line-height: 1.8em;padding-left: 35px;}
+.ul__one ul li:before {position: absolute;content: "";left: 0;top: 15px;width: 15px;height: 2px;background-color: #e74c3c;}
+.ul__one ul li:last-child {margin-bottom:0;}
+/*media*/
+@media(max-width: 767px){
+	.ul__one ul li {font-size: 16px;padding-left: 30px;}
+	.ul__one ul li:before {top: 13px;}
+}
+@media(max-width: 575px){
+	.ul__one ul li {font-size: 15px;padding-left: 25px;}
+	.ul__one ul li:before {width: 12px;}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* UL LIST - TWO STYLE */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.ul__two ul {list-style: none;}
+.ul__two ul li {position:relative;color: #282828;font-size: 18px;line-height: 1.8em;padding-left: 30px;}
+.ul__two ul li:before {content: "";position: absolute;left: 0;top: 13px;width: 6px;height: 6px;background-color: #e74c3c;}
+.ul__two ul li:last-child {margin-bottom:0;}
+/*media*/
+@media(max-width: 767px){
+	.ul__two ul li {font-size: 16px;}
+	.ul__two ul li:before {top: 11px;}
+}
+@media(max-width: 575px){
+	.ul__two ul li {font-size: 15px;padding-left: 25px;}
+	.ul__two ul li:before {top: 10px;}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* UL LIST - TREE STYLE */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.ul__tree ul {list-style: none;}
+.ul__tree ul li {position:relative;color:#282828;font-size:18px;line-height: 1.8em;padding-left:25px;}
+.ul__tree ul li:before {content:"";position:absolute;left:0;top:11px;width:10px;height:10px;border-radius:50%;
+border:2px solid #e74c3c}.
+.ul__tree ul li:last-child {margin-bottom:0;}
+/*media*/
+@media(max-width: 767px){
+	.ul__tree ul li {font-size: 16px;}
+	.ul__tree ul li:before {top: 10px;}
+}
+@media(max-width: 575px){
+	.ul__tree ul li {font-size: 15px;}
+	.ul__tree ul li:before {top: 9px;}
+}
+
