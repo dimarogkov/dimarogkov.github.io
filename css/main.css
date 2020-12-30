@@ -84,8 +84,6 @@ sup {top: -0.5em;}
 .text a{position:relative;color:#fff;cursor:pointer;white-space: nowrap;font-weight: 500;}
 .text a:before{content:"";position:absolute;bottom: -2px;left: 0;right:auto;height: 2px;width: 100%;background: #fff;transition: all 0.3s ease-out;-webkit-transition: all 0.3s ease-out;}
 .text span {color: #fff;font-weight: 500;}
-blockquote {position: relative;display: block;width: 100%;color: #fff;text-align: center;font-weight: 500;font-size: 18px;line-height: 1.5em;text-transform: uppercase;letter-spacing: 0.05em;padding: 35px;border-top: 3px solid #AB0707;}
-blockquote::before {position: absolute;content: '';top: 30px;left: 0;background-image: url(../img/icons/qwote.svg);background-repeat: no-repeat;width: 93px;height: 83px;z-index: -1;}
 h1,.h1 {font-size: 36px;line-height: 1.3em;letter-spacing: 1px;}
 h2,.h2 {font-size: 32px;line-height: 1.3em;letter-spacing: 1px;}
 h3,.h3 {font-size: 28px;line-height: 1.3em;letter-spacing: 1px;}
