@@ -1,10 +1,12 @@
 $(document).ready(function() {
-	// anchor
-	 $(window).scroll(function(){
-        if ($(this).scrollTop()>0) {
+	// header & anchor
+	$(window).scroll(function(){
+        if ($(this).scrollTop()> 50) {
             $('.anchor').addClass('active');
+            $('header').addClass('scrolled');
         } else {
             $('.anchor').removeClass('active');
+            $('header').removeClass('scrolled');
         };
     });
  	$('.anchor').on('click', function(event) {

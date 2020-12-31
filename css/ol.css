@@ -3,7 +3,7 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .ol__one ol {counter-reset: number;}
 .ol__one ol li {position:relative;color: #282828;font-size: 18px;line-height: 1.8em;padding-left: 40px;margin-bottom: 10px;}
-.ol__one ol li:before {color: #e74c3c;counter-increment: number;content: "0" counter(number) ".";position: absolute;top: 0;left: 0;font-size: 16px;line-height: 32px;font-weight: 700;letter-spacing: 0.07em;}
+.ol__one ol li:before {color: #2980b9;counter-increment: number;content: "0" counter(number) ".";position: absolute;top: 0;left: 0;font-size: 16px;line-height: 32px;font-weight: 700;letter-spacing: 0.07em;}
 .ol__one ol li:last-child {margin-bottom:0;}
 /*media*/
 @media(max-width: 767px){
@@ -20,7 +20,7 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .ol__two ol {counter-reset: number;}
 .ol__two ol li {position:relative;margin-bottom:10px;color: #282828;font-size: 18px;line-height: 28px;letter-spacing: 0.02em;padding-left: 40px;}
-.ol__two ol li:before {color: #e74c3c;counter-increment: number;content:counter(number);position:absolute;top:0;left:0;font-size:14px;font-weight: 700;letter-spacing: 0.02em;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 28px;height: 28px;border-radius: 50%;border: 1px solid #e74c3c;}
+.ol__two ol li:before {color: #2980b9;counter-increment: number;content:counter(number);position:absolute;top:0;left:0;font-size:14px;font-weight: 700;letter-spacing: 0.02em;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 28px;height: 28px;border-radius: 50%;border: 1px solid #2980b9;}
 .ol__two ol li:last-child {margin-bottom:0;}
 /*media*/
 @media(max-width: 767px){
@@ -37,7 +37,7 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .ol__tree ol {counter-reset: number;}
 .ol__tree ol li {position:relative;color: #282828;font-size: 18px;line-height: 1.8em;padding-left: 25px;margin-bottom: 10px;}
-.ol__tree ol li:before {color: #e74c3c;counter-increment: number;content: counter(number);position: absolute;top: 0;left: 0;font-size: 16px;line-height: 32px;font-weight: 700;letter-spacing: 0.07em;}
+.ol__tree ol li:before {color: #2980b9;counter-increment: number;content: counter(number);position: absolute;top: 0;left: 0;font-size: 16px;line-height: 32px;font-weight: 700;letter-spacing: 0.07em;}
 .ol__tree ol li:last-child {margin-bottom:0;}
 /*media*/
 @media(max-width: 767px){

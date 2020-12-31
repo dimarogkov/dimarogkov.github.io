@@ -1,0 +1,111 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* Simple Pagination */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.pagination__one .custom-pagination {display: block;position: relative;}
+.pagination__one .custom-pagination ul {position: relative;display: inline-block;margin: 0 auto;text-align: center;font-size: 0;}
+.pagination__one .custom-pagination ul li {position: relative;display: inline-block;vertical-align: middle;}
+.pagination__one .custom-pagination ul li a {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;color: #282828;border: 1.2px solid #E7E7E7;width: 60px;height: 60px;z-index: 2;position: relative;font-size: 16px;font-weight: 500;line-height: 1.6em;text-transform: uppercase;-o-transition: all 0.3s;transition: all 0.3s;-webkit-transition: all 0.3s;}
+.pagination__one .custom-pagination ul li.active a {color: #fff;border-color: #2980b9;background-color: #2980b9;}
+/*media*/
+@media(min-width: 1200px){
+	.pagination__one .custom-pagination ul li a:hover {color: #2980b9;}
+	.pagination__one .custom-pagination ul li.active a:hover {color: #fff;}
+}
+@media(max-width: 767px){
+	.pagination__one .custom-pagination ul li a {width: 50px;height: 50px;}
+}
+@media(max-width: 480px){
+	.pagination__one .custom-pagination ul li a {width: 40px;height: 40px;font-size: 14px;}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* Pagination with Arrows */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.pagination__two .custom-pagination {display: block;position: relative;}
+.pagination__two .custom-pagination ul {position: relative;display: inline-block;margin: 0 auto;text-align: center;font-size: 0;}
+.pagination__two .custom-pagination ul li {position: relative;display: inline-block;vertical-align: middle;}
+.pagination__two .custom-pagination ul li a {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;color: #282828;border: 1.2px solid #E7E7E7;width: 60px;height: 60px;z-index: 2;position: relative;font-size: 16px;font-weight: 500;line-height: 1.6em;text-transform: uppercase;-o-transition: all 0.3s;transition: all 0.3s;-webkit-transition: all 0.3s;}
+.pagination__two .custom-pagination ul li.active a {color: #fff;border-color: #2980b9;background-color: #2980b9;}
+.pagination__two .custom-pagination ul li.arrow a {display: inline-block;border: 1.2px solid #E7E7E7;font-size: 16px;font-weight: 500;height: 60px;width: 60px;}
+.pagination__two .custom-pagination ul li.arrow.disabled a {pointer-events: none;opacity: 0.6;}
+.pagination__two .custom-pagination ul li.arrow.left a::before {content: '';position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%) rotate(45deg);-ms-transform: translate(-50%,-50%) rotate(45deg);transform: translate(-50%,-50%) rotate(45deg);width: 10px;height: 10px;border-left: 2px solid #282828;border-bottom: 2px solid #282828;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.pagination__two .custom-pagination ul li.arrow.right a::before {content: '';position: absolute;top: 50%;left: 50%;margin-left: -2px;-webkit-transform: translate(-50%,-50%) rotate(45deg);-ms-transform: translate(-50%,-50%) rotate(45deg);transform: translate(-50%,-50%) rotate(45deg);width: 10px;height: 10px;border-right: 2px solid #282828;border-top: 2px solid #282828;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+/*media*/
+@media(min-width: 1200px){
+	.pagination__two .custom-pagination ul li a:hover {color: #2980b9;}
+	.pagination__two .custom-pagination ul li.active a:hover {color: #fff;}
+	.pagination__two .custom-pagination ul li.arrow.left a:hover::before,
+	.pagination__two .custom-pagination ul li.arrow.right a:hover::before {border-color: #2980b9;}
+}
+@media(max-width: 767px){
+	.pagination__two .custom-pagination ul li a {width: 50px;height: 50px;}
+	.pagination__two .custom-pagination ul li.arrow a {width: 50px;height: 50px;}
+	.pagination__two .custom-pagination ul li.arrow.left a::before,
+	.pagination__two .custom-pagination ul li.arrow.right a::before {width: 9px;height: 9px;}
+}
+@media(max-width: 480px){
+	.pagination__two .custom-pagination ul li a {width: 40px;height: 40px;font-size: 14px;}
+	.pagination__two .custom-pagination ul li.arrow a {width: 40px;height: 40px;}
+}
+@media(max-width: 400px){
+	.pagination__two .custom-pagination ul li.arrow a {display: none;}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* Pagination with Dott */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.pagination__tree .custom-pagination {display: block;position: relative;}
+.pagination__tree .custom-pagination ul {position: relative;display: inline-block;margin: 0 auto;text-align: center;font-size: 0;}
+.pagination__tree .custom-pagination ul li {position: relative;display: inline-block;vertical-align: middle;}
+.pagination__tree .custom-pagination ul li a {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;color: #282828;border: 1.2px solid #E7E7E7;width: 60px;height: 60px;z-index: 2;position: relative;font-size: 16px;font-weight: 500;line-height: 1.6em;text-transform: uppercase;-o-transition: all 0.3s;transition: all 0.3s;-webkit-transition: all 0.3s;}
+.pagination__tree .custom-pagination ul li.active a {color: #fff;border-color: #2980b9;background-color: #2980b9;}
+.pagination__tree .custom-pagination ul li.dott {display: inline-block;color: #282828;border: 1.2px solid #E7E7E7;font-size: 16px;font-weight: 500;line-height: 60px;height: 60px;width: 60px;pointer-events: none;}
+/*media*/
+@media(min-width: 1200px){
+	.pagination__tree .custom-pagination ul li a:hover {color: #2980b9;}
+	.pagination__tree .custom-pagination ul li.active a:hover {color: #fff;}
+}
+@media(max-width: 767px){
+	.pagination__tree .custom-pagination ul li a {width: 50px;height: 50px;}
+	.pagination__tree .custom-pagination ul li.dott {width: 50px;height: 50px;line-height: 50px;}
+}
+@media(max-width: 480px){
+	.pagination__tree .custom-pagination ul li a {width: 40px;height: 40px;font-size: 14px;}
+	.pagination__tree .custom-pagination ul li.dott {width: 40px;height: 40px;line-height: 40px;font-size: 14px;}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* Pagination with Dotta and Arrows */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.pagination__foure .custom-pagination {display: block;position: relative;}
+.pagination__foure .custom-pagination ul {position: relative;display: inline-block;margin: 0 auto;text-align: center;font-size: 0;}
+.pagination__foure .custom-pagination ul li {position: relative;display: inline-block;vertical-align: middle;}
+.pagination__foure .custom-pagination ul li a {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;color: #282828;border: 1.2px solid #E7E7E7;width: 60px;height: 60px;z-index: 2;position: relative;font-size: 16px;font-weight: 500;line-height: 1.6em;text-transform: uppercase;-o-transition: all 0.3s;transition: all 0.3s;-webkit-transition: all 0.3s;}
+.pagination__foure .custom-pagination ul li.active a {color: #fff;border-color: #2980b9;background-color: #2980b9;}
+.pagination__foure .custom-pagination ul li.dott {display: inline-block;color: #282828;border: 1.2px solid #E7E7E7;font-size: 16px;font-weight: 500;line-height: 60px;height: 60px;width: 60px;pointer-events: none;}
+.pagination__foure .custom-pagination ul li.dott {display: inline-block;color: #282828;border: 1.2px solid #E7E7E7;font-size: 16px;font-weight: 500;line-height: 60px;height: 60px;width: 60px;pointer-events: none;}
+.pagination__foure .custom-pagination ul li.arrow.disabled a {pointer-events: none;opacity: 0.6;}
+.pagination__foure .custom-pagination ul li.arrow.left a::before {content: '';position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%) rotate(45deg);-ms-transform: translate(-50%,-50%) rotate(45deg);transform: translate(-50%,-50%) rotate(45deg);width: 10px;height: 10px;border-left: 2px solid #282828;border-bottom: 2px solid #282828;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.pagination__foure .custom-pagination ul li.arrow.right a::before {content: '';position: absolute;top: 50%;left: 50%;margin-left: -2px;-webkit-transform: translate(-50%,-50%) rotate(45deg);-ms-transform: translate(-50%,-50%) rotate(45deg);transform: translate(-50%,-50%) rotate(45deg);width: 10px;height: 10px;border-right: 2px solid #282828;border-top: 2px solid #282828;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+/*media*/
+@media(min-width: 1200px){
+	.pagination__foure .custom-pagination ul li a:hover {color: #2980b9;}
+	.pagination__foure .custom-pagination ul li.active a:hover {color: #fff;}
+	.pagination__foure .custom-pagination ul li.arrow.left a:hover::before,
+	.pagination__foure .custom-pagination ul li.arrow.right a:hover::before {border-color: #2980b9;}
+}
+@media(max-width: 767px){
+	.pagination__foure .custom-pagination ul li a {width: 50px;height: 50px;}
+	.pagination__foure .custom-pagination ul li.dott {width: 50px;height: 50px;line-height: 50px;}
+	.pagination__foure .custom-pagination ul li.arrow a {width: 50px;height: 50px;}
+	.pagination__foure .custom-pagination ul li.arrow.left a::before,
+	.pagination__foure .custom-pagination ul li.arrow.right a::before {width: 9px;height: 9px;}
+}
+@media(max-width: 480px){
+	.pagination__foure .custom-pagination ul li a {width: 40px;height: 40px;font-size: 14px;}
+	.pagination__foure .custom-pagination ul li.dott {width: 40px;height: 40px;line-height: 40px;font-size: 14px;}
+	.pagination__foure .custom-pagination ul li.arrow a {width: 40px;height: 40px;}
+}
+@media(max-width: 400px){
+	.pagination__foure .custom-pagination ul li.arrow a {display: none;}
+}
