@@ -151,12 +151,24 @@ h6,.h6 {font-size: 20px;line-height: 1.3em;letter-spacing: 1px;}
 .anchor .fas {color: #fff;font-size: 14px;}
 /*button*/
 button {background-color: transparent;cursor: pointer;}
+/*close btn*/
+.btn__close {position: absolute;top: 10px;right: 10px;width: 30px;height: 30px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;cursor: pointer;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.btn__close:active {transform: translateY(5px);}
+.btn__close span {position: relative;display: block;width: 16px;height: 16px;}
+.btn__close span::before,.btn__close span::after {position: absolute;content: '';top: 50%;left: 0;margin-top: -1px;width: 100%;height: 1.2px;background-color: #282828;}
+.btn__close span::before {-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
+.btn__close span::after {-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}
+/*btn link*/
+.btn__link {position: relative;font-size: 16px;line-height: 1.3em;color: #2980b9;letter-spacing: 1px;font-weight: 300;}
+.btn__link::before {position: absolute;content: '';bottom: 0;right: 0;width: 0;height: 1.5px;background-color: #2980b9;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 /*media*/
 @media(min-width: 1200px){
 	.btn:hover {color: #fff;}
 	.btn:hover::before {width: calc(100% + 3px);}
 	.anchor:hover {background-color: #fff;}
 	.anchor:hover .fas {color: #2980b9;}
+	.btn__close:hover {opacity: 0.8;}
+	.btn__link:hover::before {width: 100%;right: auto;left: 0;}
 }
 @media(max-width: 1366px){
 	.label {top: -5px;right: -5px;}
@@ -170,6 +182,8 @@ button {background-color: transparent;cursor: pointer;}
 	.btn::before {display: none;}
 	.label {font-size: 10px;}
 	.anchor {bottom: 20px;right: 20px;}
+	.btn__close {top: 5px;right: 5px;}
+	.btn__link {font-size: 15px;}
 }
 @media(max-width: 480px){
 	.label {top: 5px;right: 5px;}
