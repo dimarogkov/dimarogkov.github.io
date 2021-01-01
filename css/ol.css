@@ -7,7 +7,7 @@
 .ol__one ol li:last-child {margin-bottom:0;}
 /*media*/
 @media(max-width: 767px){
-	.ol__one ol li {font-size: 16px;padding-left: 35px;}
+	.ol__one ol li {padding-left: 35px;font-size: 16px;}
 	.ol__one ol li:before {font-size: 15px;line-height: 29px;}
 }
 @media(max-width: 575px){
@@ -24,7 +24,7 @@
 .ol__two ol li:last-child {margin-bottom:0;}
 /*media*/
 @media(max-width: 767px){
-	.ol__two ol li {font-size: 16px;padding-left: 35px;line-height: 25px;}
+	.ol__two ol li {padding-left: 35px;line-height: 25px;font-size: 16px;}
 	.ol__two ol li:before {width: 25px;height: 25px;}
 }
 @media(max-width: 575px){
@@ -41,7 +41,7 @@
 .ol__tree ol li:last-child {margin-bottom:0;}
 /*media*/
 @media(max-width: 767px){
-	.ol__tree ol li {font-size: 16px;padding-left: 20px;}
+	.ol__tree ol li {padding-left: 20px;font-size: 16px;}
 	.ol__tree ol li:before {font-size: 15px;line-height: 29px;}
 }
 @media(max-width: 575px){

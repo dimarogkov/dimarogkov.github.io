@@ -7,7 +7,7 @@
 .ul__one ul li:last-child {margin-bottom:0;}
 /*media*/
 @media(max-width: 767px){
-	.ul__one ul li {font-size: 16px;padding-left: 30px;}
+	.ul__one ul li {padding-left: 30px;font-size: 16px;}
 	.ul__one ul li:before {top: 13px;}
 }
 @media(max-width: 575px){
@@ -36,7 +36,7 @@
 /* UL LIST - TREE STYLE */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .ul__tree ul {list-style: none;}
-.ul__tree ul li {position:relative;color:#282828;font-size:18px;line-height: 1.8em;padding-left:25px;}
+.ul__tree ul li {position:relative;color:#282828;font-size: 18px;line-height: 1.8em;padding-left:25px;}
 .ul__tree ul li:before {content:"";position:absolute;left:0;top:11px;width:10px;height:10px;border-radius:50%;border:2px solid #2980b9}.
 .ul__tree ul li:last-child {margin-bottom:0;}
 /*media*/
