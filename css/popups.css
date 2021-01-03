@@ -33,6 +33,9 @@ form .input.invalid {border: 1px solid #c23616;}
 form .input.invalid::placeholder {color: #c23616;}
 form textarea.input {height: 125px;resize: none;}
 .popup__align.acc form button {display: block;width: 100%;margin: 20px 0;background-color: #2980b9;color: #fff;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+/* subcribe popup */
+.popup__align.sub form {text-align: center;}
+.popup__align.sub .btn {margin: 0;}
 /*media*/
 @media(min-width: 1200px){
 	.popup__align .text a:hover::before {width: 100%;right: auto;left: 0;}
@@ -59,4 +62,24 @@ form textarea.input {height: 125px;resize: none;}
 }
 @media(max-width: 400px){
 	.popup__align.acc {padding: 20px;}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* VIDEO POPUP */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.video-popup{position: fixed;z-index: 1000;left: 0;top: 0;width: 100%;height: 100%;left: -100%;-webkit-transition-delay: 0.3s;transition-delay: 0.3s;letter-spacing: 0;}
+.video-popup.active{left: 0;-webkit-transition-delay: 0s;transition-delay: 0s;}
+.video-popup-overlay{position: absolute;left: 0;top: -100px;right: 0;bottom: -100px;background: rgba(0, 0, 0, 0.8);-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;opacity: 0;}
+.video-popup.active .video-popup-overlay{opacity: 1;}
+.video-popup-content{position: absolute;left: 0;top: 0;right: 0;bottom: 0;overflow: hidden;-webkit-overflow-scrolling: touch;font-size: 0;text-align: center;-webkit-transition: all 0.4s ease-out;transition: all 0.4s ease-out;-webkit-transform: translateY(100px);transform: translateY(100px);opacity: 0;visibility: hidden;}
+.video-popup.active .video-popup-content{-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;visibility: visible;}
+.video-popup-content:after{content:"";display: inline-block;height: 100%;vertical-align: middle;}
+.video-popup-container{display: inline-block;position: relative;text-align: left;background: #000;vertical-align: middle;max-width: 1200px;width: 100%;}
+.video-popup-layer{position: absolute;left: 0;bottom: 0;right: 0;height: 10000px;}
+.video-popup-align{overflow: hidden;max-height: 100vh;}
+.video-popup .embed-responsive-16by9{padding-bottom: 56.3%;}
+.video-popup iframe {width: 100%;height: 100%;position: absolute;}
+/*media*/
+@media(max-width: 1366px){
+	.video-popup-container {width: 90%;}
 }

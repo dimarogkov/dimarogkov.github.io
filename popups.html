@@ -138,6 +138,8 @@
 								<a href="#" class="btn open__popup" data-rel="5">Sing Up</a>
 								<a href="#" class="btn open__popup" data-rel="6">Review Popup</a>
 								<a href="#" class="btn open__popup" data-rel="7">Request Popup</a>
+								<a href="#" class="btn open__popup" data-rel="8">Subcribe Popup</a>
+								<a href="https://www.youtube.com/watch?v=Uq41Fmw5CGI" class="btn video-open">Video Popup</a>
 							</div>
 							<!-- popups -->
 							<div class="popup__wrapper">
@@ -268,6 +270,38 @@
 								    	<div class="btn__close"><span></span></div>
 								  	</div>
 								</div>
+								<!-- Subcribe -->
+								<div class="popup__content" data-rel="8">
+							  		<div class="layer__close"></div>
+								  	<div class="popup__container">
+								    	<div class="popup__align sub">
+								      		<div class="popup__item">
+									        	<div class="h3 title color__black semi__bold title__margin">Subcribe to the Newsletter</div>
+									        	<div class="text">Stay up-to-date on all the news from the world of Dolce&Gabbana</div>
+									        	<form>
+									        		<input class="input" type="email" name="name" placeholder="*Email" required="">
+									        		<button class="btn">Subcribe</button>
+									        	</form>
+								      		</div>
+								    	</div>
+								    	<div class="btn__close"><span></span></div>
+								  	</div>
+								</div>
+								<!-- Video -->
+								<div class="video-popup">
+							      	<div class="video-popup-overlay"></div>
+							      	<div class="video-popup-content">
+							        	<div class="video-popup-layer"></div>
+								        <div class="video-popup-container">
+								          	<div class="video-popup-align">
+									            <div class="embed-responsive embed-responsive-16by9">
+								              		<iframe class="embed-responsive-item" src="about:blank"></iframe>
+									            </div>
+								          	</div>
+							          		<div class="btn-close"><span></span></div>
+								        </div>
+							      	</div>
+							    </div>
 							</div>
 						</div>
 					</div>
@@ -324,6 +358,21 @@
 			        	showMaskOnHover: false
 				    });
 			  	}
+
+			  	/*video pop-up*/
+				$('.video-open').on('click', function(e){
+					e.preventDefault();
+					let video = $(this).attr('href');
+					$('.video-popup-container iframe').attr('src',video);
+					$('.video-popup').addClass('active');
+					$('html').addClass('overflow-hidden');
+				});
+				$('.btn-close, .video-popup-layer').on('click', function(e){
+					$('html').removeClass('overflow-hidden');
+					$('.video-popup').removeClass('active');
+					$('.video-popup-container iframe').attr('src','about:blank');
+					e.preventDefault();
+				});
 			});
 		</script>
 	</body>
