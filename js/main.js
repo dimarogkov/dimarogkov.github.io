@@ -19,4 +19,12 @@ $(document).ready(function() {
 	});
 
 
+ 	// header list
+ 	$('.header__inner .header__right .header__list').on('click', function() {
+ 		$(this).addClass('open');
+ 	});
+ 	$('.header__inner .header__right .header__list').on('mouseleave', function() {
+ 		$(this).removeClass('open');
+ 	})
+
 });

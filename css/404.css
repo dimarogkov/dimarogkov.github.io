@@ -1,0 +1,20 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*404 STYLE ONE*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.not__found_one .not__found {height: calc(100vh - 151px);display: -webkit-box;display: -ms-flexbox;display: flex;align-items: center;justify-content: center;max-width: 1400px;margin: 0 auto;}
+.not__found_one .not__found_img {position: relative;display: block;width: 39%;height: 0;padding-bottom: 13%;margin: 0 auto;margin-bottom: 50px;}
+.not__found_one .not__found_img img {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.not__found_one .not__found_cont {position: relative;display: block;width: 100%;}
+.not__found_one .not__found_cont .text {width: 100%;max-width: 60%;margin: 0 auto 20px auto;}
+/*media*/
+@media(max-width: 1640px){
+	.not__found_one .not__found {height: calc(100vh - 70px);}
+}
+@media(max-width: 1199px){
+	.not__found_one .not__found_img {width: 50%;padding-bottom: 15%;}
+	.not__found_one .not__found_cont .text {max-width: 80%;}
+}
+@media(max-width: 767px){
+	.not__found_one .not__found_img {width: 80%;padding-bottom: 25%;margin-bottom: 30px;}
+	.not__found_one .not__found_cont .text {max-width: 100%;}
+}
