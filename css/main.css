@@ -215,20 +215,16 @@ header {position: fixed;top: 0;left: 0;display: block;z-index: 2;width: 100%;hei
 .header__inner .header__logo span {padding: 5px 12px;margin-left: 10px;background-color: #2980b9;color: #fff;font-weight: 700;font-size: 12px;text-transform: uppercase;border-radius: 3px;-webkit-transition: all 0.2s;-o-transition: all 0.2s;transition: all 0.2s;}
 /*right*/
 .header__inner .header__right {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
-.header__inner .header__right .header__list {position: relative;display: inline-block;text-align: center;margin-right: 20px;width: 100px;cursor: pointer;}
+.header__inner .header__right .header__list {position: relative;display: inline-block;text-align: center;width: 100px;cursor: pointer;}
 .header__inner .header__right .header__list p {position: relative;display: inline-block;font-size: 16px;letter-spacing: 1px;text-transform: uppercase;color: #282828;padding-right: 25px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .header__inner .header__right .header__list p::before {position: absolute;content: '';top: 50%;right: 0;margin-top: -6.5px;width: 9px;height: 9px;border-bottom: 1.6px solid #282828;border-right: 1.6px solid #282828;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
-.header__inner .header__right .header__list ul {position: absolute;display: block;top: 70px;left: -25px;width: auto;min-width: 150px;height: auto;opacity: 0;visibility: hidden;z-index: 1;padding: 10px;text-align: center;background-color: #fff;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);border-radius: 2px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.header__inner .header__right .header__list ul {position: absolute;display: block;top: 70px;right: -15px;width: auto;min-width: 150px;height: auto;opacity: 0;visibility: hidden;z-index: 1;padding: 10px;text-align: center;background-color: #fff;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);border-radius: 2px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .header__inner .header__right .header__list ul li {position: relative;display: block;width: 100%;}
 .header__inner .header__right .header__list ul li a {display: block;width: 100%;padding: 10px 0;font-size: 16px;letter-spacing: 1px;color: #282828;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 /*open list*/
-.header__inner .header__right .header__list.open ul {opacity: 1;visibility: visible;top: 30px;}
+.header__inner .header__right .header__list.open ul {opacity: 1;visibility: visible;top: 25px;}
 .header__inner .header__right .header__list.open p {color: #2980b9;}
 .header__inner .header__right .header__list.open p::before {border-color: #2980b9;-webkit-transform: rotate(-135deg);-ms-transform: rotate(-135deg);transform: rotate(-135deg);margin-top: -2px;}
-.header__inner .btn {padding: 12px 40px;font-size: 13px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
-.header__inner .btn span {margin-left: 5px;}
-.header__inner .btn .fas {font-size: 18px;color: #2980b9;margin-right: 10px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
-.header__inner .btn:last-child {margin-left: 20px;}
 /*fixed*/
 header.style-2 + * {margin: 0;}
 header.style-2 {background-color: transparent;box-shadow: none;z-index: 3;}
@@ -243,7 +239,7 @@ header.scrolled.style-2 .header__inner .header__logo {color: #282828;}
 header.scrolled.style-2 .header__inner .header__logo span {background-color: #2980b9;color: #fff;}
 /*media*/
 @media(min-width: 1200px){
-	.header__inner .header__right .header__list:hover ul {opacity: 1;visibility: visible;top: 30px;}
+	.header__inner .header__right .header__list:hover ul {opacity: 1;visibility: visible;top: 25px;}
 	.header__inner .header__right .header__list:hover p {color: #2980b9;}
 	.header__inner .header__right .header__list:hover p::before {border-color: #2980b9;-webkit-transform: rotate(-135deg);-ms-transform: rotate(-135deg);transform: rotate(-135deg);margin-top: -2px;}
 	.header__inner .header__right .header__list ul li a:hover {background-color: rgba(236,240,241,0.5);color: #2980b9;}
@@ -255,24 +251,15 @@ header.scrolled.style-2 .header__inner .header__logo span {background-color: #29
 	.header__inner {padding: 0 20px;}
 	header.style-2 .header__inner {padding: 0;height: 59px;}
 	header.scrolled.style-2 .header__inner {height: 60px;}
-	.header__inner .btn {padding: 10px 20px;}
-	.header__inner .btn:last-child {font-size: 0;margin-left: 10px;}
-	.header__inner .btn .fas {margin: 0;font-size: 20px;position: relative;left: 3px;}
-	.header__inner .header__right .header__list {margin-right: 10px;}
 	.header__inner .header__right .header__list p {font-size: 15px;padding-right: 20px;}
+	.header__inner .header__right .header__list ul {right: -10px;}
 }
 @media(max-width: 575px){
 	.header__inner {padding: 0 10px;}
-	.header__inner .btn {font-size: 0;padding: 10px;height: 40px;}
-	.header__inner .btn span {font-size: 14px;margin: 0;}
-	.header__inner .btn .fas {color: #fff;}
-	.header__inner .header__right .header__list {margin-right: 5px;}
-	.header__inner .btn:last-child {margin-left: 5px;}
+	.header__inner .header__right .header__list ul {right: -3px;}
 }
 @media(max-width: 480px){
-	.header__inner .header__logo {-webkit-transform: scale(0.8);-ms-transform: scale(0.8);transform: scale(0.8);-webkit-transform-origin: left;-ms-transform-origin: left;transform-origin: left;}
-	.header__inner .header__right {-webkit-transform: scale(0.8);-ms-transform: scale(0.8);transform: scale(0.8);-webkit-transform-origin: right;-ms-transform-origin: right;transform-origin: right;}
-	.header__inner .header__logo span {position: absolute;right: -57.5px;margin: 0;}
+	.header__inner .header__logo {font-size: 16px;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
