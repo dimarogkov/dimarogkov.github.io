@@ -413,6 +413,7 @@ footer {position: relative;display: block;width: 100%;border-top: 1px solid #ecf
 	.footer-inner .footer-social a:hover:nth-child(1) .fab,.footer-inner .footer-social a:hover:nth-child(2) .fab,
 	.footer-inner .footer-social a:hover:nth-child(3) .fab,.footer-inner .footer-social a:hover:nth-child(4) .fab,
 	.footer-inner .footer-social a:hover:nth-child(5) .fab {color: #fff;}
+}
 @media(max-width: 991px){
 	.footer-inner {display: block;text-align: center;}
 	.footer-inner .footer-logo,.footer-inner .footer-social {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
