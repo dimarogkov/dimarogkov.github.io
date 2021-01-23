@@ -1,52 +1,52 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* BLOCKQUOTE - ONE STYLE */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-.blockquote__one blockquote {position: relative;display: block;background-color: #FAFAFA;width: 100%;color: #282828;font-size: 18px;line-height: 1.6em;font-weight: 500;letter-spacing: 1px;padding: 20px 30px 20px 33px;}
-.blockquote__one blockquote::before {position: absolute;content: '';left: 0;top: 0;width: 3px;height: 100%;background-color: #2980b9;}
+.blockquote-one blockquote {position: relative;display: block;background-color: #FAFAFA;width: 100%;color: #282828;font-size: 18px;line-height: 1.6em;font-weight: 500;letter-spacing: 1px;padding: 20px 30px 20px 33px;}
+.blockquote-one blockquote::before {position: absolute;content: '';left: 0;top: 0;width: 3px;height: 100%;background-color: #2980b9;}
 /*media*/
 @media(max-width: 991px){
-	.blockquote__one blockquote {padding: 20px 25px 20px 27px;}
-	.blockquote__one blockquote::before {width: 2px;}
+	.blockquote-one blockquote {padding: 20px 25px 20px 27px;}
+	.blockquote-one blockquote::before {width: 2px;}
 }
 @media(max-width: 767px){
-	.blockquote__one blockquote {padding: 15px 20px 15px 22px;font-size: 16px;}
+	.blockquote-one blockquote {padding: 15px 20px 15px 22px;font-size: 16px;}
 }
 @media(max-width: 767px){
-	.blockquote__one blockquote {padding: 12px 18px 12px 20px;font-size: 15px;}
+	.blockquote-one blockquote {padding: 12px 18px 12px 20px;font-size: 15px;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* BLOCKQUOTE - TWO STYLE */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-.blockquote__two blockquote {position: relative;display: block;width: 100%;color: #282828;text-align: center;font-size: 18px;line-height: 1.6em;letter-spacing: 1px;padding: 40px 10%;border: 2px solid #2980b9;}
+.blockquote-two blockquote {position: relative;display: block;width: 100%;color: #282828;text-align: center;font-size: 18px;line-height: 1.6em;letter-spacing: 1px;padding: 40px 10%;border: 2px solid #2980b9;}
 /*media*/
 @media(max-width: 1640px){
-	.blockquote__two blockquote {padding: 30px 6%;}
+	.blockquote-two blockquote {padding: 30px 6%;}
 }
 @media(max-width: 767px){
-	.blockquote__two blockquote {padding: 20px 4%;font-size: 16px;}
+	.blockquote-two blockquote {padding: 20px 4%;font-size: 16px;}
 }
 @media(max-width: 575px){
-	.blockquote__two blockquote {font-size: 15px;padding: 15px 3%;}
+	.blockquote-two blockquote {font-size: 15px;padding: 15px 3%;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* BLOCKQUOTE - TREE STYLE */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-.blockquote__tree blockquote {position: relative;display: block;width: 100%;padding: 40px;color: #282828;border: 2px solid #2980b9;background-color: #fff;font-size: 18px;line-height: 1.6em;letter-spacing: 1px;border-radius: 3px;}
-.blockquote__tree blockquote::before {position: absolute;content: '';bottom: -20px;right: -20px;width: 100%;height: 100%;border: 2px solid #2980b9;background-color: #2980b9;z-index: -1;border-radius: 3px;}
+.blockquote-tree blockquote {position: relative;display: block;width: 100%;padding: 40px;color: #282828;border: 2px solid #2980b9;background-color: #fff;font-size: 18px;line-height: 1.6em;letter-spacing: 1px;border-radius: 3px;}
+.blockquote-tree blockquote::before {position: absolute;content: '';bottom: -20px;right: -20px;width: 100%;height: 100%;border: 2px solid #2980b9;background-color: #2980b9;z-index: -1;border-radius: 3px;}
 /*media*/
 @media(max-width: 1640px){
-	.blockquote__tree blockquote {padding: 30px;}
-	.blockquote__tree blockquote::before {right: -15px;bottom: -15px;}
+	.blockquote-tree blockquote {padding: 30px;}
+	.blockquote-tree blockquote::before {right: -15px;bottom: -15px;}
 }
 @media(max-width: 767px){
-	.blockquote__tree blockquote {padding: 20px;font-size: 16px;}
-	.blockquote__tree blockquote::before {right: -10px;bottom: -10px;}
+	.blockquote-tree blockquote {padding: 20px;font-size: 16px;}
+	.blockquote-tree blockquote::before {right: -10px;bottom: -10px;}
 }
 @media(max-width: 575px){
-	.blockquote__tree blockquote {font-size: 15px;padding: 15px;}
-	.blockquote__tree blockquote::before {display: none;right: auto;bottom: auto;}
+	.blockquote-tree blockquote {font-size: 15px;padding: 15px;}
+	.blockquote-tree blockquote::before {display: none;right: auto;bottom: auto;}
 }
 
 

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	$('.accordeon__title').on('click', function () {
-		$(this).siblings('.accordeon__title.active').toggleClass('active').next().slideToggle();
+	$('.accordeon-title').on('click', function () {
+		$(this).siblings('.accordeon-title.active').toggleClass('active').next().slideToggle();
 		$(this).toggleClass('active').next().slideToggle();
 	});
 

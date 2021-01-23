@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	$('.more__text .read__more').on('click', function(){
-		$(this).parents('.more__text').toggleClass('open__more_text');
+	$('.more-text .read-more').on('click', function(){
+		$(this).parents('.more-text').toggleClass('open-more-text');
 		$(this).parent().find('.text').slideToggle(300);
 	});
 

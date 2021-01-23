@@ -17,22 +17,22 @@ $(document).ready(function() {
 	}
 
 	_functions.openPopup = function(popup){
-		$('.popup__content').removeClass('active');
-		$(popup + ', .popup__wrapper').addClass('active');
+		$('.popup-content').removeClass('active');
+		$(popup + ', .popup-wrapper').addClass('active');
 		removeScroll();
 	};
 
 	_functions.closePopup = function(){
-		$('.popup__wrapper, .popup__content').removeClass('active');
+		$('.popup-wrapper, .popup-content').removeClass('active');
 		addScroll();
 	};
 
-	$(document).on('click', '.open__popup', function(e){
+	$(document).on('click', '.open-popup', function(e){
 		e.preventDefault();
-		_functions.openPopup('.popup__content[data-rel="' + $(this).data('rel') +'"]');
+		_functions.openPopup('.popup-content[data-rel="' + $(this).data('rel') +'"]');
 	});
 
-	$(document).on('click', '.popup__wrapper .btn__close, .popup__wrapper .layer__close', function(e){
+	$(document).on('click', '.popup-wrapper .btn-close, .popup-wrapper .layer-close', function(e){
 		e.preventDefault();
 		_functions.closePopup();
 	});

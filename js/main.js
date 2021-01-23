@@ -12,7 +12,7 @@ $(document).ready(function() {
  	$('.anchor').on('click', function(event) {
 		event.preventDefault();
 
-		let block_top = $('.header__inner').offset().top;
+		let block_top = $('.header-inner').offset().top;
 		$('html, body').animate({
 			scrollTop: -block_top
 		}, 900)
@@ -20,10 +20,10 @@ $(document).ready(function() {
 
 
  	// header list
- 	$('.header__inner .header__right .header__list').on('click', function() {
+ 	$('.header-inner .header-right .header-list').on('click', function() {
  		$(this).addClass('open');
  	});
- 	$('.header__inner .header__right .header__list').on('mouseleave', function() {
+ 	$('.header-inner .header-right .header-list').on('mouseleave', function() {
  		$(this).removeClass('open');
  	})
 
