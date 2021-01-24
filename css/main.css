@@ -25,7 +25,6 @@ html:not(.ie) #content-block {display:-webkit-box;display:-ms-flexbox;display:fl
 html.overflow-hidden body{overflow: hidden;}
 html:not(.ie) main {-webkit-box-flex:1;-ms-flex:1;flex:1;}
 html:not(.ie), html:not(.ie) body {height: 100%;}
-.swiper-slide:not(:first-child){display: none;}
 .section {position: relative;display: block;width: 100%;}
 .anchor-link {display: block;position: absolute;top: -160px;left: 0;}
 /*spacers*/

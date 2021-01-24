@@ -18,6 +18,9 @@
 		<!-- lightbox css -->
 		<link href="css/lightbox.css" rel="stylesheet">
 		<link href="css/my_lightbox.css" rel="stylesheet">
+		<!-- swiper css -->
+		<link href="css/swiper.css" rel="stylesheet">
+		<link href="css/my_swiper.css" rel="stylesheet">
 	</head>
 	<body>
 		<div id="content-block">
@@ -91,6 +94,8 @@
 									<div class="h3 title color-black normal title-margin">CSS Files</div>
 									<a href="css/lightbox.css" class="btn" target="_blank">lightbox css</a>
 									<a href="css/my_lightbox.css" class="btn" target="_blank">my lightbox css</a>
+									<a href="css/swiper.css" class="btn" target="_blank">my lightbox css</a>
+									<a href="css/my_swiper.css" class="btn" target="_blank">my swiper css</a>
 								</div>
 							</div>
 						</div>
@@ -107,6 +112,8 @@
 									<div class="h3 title color-black normal title-margin">JS Files</div>
 									<a href="js/lightbox/lightbox.js" class="btn" target="_blank">lightbox js</a>
 									<a href="js/lightbox/my_lightbox.js" class="btn" target="_blank">my lightbox js</a>
+									<a href="js/swiper/swiper.js" class="btn" target="_blank">swiper js</a>
+									<a href="js/swiper/my_swiper.js" class="btn" target="_blank">my swiper js</a>
 								</div>
 							</div>
 						</div>
@@ -166,7 +173,7 @@
 					<div class="spacer-sm"></div>
 				</div>
 
-				<!-- lightbox block with content-->
+				<!-- lightbox block with content -->
 				<div class="section">
 					<div class="container">
 						<div class="row">
@@ -221,6 +228,75 @@
 					</div>
 					<div class="spacer-sm"></div>
 				</div>
+
+				<!-- lightbox slider -->
+				<div class="section">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-10 offset-xl-1 col-lg-12">
+								<div class="h3 title color-black normal title-margin">Lightbox Block with Content</div>
+								<div class="swiper-entry lightbox-tree">
+									<div class="swiper-button-prev"></div>
+					                <div class="swiper-button-next"></div>
+						            <div class="swiper-container" data-options='{"slidesPerView":2, "autoHeight": true, "spaceBetween": 30, "breakpoints": {"991": {"slidesPerView": 1, "spaceBetween": 0} }}'>
+						                <div class="swiper-wrapper">
+						                    <div class="swiper-slide">
+						                    	<div class="lightbox-wrapper lightbox-block">
+													<a href="img/lightbox/lightbox_one.jpg" class="lightbox lightbox-imgs"><img src="img/lightbox/lightbox_one.jpg"></a>
+													<a href="img/lightbox/lightbox_two.jpg" class="lightbox"></a>
+													<a href="img/lightbox/lightbox_tree.jpg" class="lightbox"></a>
+													<a href="img/lightbox/lightbox_foure.jpg" class="lightbox"></a>
+													<div class="lightbox-cont">
+														<div class="h4 title color-black medium title-margin">Lightbox Title</div>
+														<div class="text">Over the past 24hrs, 48 new coronavirus patients have been registered in the country.Over the past 24hrs, 48 new coronavirus patients have been registered in the country</div>
+													</div>
+												</div>
+						                    </div>
+						                    <div class="swiper-slide">
+						                    	<div class="lightbox-wrapper lightbox-block">
+													<a href="img/lightbox/lightbox_two.jpg" class="lightbox lightbox-imgs"><img src="img/lightbox/lightbox_two.jpg"></a>
+													<a href="img/lightbox/lightbox_tree.jpg" class="lightbox"></a>
+													<a href="img/lightbox/lightbox_foure.jpg" class="lightbox"></a>
+													<a href="img/lightbox/lightbox_one.jpg" class="lightbox"></a>
+													<div class="lightbox-cont">
+														<div class="h4 title color-black medium title-margin">Lightbox Title</div>
+														<div class="text">Over the past 24hrs, 48 new coronavirus patients have been registered in the country.</div>
+													</div>
+												</div>
+						                    </div>
+						                    <div class="swiper-slide">
+						                    	<div class="lightbox-wrapper lightbox-block">
+													<a href="img/lightbox/lightbox_tree.jpg" class="lightbox lightbox-imgs"><img src="img/lightbox/lightbox_tree.jpg"></a>
+													<a href="img/lightbox/lightbox_foure.jpg" class="lightbox"></a>
+													<a href="img/lightbox/lightbox_one.jpg" class="lightbox"></a>
+													<a href="img/lightbox/lightbox_two.jpg" class="lightbox"></a>
+													<div class="lightbox-cont">
+														<div class="h4 title color-black medium title-margin">Lightbox Title</div>
+														<div class="text">Over the past 24hrs, 48 new coronavirus patients have been registered in the country.Over the past 24hrs, 48 new coronavirus patients have been registered in the country.Over the past 24hrs, 48 new coronavirus patients have been registered in the country</div>
+													</div>
+												</div>
+						                    </div>
+						                    <div class="swiper-slide">
+						                    	<div class="lightbox-wrapper lightbox-block">
+													<a href="img/lightbox/lightbox_foure.jpg" class="lightbox lightbox-imgs"><img src="img/lightbox/lightbox_foure.jpg"></a>
+													<a href="img/lightbox/lightbox_one.jpg" class="lightbox"></a>
+													<a href="img/lightbox/lightbox_two.jpg" class="lightbox"></a>
+													<a href="img/lightbox/lightbox_tree.jpg" class="lightbox"></a>
+													<div class="lightbox-cont">
+														<div class="h4 title color-black medium title-margin">Lightbox Title</div>
+														<div class="text">Over the past 24hrs, 48 new coronavirus patients have been registered in the country.Over the past 24hrs, 48 new coronavirus patients have been registered in the country</div>
+													</div>
+												</div>
+						                    </div>
+						                </div>
+						            </div>
+						            <div class="swiper-pagination"></div>
+						        </div>
+							</div>
+						</div>
+					</div>
+					<div class="spacer-sm"></div>
+				</div>
 			</main>
 
 			<!-- footer -->
@@ -255,5 +331,8 @@
 		<!-- lightbox js -->
 		<script src="js/lightbox/lightbox.js"></script>
 		<script src="js/lightbox/my_lightbox.js"></script>
+		<!-- swiper js -->
+		<script src="js/swiper/swiper.js"></script>
+		<script src="js/swiper/my_swiper.js"></script>
 	</body>
 </html>
