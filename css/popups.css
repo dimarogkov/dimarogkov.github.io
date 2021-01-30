@@ -58,10 +58,11 @@ form textarea.input {height: 125px;resize: none;}
 	form .input {font-size: 15px;padding: 12px 10px;} 
 	form textarea.input {height: 100px;}
 	form button.btn {display: block;width: 100%;}
+	.popup-align.acc {padding: 30px 15px;}
 	.popup-align.acc .title {margin-bottom: 5px;}
 }
 @media(max-width: 400px){
-	.popup-align.acc {padding: 20px;}
+	.popup-align.acc {padding: 20px 10px;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/

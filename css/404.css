@@ -16,7 +16,7 @@
 }
 @media(max-width: 767px){
 	.not-found-one .not-found {height: calc(100vh - 60px);}
-	.not-found-one .not-found-img {margin-bottom: 30px;width: 100%;padding-bottom: 30%;}
+	.not-found-one .not-found-img {margin-bottom: 30px;}
 	.not-found-one .not-found-cont .text {max-width: 100%;}
 }
 
@@ -37,6 +37,7 @@
 	.not-found-two .not-found-cont {padding-left: 0;}
 }
 @media(max-width: 991px){
+	.not-found-two .not-found-img {width: 80%;padding-bottom: 25%;}
 	.not-found-two .not-found-cont {text-align: center;margin-top: 50px;}
 }
 @media(max-width: 767px){
