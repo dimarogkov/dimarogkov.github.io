@@ -140,6 +140,8 @@ h6,.h6 {font-size: 20px;line-height: 1.3em;letter-spacing: 1px;}
 .btn {position: relative;display: inline-block;padding: 14px 40px;color: #282828;border: 2px solid #2980b9;border-radius: 2px;font-size: 14px;font-weight: 500;letter-spacing: 1px;text-transform: uppercase;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .btn::before {position: absolute;content: '';top: -1px;left: -1px;width: 0;height: calc(100% + 2px);border-radius: 2px;background-color: #2980b9;z-index: -1;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .btn:active {-webkit-transform: translateY(3px);-ms-transform: translateY(3px);transform: translateY(3px);}
+.btn.btn-active {background-color: #2980b9;color: #fff;}
+.btn.btn-active::before {display: none;}
 /*label*/
 .label {position: absolute;z-index: 1;top: -8px;right: -8px;display: inline-block;border-radius: 3px;font-size: 12px;text-transform: uppercase;color: #fff;font-weight: 500;padding: 5px 10px;}
 .label.process {background-color: #f1c40f;}
