@@ -38,6 +38,8 @@
 .tab-two .tabs {position: relative;display: block;width: 70%;padding: 20px;border-left: 2px solid #2980b9;}
 .tab-two .tab {display: none;}
 .tab-two .tab:nth-child(1) {display: block;}
+/*tab on right*/
+.tab-two.right .tabs {border-left: none;border-right: 2px solid #2980b9;}
 /*media*/
 @media(min-width: 1200px) {
 	.tab-two .tab-toggle div:hover {color: #2980b9;}

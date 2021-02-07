@@ -5,7 +5,7 @@
 .seo-one .more-text .text {display: none;}
 .seo-one .more-text .read-more {position: relative;display: inline-block;cursor: pointer;font-size: 14px;font-weight: 600;letter-spacing: 0.14em;text-transform: uppercase;color: #282828;padding-right: 15px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .seo-one .more-text .read-more::before {position: absolute;content: '';top: 50%;right: 0;margin-top: -6px;width: 8px;height: 8px;border-left: 2px solid #282828;border-bottom: 2px solid #282828;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
-.seo-one .more-text.open-more-text .read-more::before {-webkit-transform: rotate(-225deg);-ms-transform: rotate(-225deg);transform: rotate(-225deg);margin-top: -2px;}
+.seo-one .more-text.open .read-more::before {-webkit-transform: rotate(-225deg);-ms-transform: rotate(-225deg);transform: rotate(-225deg);margin-top: -2px;}
 /*media*/
 @media(min-width: 1200px){
 	.seo-one .more-text .read-more:hover {color: #2980b9}
@@ -24,7 +24,7 @@
 .seo-two .more-text .text {display: none;}
 .seo-two .more-text .read-more {position: relative;display: inline-block;cursor: pointer;font-size: 14px;font-weight: 600;letter-spacing: 0.14em;text-transform: uppercase;color: #282828;padding-right: 15px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .seo-two .more-text .read-more::before {position: absolute;content: '';top: 50%;right: 0;margin-top: -6px;width: 8px;height: 8px;border-left: 2px solid #282828;border-bottom: 2px solid #282828;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
-.seo-two .more-text.open-more-text .read-more::before {-webkit-transform: rotate(-225deg);-ms-transform: rotate(-225deg);transform: rotate(-225deg);margin-top: -2px;}
+.seo-two .more-text.open .read-more::before {-webkit-transform: rotate(-225deg);-ms-transform: rotate(-225deg);transform: rotate(-225deg);margin-top: -2px;}
 /*media*/
 @media(min-width: 1200px){
 	.seo-two .more-text .read-more:hover {color: #2980b9}
