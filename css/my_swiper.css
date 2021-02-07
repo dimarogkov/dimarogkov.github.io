@@ -16,6 +16,7 @@
 .swiper-entry .swiper-button-lock {display:none;}
 /*swiper pagination*/
 .swiper-pagination {position: relative;display: block;width: 100%;line-height:0;z-index:2;text-align: center;}
+.swiper-pagination,.swiper-pagination-progress {height: 2px;}
 .swiper-pagination-bullet {width: 10px;height: 10px;background-color: transparent;border: 1px solid #2980b9;border-radius: 50%;opacity:1;outline:none;margin-right: 40px;-webkit-transition:0.3s;-o-transition:0.3s;transition:0.3s;}
 .swiper-pagination-bullet:last-child {margin-right: 0px;}
 .swiper-pagination-bullet-active {background-color: #2980b9;}
@@ -25,10 +26,20 @@
 .swiper-banner .swiper-button-prev,.swiper-banner .swiper-button-next {left: 40px;width: 60px;height: 60px;}
 .swiper-banner .swiper-button-next {left: auto;right: 40px;}
 .swiper-banner .swiper-pagination {position: absolute;bottom: 40px;}
+/*my swiper block*/
+.swiper-block {position: relative;display: block;width: 100%;}
+.swiper-block .swiper-imgs {position: relative;display: block;width: 100%;height: 0;padding-bottom: 60%;overflow: hidden;}
+.swiper-block .swiper-imgs::before {position: absolute;content: '';z-index: 1;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.2);}
+.swiper-block .swiper-imgs img {position: absolute;top: 0;left: 0;width: 100%;height: 100%;-webkit-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;}
+.swiper-block .swiper-cont {position: relative;display: block;width: 100%;padding: 20px 10px;border: 1px solid #eee;border-top: none;}
+.swiper-block .swiper-cont .title {position: relative;display: inline-block;margin-bottom: 10px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.swiper-block .swiper-cont .text {margin-bottom: 10px;}
 /*media*/
 @media(min-width: 1200px){
 	.swiper-button-prev:hover,.swiper-button-next:hover {background-color: transparent;}
 	.swiper-button-prev:hover::before,.swiper-button-next:hover::before {border-color: #2980b9;}
+	.swiper-block .swiper-imgs:hover img {-webkit-transform: scale(1.05);-ms-transform: scale(1.05);transform: scale(1.05);}
+	.swiper-block .swiper-cont .title:hover {color: #2980b9;}
 }
 @media(max-width: 1366px){
 	.swiper-button-prev, .swiper-button-next {display: none;}
