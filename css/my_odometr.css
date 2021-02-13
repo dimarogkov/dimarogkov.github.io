@@ -1,0 +1,40 @@
+/*-----------------------------------------------------------------------------------------------------------------------*/
+/* NUM BLOCK */
+/*-----------------------------------------------------------------------------------------------------------------------*/
+.num {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;width: 100%;}
+.num.mobile {display: none;}
+.num-block {position: relative;display: block;width: calc(33.333% - 30px);margin: 0 15px;margin-top: 30px;padding: 30px 0;text-align: center;background: #F8F9FB;}
+.num-block:nth-child(1),.num-block:nth-child(2),.num-block:nth-child(3) {margin-top: 0;}
+.num-block span {font-size: 72px;line-height: 0.8em;font-weight: 500;color: #2980b9;}
+.num-block p {font-weight: 500;font-size: 16px;line-height: 1.4em;text-transform: uppercase;color: #282828;margin-top: 10px;}
+.num-block .plus-decor {position: relative;display: inline-block;}
+.num-block .plus-decor span {position: relative;}
+.num-block .plus-decor i {position: absolute;left: -35px;top: 50%;margin-top: -17px;display: block;width: 34px;height: 34px;}
+.num-block .plus-decor i::before,.num-block .plus-decor i::after {position: absolute;content: '';left: 0;top: 50%;margin-top: -4px;display: block;width: 100%;height: 8px;background-color: #2980b9;}
+.num-block .plus-decor i::after {transform: rotate(90deg);}
+/*media*/
+@media(max-width: 1640px){
+  	.num-block span {font-size: 65px;}
+  	.num-block p {margin-top: 10px;}
+}
+@media(max-width: 1366px){
+  	.num-block .plus-decor i {width: 30px;height: 30px;margin-top: -15px;}
+  	.num-block .plus-decor i::before, .num-block .plus-decor i::after {height: 6px;margin-top: -3px;}
+  	.num-block span {font-size: 55px;}
+}
+@media(max-width: 1199px){
+	.num {display: none;}
+	.num.mobile {display: -webkit-box;display: -ms-flexbox;display: flex;}
+  	.num-block {width: calc(50% - 30px);}
+  	.num-block:nth-child(3) {margin-top: 30px;} 
+}
+@media(max-width: 767px){
+  	.num-block {width: 100%;margin: 0;}
+  	.num-block,.num-block:nth-child(2),.num-block:nth-child(3) {margin-top: 20px;}
+  	.num-block .plus-decor i {width: 22px;height: 22px;margin-top: -11px;}  
+  	.num-block .plus-decor i::before, .num-block .plus-decor i::after {height: 4px;margin-top: -2px;}
+}
+@media(max-width: 575px){
+	.num-block span {font-size: 50px;}
+	.num-block p {font-size: 14px;}
+}
