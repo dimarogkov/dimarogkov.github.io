@@ -75,13 +75,6 @@ sup {top: -0.5em;}
 .text *{margin-bottom:20px;}
 .text *:last-child{margin-bottom: 0;}
 .text img {max-width: 100%; height: auto; display: block;}
-.text ul li, .text ol li{position:relative;margin-bottom: 0;color: #282828;font-size: 18px;font-weight: 300;}
-.text ul li:before{content: "";position: absolute;left: 0;top: 13px;width: 6px;height: 6px;background-color: #fff;}
-.text ul li{padding-left: 30px;}
-.text ol{counter-reset: number;}
-.text ol li {padding-left: 40px;margin-bottom: 15px;}
-.text ol li:before{color: #fff;font-weight: 500;counter-increment: number;content: "0" counter(number) ".";position: absolute;top: 0;left: 0;font-size: 16px;letter-spacing: 0.07em;}
-.text ul li:last-child,.text ol li:last-child{margin-bottom:0;}
 .text a{position:relative;color:#fff;cursor:pointer;white-space: nowrap;font-weight: 500;}
 .text a:before{content:"";position:absolute;bottom: -2px;left: 0;right:auto;height: 2px;width: 100%;background: #fff;transition: all 0.3s ease-out;-webkit-transition: all 0.3s ease-out;}
 .text span {color: #fff;font-weight: 500;}
