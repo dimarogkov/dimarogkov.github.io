@@ -34,11 +34,16 @@
 .swiper-block .swiper-cont {position: relative;display: block;width: 100%;padding: 20px 10px;border: 1px solid #eee;border-top: none;}
 .swiper-block .swiper-cont .title {position: relative;display: inline-block;margin-bottom: 10px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .swiper-block .swiper-cont .text {margin-bottom: 10px;}
+/*swiper-thumbs*/
+.swiper-thumbs,.swiper-thumbs-2 {position: relative;display: block;width: 100%;}
+.swiper-thumbs-bottom .swiper-block .swiper-imgs {cursor: pointer;}
 /*media*/
 @media(min-width: 1200px){
 	.swiper-button-prev:hover,.swiper-button-next:hover {background-color: transparent;}
 	.swiper-button-prev:hover::before,.swiper-button-next:hover::before {border-color: #2980b9;}
 	.swiper-block .swiper-imgs:hover img {-webkit-transform: scale(1.05);-ms-transform: scale(1.05);transform: scale(1.05);}
+	.swiper-thumbs-top .swiper-block .swiper-imgs:hover img,
+	.swiper-thumbs-bottom .swiper-block .swiper-imgs:hover img {-webkit-transform: none;-ms-transform: none;transform: none;}
 	.swiper-block .swiper-cont .title:hover {color: #2980b9;}
 }
 @media(max-width: 1366px){

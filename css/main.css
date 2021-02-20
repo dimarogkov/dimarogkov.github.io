@@ -141,6 +141,7 @@ h6,.h6 {font-size: 20px;line-height: 1.3em;letter-spacing: 1px;}
 .label.done {background-color: #27ae60;}
 .label.updated {background-color: #2980b9;}
 .label.notready {background-color: #e74c3c;}
+.label.new {background-color: #5f27cd;}
 /*anchor*/
 .anchor {position: fixed;right: 40px;bottom: 40px;width: 40px;height: 40px;border-radius: 4px;z-index: 2;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;background-color: #2980b9;border: 2px solid #2980b9;cursor: pointer;opacity: 0;visibility: hidden;-webkit-transform: translateY(50px);-ms-transform: translateY(50px);transform: translateY(50px);-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
 .anchor.active {opacity: 1;visibility: visible;-webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0);}

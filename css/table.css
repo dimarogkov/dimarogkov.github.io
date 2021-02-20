@@ -1,0 +1,37 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* TABLE */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.table-block {width: 100%;border-collapse: collapse;border: 1px solid #E7E7E7;border-bottom: none;}
+.table-block tr td {text-align: center;height: 100%;border-right: 1px solid #E7E7E7;padding: 12px 0;}
+.table-block tr td:last-child {border-right: 0;}
+.table-block tr td:nth-child(1) {width: 8%;}
+.table-block tr td:nth-child(2) {width: 60%;}
+.table-block tr td:nth-child(3) {width: 16%;}
+.table-block tr td:nth-child(4) {width: 16%;}
+/*thead*/
+.table-block thead tr {border-bottom: 2px solid #2980b9;}
+.table-block thead tr td {font-size: 16px;font-weight: 500;color: #282828;}
+/*tbody*/
+.table-block tbody tr td {font-size: 16px;font-weight: 300;color: #585E62;vertical-align: middle;}
+.table-block tbody tr td:nth-child(1) {font-size: 16px;font-weight: 500;letter-spacing: 0.07em;color: #2980b9;}
+.table-block tbody tr td:nth-child(2) {text-align: left;padding-left: 20px;}
+.table-block tbody tr:nth-child(2n) {background-color: #F6F6F6;}
+/*media*/
+@media(max-width: 991px){
+	.table-block tr td:nth-child(2) {width: 54%;}
+	.table-block tr td:nth-child(3) {width: 19%;}
+	.table-block tr td:nth-child(4) {width: 19%;}
+}
+@media(max-width: 767px){
+	.table-block thead {display: none;}
+	.table-block tr {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;width: 100%;border-bottom: 1px solid #E7E7E7;}
+	.table-block tbody tr:nth-child(2n) {background-color: #fff;}
+	.table-block tbody td:before {content: attr(data-mobile-title);position: absolute;display: block;left: -60%;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);width: 32%;}
+	.table-block tr td {padding: 12px 20px 12px 0;border-right: none;}
+	.table-block tbody tr td:nth-child(2) {padding-left: 0;}
+	.table-block tr td:nth-child(1),.table-block tr td:nth-child(2),
+	.table-block tr td:nth-child(3),.table-block tr td:nth-child(4) {position: relative;width: 60%;margin: 0 0 0 auto;text-align: left;}
+}
+@media(max-width: 400px){
+	.table-block tr td {padding: 10px 10px 10px 0;}
+}

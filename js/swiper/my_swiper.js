@@ -41,4 +41,19 @@ $(document).ready(function() {
         _functions.initSwiper($(this));
     });
 
+    // thumbs init
+    $('.swiper-thumbs').each(function () {
+	    let top = $(this).find('.swiper-container.swiper-thumbs-top')[0].swiper,
+	        bottom = $(this).find('.swiper-container.swiper-thumbs-bottom')[0].swiper;
+	    top.thumbs.swiper = bottom;
+	    top.thumbs.init();
+	    top.thumbs.update();
+  	});
+  	$('.swiper-control').each(function () {
+	    let top = $(this).find('.swiper-container')[0].swiper,
+	        bottom = $(this).find('.swiper-container')[1].swiper;
+	    top.controller.control = bottom;
+	    bottom.controller.control = top;
+  	});
+
 });
