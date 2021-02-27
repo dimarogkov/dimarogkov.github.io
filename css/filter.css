@@ -1,0 +1,35 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* FILTER ONE */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.filter-one .filter-btns {position: relative;display: block;width: 100%;margin-bottom: 30px;}
+.filter-one .filter-btns .btn.active {color: #fff;}
+.filter-one .filter-btns .btn.active::before {width: calc(100% + 3px);}
+.filter-one .grid {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;width: 100%;}
+.filter-one .grid:after {content: '';display: block;clear: both;}
+.filter-one .grid-item {position: relative;width: 60px;height: 60px;margin-right: 10px;margin-bottom: 10px;font-size: 22px;border-radius: 4px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.filter-one .grid-item:last-child {margin-right: 0;}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* FILTER TWO */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.filter-two .filter-btns {position: relative;display: block;width: 100%;margin-bottom: 30px;}
+.filter-two .filter-btns .btn.active {color: #fff;}
+.filter-two .filter-btns .btn.active::before {width: calc(100% + 3px);}
+.filter-two .filter-btns .filter-group {position: relative;display: block;width: 100%;margin-bottom: 20px;}
+.filter-two .filter-btns .filter-group:last-child {margin-bottom: 0;}
+.filter-two .filter-btns .filter-group .title {margin-bottom: 10px;}
+.filter-two .grid {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;width: 100%;}
+.filter-two .grid:after {content: '';display: block;clear: both;}
+.filter-two .grid-item {position: relative;width: 60px;height: 60px;margin-right: 10px;margin-bottom: 10px;font-size: 22px;border-radius: 4px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.filter-two .grid-item:last-child {margin-right: 0;}
+/*size*/
+.filter-two .small {width: 60px;height: 60px;}
+.filter-two .big {width: 100px;height: 100px;}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* FILTER COLORS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.white {color: #fff;}
+.red-bg {background-color: #eb2f06;}
+.green-bg {background-color: #27ae60;}
+.blue-bg {background-color: #2980b9;}
