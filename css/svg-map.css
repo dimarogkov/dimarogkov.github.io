@@ -9,7 +9,7 @@
 .svg-map-info {position: absolute;display: inline-block;background-color: #fff;box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);padding: 12px 40px 12px 12px;opacity: 0;visibility: hidden;-webkit-transform: translate(30px, -22px);-ms-transform: translate(30px, -22px);transform: translate(30px, -22px);}
 .svg-map-info.active {opacity: 1;visibility: visible;}
 .svg-map-info::before {position: absolute;content: '';top: 50%;left: -8px;display: inline-block;border-top: 10px solid transparent;border-right: 10px solid #fff;border-bottom: 10px solid transparent;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
-.svg-map-info .svg-map-close {position: absolute;top: 50%;right: 10px;display: inline-block;font-size: 18px;color: #282828;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);-webkit-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;}
+.svg-map-info .svg-map-close {position: absolute;top: 50%;right: 10px;display: inline-block;font-size: 16px;color: #282828;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);-webkit-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;}
 /*media*/
 @media(min-width: 1200px){
 	.svg-map-imgs circle:hover {stroke: #282828;}
