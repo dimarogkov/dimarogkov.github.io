@@ -336,6 +336,8 @@ header.scrolled.style-2 .header-inner .header-logo span {background-color: #2980
 /*message*/
 .message {position: relative;display: block;width: calc(100% - 6px);padding: 40px 20px;margin-left: 6px;line-height: 1.3em;background-color: rgba(41,128,185,0.3);font-size: 16px;color: #282828;}
 .message::before {position: absolute;content: ''; top: 0;left: -6px;width: 6px;height: 100%;background-color: #2980b9;z-index: 1;}
+.message p {margin-bottom: 5px;}
+.message p:last-child {margin-bottom: 0;}
 /*media*/
 @media(max-width: 1366px){
 	.message {padding: 30px 20px;}
