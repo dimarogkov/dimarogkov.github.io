@@ -4,5 +4,5 @@
 .draw-svg {position: relative;display: block;width: 100%;}
 .draw-svg-area {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 400px;height: 300px;background-color: #fff;border-radius: 5px;box-shadow: 0 0 5px rgba(0,0,0,0.2);margin-top: 10px;}
 .draw-svg-area svg {position: relative;display: inline-block;}
-.draw-svg-area svg path {stroke: #2980b9;stroke-width: 3px;fill: transparent;stroke-dasharray: 2952.6513671875px;stroke-dashoffset: -2952.6513671875px;-webkit-transition: stroke-dashoffset 1s linear, fill 0.3s ease 1s;-o-transition: stroke-dashoffset 1s linear, fill 0.3s ease 1s;transition: stroke-dashoffset 1s linear, fill 0.3s ease 1s;}
+.draw-svg-area svg path {stroke: #2980b9;stroke-width: 3px;fill: transparent;stroke-dasharray: 2952.6513671875px;stroke-dashoffset: -2952.6513671875px;-webkit-transition: stroke-dashoffset 1.5s linear, fill 0.3s ease 1.5s;-o-transition: stroke-dashoffset 1.5s linear, fill 0.3s ease 1.5s;transition: stroke-dashoffset 1.5s linear, fill 0.3s ease 1.5s;}
 .draw-svg-area.animate svg path {fill: rgba(41,128,185,0.3);stroke-dashoffset: 0;}
