@@ -340,14 +340,15 @@
 
 		<!-- jquery and js-->
 		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>
+		<script src="js/smooth-scroll.js" defer></script>
+		<script src="js/main.js" defer></script>
 
 		<!-- popups js -->
-		<script src="js/popups/popups.js"></script>
+		<script src="js/popups/popups.js" defer></script>
 
 		<!-- form script -->
-		<script src="js/inputmask/inputmask.min.js"></script>
-		<script>
+		<script src="js/inputmask/inputmask.min.js" defer></script>
+		<script defer>
 			$(document).ready(function() {
 				$(document).on('blur', '.input[required]', function(){
 				    if($(this).val().trim()){

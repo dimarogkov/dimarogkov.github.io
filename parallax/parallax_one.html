@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Doc | Banners</title>
+		<title>Doc | Parallax Vertical</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,6 +15,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 		<!-- icons -->
 		<link href="../fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
+		<!-- parallax css -->
+		<link href="../css/parallax.css" rel="stylesheet">
 	</head>
 	<body>
 		<div id="content-block">
@@ -27,50 +29,82 @@
 			</div>
 
 			<!-- header -->
-			<header class="style-2">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-10 offset-xl-1 col-lg-12">
-							<div class="header-inner">
-								<a href="../index.html" class="header-logo">Dmitriy Rogkov <span>Api</span></a>
-							</div>
+			<header>
+				<div class="header-inner">
+					<a href="../index.html" class="header-logo">Dmitriy Rogkov <span>Api</span></a>
+					<div class="header-right">
+						<div class="header-list">
+							<p>Style</p>
+							<ul>
+								<li><a href="parallax_one.html">Vertical</a></li>
+								<li><a href="parallax_two.html">Horizontal</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</header>
 
 			<main>
-				<!-- banner -->
-				<div class="section banner">
-					<div class="container">
-						<div class="row">
-							<div class="col-xl-10 offset-xl-1 col-lg-12">
-								<div class="banner-cont">
-									<div class="h2 title bold color-white text-line-2">Simple Pages</div>
-									<div class="breadcrumbs">
-										<nav>
-											<ul>
-												<li><a href="../index.html">Home</a></li>
-												<li><span>Simple Pages</span></li>
-											</ul>
-										</nav>
-									</div>
-								</div>
+				<!-- parallax vertical -->
+				<div class="section">
+					<div class="parallax vertical">
+						<div class="parallax-decor" data-parallax-type='vertical'>
+							<div>
+								<img src="https://images.ctfassets.net/yrmp9cce5e98/3AWelrS7Y43vwivHpin6x7/584e639a6bf9f433fc89b6224862abcd/meus.jpg?w=480&fm=webp&q=80" alt class="c-rellax" data-parallax-speedY='1'>
+							</div>
+							<div>
+								<img src="https://images.ctfassets.net/yrmp9cce5e98/6hZ9iXYZmWiR6idfODSxj1/ad6db7ca84e88caeee54fd84695f6c72/large2.jpg?w=480&fm=webp&q=80" alt class="c-rellax" data-parallax-speedY='1'>
+							</div>
+							<div>
+								<img src="https://images.ctfassets.net/yrmp9cce5e98/61iFMgtF0kSjtVvzUOln6l/52ca8c7c2f9498b697ce567bdef5f4a3/muse.jpg?w=480&fm=webp&q=80" alt class="c-rellax" data-parallax-speedY='1'>
+							</div>
+							<div>
+								<img src="https://images.ctfassets.net/yrmp9cce5e98/6l61Uc0h04d0otAXn8fgS/90debb96504c09cddddb4fc377b3e1bd/gal.jpg?w=480&fm=webp&q=80" alt class="c-rellax" data-parallax-speedY='2'>
+							</div>
+							<div>
+								<img src="https://images.ctfassets.net/yrmp9cce5e98/1T23aMtW7tyOPOZMkRvXUF/af0305b413d2e52a4a8b63074099d093/mm2.jpg?w=480&fm=webp&q=80" alt class="c-rellax" data-parallax-speedY='2'>
+							</div>
+							<div>
+								<img src="https://images.ctfassets.net/yrmp9cce5e98/O4HuQKs5UBNYfHrq3E4q5/420dd43fdc08c270bfd05bc3cb5b5fcb/mm.jpg?w=480&fm=webp&q=80" alt class="c-rellax" data-parallax-speedY='1'>
 							</div>
 						</div>
-					</div>
+						<div class="parallax-cont">
+							<div class="h1 title color-black medium title-margin">Parallax Vertical</div>
+							<a href="#about" class="btn">About</a>
+						</div>
+			        </div>
 				</div>
 
-				<!-- banner block -->
-				<div class="section">
+				<!-- about -->
+				<div class="section" id="about">
 					<div class="spacer-sm"></div>
 					<div class="container">
 						<div class="row">
 							<div class="col-xl-10 offset-xl-1 col-lg-12">
 								<div class="block">
-									<div class="h3 title color-black normal title-margin">Simple Pages</div>
-									<a href="simple_page_one.html" class="btn" target="_blank">Simple Page 1</a>
-									<a href="simple_page_two.html" class="btn" target="_blank">Simple Page 2</a>
+									<div class="h3 title color-black normal title-margin">Custom Parallax</div>
+									<div class="text">A customizable, modular, responsive, parallax plugin for jQuery. How use:</div>
+									<div class="text">1) Get js code and add to your project.</div>
+									<div class="text">2) Select type of parallax - Vertical/Horizontal and add data-attr to parent block. Examplex - data-parallax-type='vertical'.</div>
+									<div class="text">3) Add class 'c-rellax' to your image.</div>
+									<div class="text">4) Add data-attr with speed - data-parallax-speedY='1'. But, if you use Horizontal type, you show also add second data-attr speed - data-parallax-speedX='1'.</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="spacer-sm"></div>
+				</div>
+				
+				<!-- parallax block -->
+				<div class="section">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-10 offset-xl-1 col-lg-12">
+								<div class="block">
+									<div class="h3 title color-black normal title-margin">Select Parallax</div>
+									<a href="parallax_one.html" class="btn" target="_blank">Vertical</a>
+									<a href="parallax_two.html" class="btn" target="_blank">Horizontal</a>
 								</div>
 							</div>
 						</div>
@@ -85,10 +119,7 @@
 							<div class="col-xl-10 offset-xl-1 col-lg-12">
 								<div class="block">
 									<div class="h3 title color-black normal title-margin">CSS Files</div>
-									<a href="../css/banners.css" class="btn" target="_blank">banners css</a>
-									<a href="../css/swiper.css" class="btn" target="_blank">swiper css</a>
-									<a href="../css/my_swiper.css" class="btn" target="_blank">my swiper css</a>
-									<a href="../css/simple_page.css" class="btn" target="_blank">simple page css</a>
+									<a href="../css/parallax.css" class="btn" target="_blank">parallax css</a>
 								</div>
 							</div>
 						</div>
@@ -103,10 +134,7 @@
 							<div class="col-xl-10 offset-xl-1 col-lg-12">
 								<div class="block">
 									<div class="h3 title color-black normal title-margin">JS Files</div>
-									<a href="../js/swiper/swiper.js" class="btn" target="_blank">swiper js</a>
-									<a href="../js/swiper/my_swiper.js" class="btn" target="_blank">my swiper js</a>
-									<a href="../js/rellax/rellax.js" class="btn" target="_blank">rellax js</a>
-									<a href="../js/rellax/my_rellax.js" class="btn" target="_blank">my rellax js</a>
+									<a href="../js/parallax/parallax.js" class="btn" target="_blank">parallax js</a>
 								</div>
 							</div>
 						</div>
@@ -144,5 +172,8 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 		<script src="../js/smooth-scroll.js" defer></script>
 		<script src="../js/main.js" defer></script>
+
+		<!-- parallax js -->
+		<script src="../js/parallax/parallax.js"></script>
 	</body>
 </html>
