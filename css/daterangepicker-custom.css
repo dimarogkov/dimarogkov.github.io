@@ -1,0 +1,134 @@
+.daterangepicker.opensright:after,
+.daterangepicker.opensright:before {
+  display: none;
+}
+
+.daterangepicker {
+  margin-top: 0;
+  border-radius: 5px;
+  border: 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: auto !important;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.daterangepicker.active {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.daterangepicker.show-calendar .ranges {
+  margin-top: 0;
+}
+
+.daterangepicker .drp-calendar {
+  max-width: 100% !important;
+}
+
+.daterangepicker .drp-calendar.left {
+  padding: 0;
+}
+
+.daterangepicker .drp-calendar.left .calendar-table {
+  padding: 15px;
+  border-bottom: 2px solid #fff;
+}
+
+.daterangepicker .calendar-table thead tr:first-child th {
+  border-radius: 0;
+  border: 0;
+  height: 30px;
+  font-size: 16px;
+  color: #2980b9;
+  font-weight: 700;
+}
+
+.daterangepicker .calendar-table .next span,
+.daterangepicker .calendar-table .prev span {
+  padding: 4px;
+  border-color: #565656;
+}
+
+.daterangepicker .calendar-table th {
+  cursor: default;
+}
+
+.daterangepicker .calendar-table th.next,
+.daterangepicker .calendar-table th.prev {
+  cursor: pointer;
+}
+
+.daterangepicker .calendar-table th.next span,
+.daterangepicker .calendar-table th.prev span {
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.daterangepicker .calendar-table th.next:hover,
+.daterangepicker .calendar-table th.prev:hover {
+  background-color: #FFF;
+}
+
+.daterangepicker .calendar-table th.next:hover span,
+.daterangepicker .calendar-table th.prev:hover span {
+  border-color: #2980b9;
+}
+
+.daterangepicker .calendar-table td,
+.daterangepicker .calendar-table th {
+  font-size: 14px;
+  height: 30px;
+  color: #000;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.daterangepicker .calendar-table th {
+  color: #565656;
+}
+
+.calendar-table tbody tr:not(:last-child) td.ends {
+  opacity: 0.5;
+}
+
+.calendar-table tbody tr:last-child td {
+  display: none;
+}
+
+.daterangepicker .calendar-table thead tr:nth-child(2) th {
+  height: 40px;
+}
+
+.daterangepicker option.disabled,
+.daterangepicker td.disabled {
+  color: #9e9ea3;
+  text-decoration: none;
+}
+
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+  font-weight: 500;
+  background-color: #FFF;
+  color: #2980b9;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  font-weight: 500;
+  background-color: #FFF;
+  color: #2980b9;
+}
+
+/*# sourceMappingURL=daterangepicker-custom.css.map */
