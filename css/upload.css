@@ -1,0 +1,33 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* UPLOAD */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.upload {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;padding: 25px;border: 1px dashed #E0E0E0;}
+.upload input {position: absolute;left: 0;top: 0;width: 100%;height: 100%;opacity: 0;border: none;cursor: pointer;z-index: 2;font-size: 0;}
+.upload .upload-imgs {position: relative;display: inline-block;width: 130px;height: 110px;min-width: 130px;padding-right: 20px;}
+.upload .upload-imgs::before {position: absolute;content: '';right: 0;top: 0;display: inline-block;width: 1px;height: 100%;background-color: #E0E0E0;}
+.upload .upload-imgs div {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;width: 100%;height: 100%;border-radius: 50%;background-color: #F7F7F7;overflow: hidden;}
+.upload .upload-imgs img {position: relative;display: inline-block;width: auto;}
+.upload .text {position: relative;padding-left: 20px;text-align: center;font-size: 16px;line-height: 1.6em;color: #737B7D;}
+/*media*/
+@media(max-width: 1640px){
+	.upload {padding: 20px;}
+}
+@media(max-width: 1366px){
+	.upload .data-photo-imgs {width: 110px;min-width: 110px;height: 90px;}
+}
+@media(max-width: 767px){
+	.upload {padding: 15px;}
+	.upload .upload-imgs {padding-right: 15px;width: 100px;min-width: 100px;height: 85px;}
+	.upload .upload-imgs img.start-img {-webkit-transform: scale(0.9);-ms-transform: scale(0.9);transform: scale(0.9);}
+	.upload .text {padding-left: 15px;font-size: 15px;}
+}
+@media(max-width: 480px){
+	.upload {padding: 10px;}
+	.upload .upload-imgs {padding-right: 10px;width: 85px;min-width: 85px;height: 75px;}
+	.upload .text {padding-left: 10px;font-size: 14px;}
+}
+@media(max-width: 400px){
+	.upload {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;padding: 10px;}
+	.upload .upload-imgs::before {display: none;}
+	.upload .text {margin-top: 12px;padding: 0;}
+}

@@ -1,5 +1,5 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-/*COOKIE POPUP*/
+/* COOKIE POPUP */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .cookie {position: fixed;left: 0;bottom: 0;opacity: 0;visibility: visible;width: 100%;display: block;box-shadow: 0 0 5px #666;background-color: #fff;z-index: 999;-webkit-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;}
 .cookie.show {opacity: 1;visibility: visible;}
