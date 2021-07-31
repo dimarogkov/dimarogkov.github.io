@@ -1,0 +1,15 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* STAR RATING*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.star {position: relative;display: inline-block;}
+.star .select-icon {position: relative;width: 25px;height: 25px;margin-bottom: 0;display: inline-block;background-size: cover;background-position: 50% 50%;background-repeat: no-repeat;cursor: pointer;margin-right: 5px;-webkit-transition: background 0.25s linear;-o-transition: background 0.25s linear;transition: background 0.25s linear;}
+.star .select-icon:last-child {margin-right: 0;}
+.star .select-icon.star {background-image: url(../img/star/star.svg);}
+.star .select-icon.star-active {background-image: url(../img/star/star-active.svg);}
+/*media*/
+@media(max-width: 767px){
+	.star .select-icon {width: 20px;height: 20px;}
+}
+@media(max-width: 480px){
+	.star {margin-bottom: 15px;}
+}
