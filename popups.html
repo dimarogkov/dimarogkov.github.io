@@ -142,6 +142,7 @@
 										<a href="#" class="btn open-popup" data-rel="7">Request Popup</a>
 										<a href="#" class="btn open-popup" data-rel="8">Subcribe Popup</a>
 										<a href="https://www.youtube.com/embed/dLRfvjbccLY?autoplay=1" class="btn video-open">Video Popup</a>
+										<a href="#" class="btn search-open">Search Popup</a>
 									</div>
 									<!-- popups -->
 									<div class="popup-wrapper">
@@ -304,6 +305,14 @@
 										        </div>
 									      	</div>
 									    </div>
+									    <!-- Search -->
+									    <div class="search-popup">
+									    	<div class="search-popup-block">
+									    		<span class="search-close-js">&#10005;</span>
+									    		<input type="text" name="search" placeholder="Search" class="input">
+									    		<button class="search-close-js">Search</button>
+									    	</div>
+									    </div>
 									</div>
 								</div>
 							</div>
@@ -366,18 +375,28 @@
 			  	}
 
 			  	/*video pop-up*/
-				$('.video-open').on('click', function(e){
+				$(document).on('click', '.video-open', function(e){
 					e.preventDefault();
 					let video = $(this).attr('href');
 					$('.video-popup-container iframe').attr('src',video);
 					$('.video-popup').addClass('active');
-					$('html').addClass('overflow-hidden');
+					$('body').addClass('lock');
 				});
-				$('.btn-close, .video-popup-layer').on('click', function(e){
-					$('html').removeClass('overflow-hidden');
+				$(document).on('click', '.btn-close, .video-popup-layer', function(e){
+					$('body').removeClass('lock');
 					$('.video-popup').removeClass('active');
 					$('.video-popup-container iframe').attr('src','about:blank');
 					e.preventDefault();
+				});
+
+				// search popup
+				$(document).on('click', '.search-open', function(e) {
+					e.preventDefault();
+					$('.search-popup').addClass('active');
+				});
+				$(document).on('click', '.search-close-js', function(e) {
+					e.preventDefault();
+					$('.search-popup').removeClass('active');
 				});
 			});
 		</script>

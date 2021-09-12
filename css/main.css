@@ -19,6 +19,7 @@ body *::selection {color:#fff;background:#2980b9;}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 html{height: 100%;}
 body{height: 100%;}
+body.lock {overflow: hidden;}
 html:not(.ie) #content-block {display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-height:100%;}
 #content-block {overflow: hidden;position: relative;}
 .overflow-hidden{overflow: hidden;}
@@ -139,7 +140,7 @@ h6,.h6 {font-size: 20px;line-height: 1.3em;letter-spacing: 1px;}
 .label {position: absolute;z-index: 1;top: -8px;right: -8px;display: inline-block;border-radius: 3px;font-size: 12px;text-transform: uppercase;color: #fff;font-weight: 500;padding: 5px 10px;}
 .label.process {background-color: #f1c40f;}
 .label.done {background-color: #27ae60;}
-.label.updated {background-color: #2980b9;}
+.label.update {background-color: #2980b9;}
 .label.notready {background-color: #e74c3c;}
 .label.new {background-color: #5f27cd;}
 /*anchor*/
@@ -215,7 +216,7 @@ header {position: fixed;top: 0;left: 0;display: block;z-index: 3;width: 100%;hei
 .header-inner .header-right .header-list p::before {position: absolute;content: '';top: 50%;right: 0;margin-top: -6.5px;width: 9px;height: 9px;border-bottom: 1.6px solid #282828;border-right: 1.6px solid #282828;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .header-inner .header-right .header-list ul {position: absolute;display: block;top: 70px;right: -15px;width: auto;min-width: 150px;height: auto;opacity: 0;visibility: hidden;z-index: 1;padding: 8px;text-align: center;background-color: #fff;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);border-radius: 2px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .header-inner .header-right .header-list ul li {position: relative;display: block;width: 100%;}
-.header-inner .header-right .header-list ul li a {display: block;width: 100%;padding: 10px 0;font-size: 16px;letter-spacing: 1px;color: #282828;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.header-inner .header-right .header-list ul li a {display: block;width: 100%;padding: 10px 0;font-size: 16px;letter-spacing: 1px;color: #282828;border: none;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .header-inner .header-right .header-version {font-weight: 500;font-size: 14px;color: #666666;padding: 6px 12px;background-color: #eeeeee;border-radius: 3px;}
 .header-inner .header-right a {position: relative;display: inline-block;font-size: 16px;line-height: 1.4em;font-weight: 400;color: #282828;padding: 8px 20px;border: 1px solid #2980b9;border-radius: 3px;margin-right: 30px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .header-inner .header-right a:active {-webkit-transform: translateY(3px);-ms-transform: translateY(3px);transform: translateY(3px);}
