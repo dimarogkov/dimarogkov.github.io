@@ -46,4 +46,31 @@ $(document).ready(function() {
 		    });
 		}
   	}
+
+  	// parallax imgs
+  	if ($('.c-rellax-img').length && winWidth > 1199) {
+
+	    $(window).scroll(function() {
+	      	let cRellax = $('.c-rellax-img'),
+	      		winScr = $(window).scrollTop();
+
+	      	$(cRellax).each(function() {
+		        let itemOffset = $(this).offset().top,
+		            itemHeight = $(this).height(),
+		            itemVisible = winScr - ( $(window).height() * 0.9 );
+
+		        if (itemVisible) {
+		          	let diff = winScr - itemOffset,
+		              	diffSpeed = ( +$(this).attr('data-parallax-speed') + 2 ) + 100,
+		              	total = Math.round((diff / itemHeight) * diffSpeed);
+
+		          	$(this).css({
+			            'top': total
+		          	});
+		        };
+	      	});
+	      
+	    });
+
+  	}
 });

@@ -1,5 +1,5 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-/* BANNERS */
+/* PARALLAX BANNER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .parallax {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 100%;height: calc(100vh - 70px);overflow: hidden;}
 .parallax.vertical .parallax-decor::before {position: absolute;content: '';z-index: 1;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(192, 57, 43, 0.4);}
@@ -101,4 +101,13 @@
 	.parallax-decor div:nth-child(5) {width: calc(192px * 0.5);right: 28%;bottom: calc(4% - 50px);}
 	.site-ready .parallax-decor div:nth-child(3) {top: 32%;}
 	.site-ready .parallax-decor div:nth-child(5) {bottom: 4%;}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* PARALLAX IMGS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.left-right-one .left-right-block .left-right-imgs .c-rellax-img {height: auto;-webkit-transition: none;-o-transition: none;transition: none;}
+/*media*/
+@media(min-width: 1200px){
+	.left-right-one .left-right-block .left-right-imgs:hover .c-rellax-img {-webkit-transform: scale(1);-ms-transform: scale(1);transform: scale(1);}
 }

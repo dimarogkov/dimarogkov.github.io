@@ -231,11 +231,15 @@ header.style-2::before {position: absolute;content: '';top: 0;left: 0;width: 100
 header.style-2 .header-inner {padding: 0;height: 69px;border-bottom: 1px solid rgba(255,255,255,0.7);}
 header.style-2 .header-inner .header-logo {color: #fff;}
 header.style-2 .header-inner .header-logo span {background-color: #fff;color: #2980b9;}
+header.style-2 .header-inner .header-right .header-list p {color: #fff;}
+header.style-2 .header-inner .header-right .header-list p::before {border-color: #fff;}
 /*scrolled*/
 header.scrolled.style-2::before {height: 100%;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);}
 header.scrolled.style-2 .header-inner {border-bottom: none;height: 70px;}
 header.scrolled.style-2 .header-inner .header-logo {color: #282828;}
 header.scrolled.style-2 .header-inner .header-logo span {background-color: #2980b9;color: #fff;}
+header.scrolled .header-inner .header-right .header-list p {color: #282828;}
+header.scrolled .header-inner .header-right .header-list p::before {border-color: #282828;}
 /*media*/
 @media(min-width: 1200px){
 	.header-inner .header-right .header-list:hover ul {opacity: 1;visibility: visible;top: 25px;}
