@@ -1,0 +1,73 @@
+:root {
+  --color-white: #fff;
+  --color-black: #001E3C;
+  --color-blue: #0984e3;
+  --color-grey: #dfe6e9;
+  --color-dark: #0f75c3;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* BTNS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.btn {
+	position: relative;
+	display: inline-block;
+	height: 42px;
+	padding: 0 25px;
+	line-height: calc(42px - 2px);
+	text-transform: uppercase;
+	border-radius: 3px;
+	border: 2px solid var(--color-blue);
+	background-color: var(--color-blue);
+	-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;
+}
+.btn span {
+	position: relative;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	color: var(--color-white);
+	-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;
+}
+/*active*/
+.btn.active {background-color: transparent;}
+.btn.active span {color: var(--color-blue);}
+/*disabled*/
+.btn.disabled {pointer-events: none;opacity: 0.6;}
+/*btn-text*/
+.btn.btn-text {background-color: transparent;border-color: transparent;}
+.btn.btn-text span {color: var(--color-blue);}
+/*icon*/
+.btn.btn-icon span {padding-right: 20px;}
+.btn.btn-icon span .icon {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	display: inline-block;
+	font-size: 18px;
+	color: var(--color-white);
+	margin-top: -1px;
+	transform: translateY(-50%);
+	-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;
+}
+/*btn-block*/
+.btn.btn-block {width: 100%;text-align: center;}
+.btn:active {-webkit-transform: translateY(5px);-ms-transform: translateY(5px);transform: translateY(5px);}
+/*media*/
+@media(min-width: 1200px){
+	.btn:hover {background-color: transparent;}
+	.btn:hover span {color: var(--color-blue);}
+	.btn.static:hover {background-color: var(--color-dark);border-color: var(--color-dark);}
+	.btn.static:hover span {color: var(--color-white);}
+	.btn.active:hover {background-color: var(--color-blue);}
+	.btn.active:hover span {color: var(--color-white);}
+	.btn.btn-text:hover {background-color: var(--color-grey);border-color: var(--color-grey);}
+	.btn.btn-icon:hover {background-color: var(--color-blue);border-color: var(--color-blue);}
+	.btn.btn-icon:hover span {color: var(--color-white);}
+	.btn.btn-icon:hover span .icon {transform: translate(5px, -50%);}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* CHECKBOX */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
