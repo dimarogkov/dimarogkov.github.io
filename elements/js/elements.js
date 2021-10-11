@@ -1,13 +1,22 @@
 $(document).ready(function() {
-	$('.elements-item').each(function() {
-		let th = $(this);
-			code = th.find('.elements-item-code').html(),
+	$(document).on('click', '.copy-code-js', function(e){
+		e.preventDefault();
+		let th = $(this),
+			code = th.closest('.elements-item').find('.elements-item-code').html();
 			str = code.replace(/^\s*/gm, '');
 
-		$(document).on('click', '.copy-code-js', function(e){
-			e.preventDefault();
-			copy(str);
-		});
+		copy(str);
+
+		$('.copy-popup').addClass('active');
+
+		setTimeout(function() {
+			$('.copy-popup').removeClass('active');
+		}, 3000);
+	});
+
+	$(document).on('click', '.copy-popup .btn-close', function(e) {
+		e.preventDefault();
+		$(this).parent().removeClass('active');
 	});
 
 	function copy(text) {
