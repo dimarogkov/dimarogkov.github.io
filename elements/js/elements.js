@@ -18,6 +18,9 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).parent().removeClass('active');
 	});
+	$('.elements-menu ul li a').on('click', function(e) {
+		$(this).parent().addClass('active').siblings().removeClass('active');
+	});
 
 	function copy(text) {
 	    let copyCode = document.createElement("textarea");
