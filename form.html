@@ -103,7 +103,8 @@
 							<div class="col-xl-10 offset-xl-1 col-lg-12">
 								<div class="block">
 									<div class="h3 title color-black normal title-margin">JS Files</div>
-									<a href="js/inputmask/inputmask.min.js" class="btn" target="_blank">inputmask js</a>
+									<a href="js/form/inputmask.min.js" class="btn" target="_blank">inputmask js</a>
+									<a href="js/form/form.js" class="btn" target="_blank">form js</a>
 								</div>
 							</div>
 						</div>
@@ -201,24 +202,7 @@
 		<script src="js/main.js" defer></script>
 
 		<!-- form script -->
-		<script src="js/inputmask/inputmask.min.js" defer></script>
-		<script defer>
-			$(document).ready(function() {
-				$(document).on('blur', '.input[required]', function(){
-				    if($(this).val().trim()){
-			        	$(this).removeClass('invalid');
-				    } else {
-				        $(this).addClass('invalid');
-				    }
-			  	});
-
-			  	//inputmask
-			  	if ($(".inputmask").length) {
-			    	$(".inputmask").inputmask({
-			        	showMaskOnHover: false
-				    });
-			  	}
-			});
-		</script>
+		<script src="js/form/inputmask.min.js" defer></script>
+		<script src="js/form/form.js" defer></script>
 	</body>
 </html>
