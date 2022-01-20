@@ -44,4 +44,45 @@ $(document).ready(function() {
 		}
 	});
 
+	// invalid
+	$(document).on('blur', '.input[required]', function(){
+	    if($(this).val().trim()){
+        	$(this).removeClass('invalid');
+	    } else {
+	        $(this).addClass('invalid');
+	    }
+  	});
+
+  	//inputmask
+  	if ($(".inputmask").length) {
+    	$(".inputmask").inputmask({
+        	showMaskOnHover: false
+	    });
+  	}
+
+  	/*video pop-up*/
+	$(document).on('click', '.video-open', function(e){
+		e.preventDefault();
+		let video = $(this).attr('href');
+		$('.video-popup-container iframe').attr('src',video);
+		$('.video-popup').addClass('active');
+		$('body').addClass('lock');
+	});
+	$(document).on('click', '.btn-close, .video-popup-layer', function(e){
+		$('body').removeClass('lock');
+		$('.video-popup').removeClass('active');
+		$('.video-popup-container iframe').attr('src','about:blank');
+		e.preventDefault();
+	});
+
+	// search popup
+	$(document).on('click', '.search-open', function(e) {
+		e.preventDefault();
+		$('.search-popup').addClass('active');
+	});
+	$(document).on('click', '.search-close-js', function(e) {
+		e.preventDefault();
+		$('.search-popup').removeClass('active');
+	});
+
 });

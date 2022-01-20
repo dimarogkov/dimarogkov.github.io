@@ -104,7 +104,7 @@
 								<div class="block">
 									<div class="h3 title color-black normal title-margin">JS Files</div>
 									<a href="js/popups/popups.js" class="btn" target="_blank">popups js</a>
-									<a href="js/inputmask/inputmask.min.js" class="btn" target="_blank">inputmask js</a>
+									<a href="js/form/inputmask.min.js" class="btn" target="_blank">inputmask js</a>
 								</div>
 							</div>
 						</div>
@@ -352,53 +352,8 @@
 		<script src="js/smooth-scroll.js" defer></script>
 		<script src="js/main.js" defer></script>
 
-		<!-- popups js -->
+		<!-- popups && inputmask -->
+		<script src="js/form/inputmask.min.js" defer></script>
 		<script src="js/popups/popups.js" defer></script>
-
-		<!-- form script -->
-		<script src="js/inputmask/inputmask.min.js" defer></script>
-		<script defer>
-			$(document).ready(function() {
-				$(document).on('blur', '.input[required]', function(){
-				    if($(this).val().trim()){
-			        	$(this).removeClass('invalid');
-				    } else {
-				        $(this).addClass('invalid');
-				    }
-			  	});
-
-			  	//inputmask
-			  	if ($(".inputmask").length) {
-			    	$(".inputmask").inputmask({
-			        	showMaskOnHover: false
-				    });
-			  	}
-
-			  	/*video pop-up*/
-				$(document).on('click', '.video-open', function(e){
-					e.preventDefault();
-					let video = $(this).attr('href');
-					$('.video-popup-container iframe').attr('src',video);
-					$('.video-popup').addClass('active');
-					$('body').addClass('lock');
-				});
-				$(document).on('click', '.btn-close, .video-popup-layer', function(e){
-					$('body').removeClass('lock');
-					$('.video-popup').removeClass('active');
-					$('.video-popup-container iframe').attr('src','about:blank');
-					e.preventDefault();
-				});
-
-				// search popup
-				$(document).on('click', '.search-open', function(e) {
-					e.preventDefault();
-					$('.search-popup').addClass('active');
-				});
-				$(document).on('click', '.search-close-js', function(e) {
-					e.preventDefault();
-					$('.search-popup').removeClass('active');
-				});
-			});
-		</script>
 	</body>
 </html>

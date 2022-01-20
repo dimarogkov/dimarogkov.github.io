@@ -6,6 +6,49 @@
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
+/* DOCUMENTS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.elements-docs {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	border: 1px solid var(--color-blue);
+	border-radius: 5px;
+}
+.elements-docs-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid var(--color-blue);
+}
+.elements-docs-item:last-child {border-bottom: none;}
+.elements-docs-col {
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+}
+.elements-docs-col:first-child {
+	width: 70%;
+}
+.elements-docs-col:last-child {
+	width: 30%;
+	text-align: right;
+}
+.elements-docs-col .name {
+	position: relative;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 1.6em;
+	color: var(--color-black);
+	letter-spacing: 0.5px;
+	font-style: italic;
+}
+.elements-docs-col .btn {margin-right: 10px;}
+.elements-docs-col .btn:last-child {margin-right: 0;}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
 /* BTNS */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .btn {
@@ -22,6 +65,7 @@
 }
 .btn span {
 	position: relative;
+	top: -1px;
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 500;
