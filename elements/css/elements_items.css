@@ -8,7 +8,8 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* DOCUMENTS */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-.elements-docs {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;width: 100%;border: 1px solid var(--color-blue);border-radius: 5px;overflow: hidden;}
+.elements-docs {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;width: 100%;border: 1px solid var(--color-blue);border-radius: 5px;overflow: hidden;margin-bottom: 20px;}
+.elements-docs:last-child {margin-bottom: 0;}
 .elements-docs-title {position: relative;display: block;width: 100%;font-size: 18px;line-height: 1.4em;font-style: italic;color: var(--color-blue);margin-bottom: 10px;}
 .elements-docs-item {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 100%;border-bottom: 1px solid var(--color-blue);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .elements-docs-item:last-child {border-bottom: none;}
