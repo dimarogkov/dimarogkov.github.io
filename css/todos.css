@@ -1,0 +1,60 @@
+:root {
+  --color-white: #fff;
+  --color-black: #001E3C;
+  --color-blue: #0984e3;
+  --color-grey: #cbcbcb;
+  --color-light: #f3f3f3;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* TODOS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.todos,.todos-table {position: relative;display: block;width: 100%;padding: 50px 0;}
+.todos-table {padding: 0;}
+.todos-layer {position: fixed;z-index: 2;top: 0;left: 0;display: block;width: 100%;height: 100%;opacity: 0;visibility: hidden;}
+.todos-layer.active {opacity: 1;visibility: visible;}
+.todos-head {position: relative;z-index: 1;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 100%;padding-bottom: 10px;border-bottom: 1px solid var(--color-light);background-color: var(--color-white);}
+.todos-head .todos-col {position: relative;display: inline-block;text-align: center;font-size: 14px;line-height: 1.4em;font-weight: 500;color: var(--color-black);}
+.todos-head .todos-col:nth-child(1) {width: 40%;text-align: left;padding-left: 15px;}
+.todos-head .todos-col:nth-child(2),.todos-head .todos-col:nth-child(3),.todos-head .todos-col:nth-child(4) {width: 15%;}
+.todos-head .todos-col:nth-child(5) {width: 20%;padding-right: 20px;}
+/*body*/
+.todos-body {position: relative;display: block;width: 100%;}
+.todos-item {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 100%;height: 56px;padding-left: 15px;border-bottom: 1px solid var(--color-light);}
+.todos-item:last-child {border-bottom: none;}
+.todos-item .todos-col:nth-child(1) {width: 40%;}
+.todos-item .todos-col:nth-child(2),.todos-item .todos-col:nth-child(3),.todos-item .todos-col:nth-child(4) {width: 15%;text-align: center;}
+.todos-item .todos-col:nth-child(5) {width: 20%;display: flex;align-items: center;justify-content: space-between;}
+.todos-item.disabled .todos-col:not(:last-child) {opacity: 0.4;pointer-events: none;}
+.task-input,.time-input {position: relative;display: block;width: 100%;font-size: 16px;color: var(--color-black);}
+.task-input::placeholder,.time-input::placeholder {color: var(--color-grey);}
+.time-input {text-align: center;padding: 0 10px;}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance: none;}
+.todo-priority-block {position: relative;display: block;width: 100%;text-align: center;}
+.todo-priority-block span {position: relative;display: inline-block;cursor: pointer;}
+.todo-priority-list {position: absolute;z-index: 3;top: 0;left: 65%;display: inline-block;text-align: left;box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);background-color: var(--color-white);opacity: 0;visibility: hidden;-webkit-transform: translateX(-40px);-ms-transform: translateX(-40px);transform: translateX(-40px);-webkit-transition: all 0.3s;-o-transition: all 0.3s; transition: all 0.3s;}
+.todo-priority-list.active {opacity: 1;visibility: visible;-webkit-transform: translateX(0);-ms-transform: translateX(0);transform: translateX(0);}
+.todo-priority-list li {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;cursor: pointer;width: 100%;font-size: 15px;line-height: 1.4em;padding: 8px 15px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todo-priority-list li .far {margin-right: 12px;}
+.todo-priority-list li.red .far,.todo-priority-block span.red {color: #e74c3c;}
+.todo-priority-list li.yellow .far,.todo-priority-block span.yellow {color: #f1c40f;}
+.todo-priority-list li.blue .far,.todo-priority-block span.blue {color: #3498db;}
+.todo-priority-list li.grey .far,.todo-priority-block span.grey {color: var(--color-grey);}
+.todo-time-posted {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;width: 100%;padding-right: 20px;}
+.todo-time-posted input {position: absolute;z-index: 1;cursor: pointer;display: block;width: 56px;height: 30px;opacity: 0;}
+.todo-time-posted span {position: relative;display: inline-block;cursor: pointer;width: 56px;height: 30px;border-radius: 60px;background-color: var(--color-grey);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todo-time-posted span::before {position: absolute;content: '';top: 4px;left: 4px;display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: var(--color-white);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todo-time-posted input:checked + span {background-color: var(--color-blue);}
+.todo-time-posted input:checked + span::before {left: calc(100% - 26px);}
+.todo-remove {position: absolute;right: 0;display: -webkit-box;display: -ms-flexbox;display: flex;cursor: pointer;font-size: 22px;color: var(--color-grey);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todo-remove.hide {opacity: 0;visibility: hidden;}
+/*empty*/
+.todos-empty {position: relative;display: block;cursor: pointer;width: 100%;height: 56px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;background-color: var(--color-blue);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todos-empty a {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;width: 100%;height: 100%;font-size: 16px;line-height: 1.4em;color: var(--color-white);padding: 0 15px;}
+.todos-empty a .fas {font-size: 14px;margin-left: 10px;}
+/*media*/
+@media(min-width: 1200px){
+  .todo-priority-list li:hover {background-color: var(--color-light);}
+  .todos-empty:hover {opacity: 0.8;}
+  .todo-remove:hover {color: #e74c3c;}
+}

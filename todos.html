@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doc | Todos</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<meta name='robots' content='noindex,nofollow'>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap.bottom.css" rel="stylesheet" type="text/css">
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+		<!-- icons -->
+		<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
+		<!-- todos -->
+		<link href="css/todos.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="content-block">
+			<!-- loader -->
+			<div class="loader">
+				<div class="loader-body media">
+					<div class="loader-circle"></div>
+					<p>Loading...</p>
+				</div>
+			</div>
+
+			<!-- header -->
+			<header>
+				<div class="header-inner">
+					<a href="index.html" class="header-logo">Dmitriy Rogkov <span>Api</span></a>
+					<div class="header-right">
+						<a href="todos.html" class="active">Todos</a>
+						<a href="elements/elements.html">Elements</a>
+						<div class="header-version">v1.0.6</div>
+					</div>
+				</div>
+			</header>
+
+			<main>
+
+				<!-- todos -->
+				<div class="section">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-10 offset-xl-1 col-lg-12">
+								<div class="todos">
+									<div class="todos-layer"></div>
+									<div class="todos-table">
+										<div class="todos-head">
+											<div class="todos-col">Task</div>
+											<div class="todos-col">Priority</div>
+											<div class="todos-col">Time Tracked</div>
+											<div class="todos-col">Estimate</div>
+											<div class="todos-col">Time Post</div>
+										</div>
+										<div class="todos-body">
+											<div class="todos-item">
+												<div class="todos-col">
+													<input class="task-input" type="text" name="task" placeholder="Write Task">
+												</div>
+												<div class="todos-col">
+													<div class="todo-priority-block">
+														<span class="selected grey" data-name-priority="Clear">
+															<i class="far fa-flag"></i>
+														</span>
+														<ul class="todo-priority-list">
+															<li data-class="red" class="red">
+																<i class="far fa-flag"></i> Urgent
+															</li>
+															<li data-class="yellow" class="yellow">
+																<i class="far fa-flag"></i> Hight
+															</li>
+															<li data-class="blue" class="blue">
+																<i class="far fa-flag"></i> Normal
+															</li>
+															<li data-class="grey" class="grey">
+																<i class="far fa-flag"></i> Clear
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="todos-col">
+													<input class="time-input time-tracked" type="number" min="0" step="1" name="timeTracked" placeholder="hour">
+												</div>
+												<div class="todos-col">
+													<input class="time-input time-estimate" type="number" min="0" step="1" name="timeEstimate" placeholder="hour">
+												</div>
+												<div class="todos-col">
+													<div class="todo-time-posted" data-post-status="false">
+														<input type="checkbox" name="timePost">
+														<span></span>
+													</div>
+													<div class="todo-remove"><i class="fas fa-times"></i></div>
+												</div>
+											</div>
+										</div>
+										<div class="todos-empty">
+											<a href="#">Add Todo <i class="fas fa-plus"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</main>
+
+			<!-- footer -->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer-inner">
+								<a href="index.html" class="footer-logo">Dmitriy Rogkov <span>Api</span></a>
+								<p>© Dmitriy Rogkov. All rights reserved.</p>
+								<div class="footer-social">
+									<a href="https://www.facebook.com/profile.php?id=100014871194282" target="_blank"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+									<a href="https://www.linkedin.com/in/dima-rogkov-7254431a9/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									<a href="https://www.google.com.ua/" target="_blank"><i class="fab fa-google"></i></a>
+									<a href="https://github.com/dimarogkov" target="_blank"><i class="fab fa-github"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<!-- Anchor -->
+			<div class="anchor"><i class="fas fa-chevron-up"></i></div>
+		</div>
+
+		<!-- jquery and js-->
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+		<script src="js/smooth-scroll.js" defer></script>
+		<script src="js/main.js" defer></script>
+		<!-- todos -->
+		<script src="js/todos/todos.js" defer></script>
+	</body>
+</html>

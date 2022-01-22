@@ -221,7 +221,7 @@ header {position: fixed;top: 0;left: 0;display: block;z-index: 3;width: 100%;hei
 .header-inner .header-right .header-version {font-weight: 500;font-size: 14px;color: #666666;padding: 6px 12px;background-color: #eeeeee;border-radius: 3px;}
 .header-inner .header-right a {position: relative;display: inline-block;font-size: 16px;line-height: 1.4em;font-weight: 400;color: #282828;padding: 8px 20px;border: 1px solid #2980b9;border-radius: 3px;margin-right: 15px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .header-inner .header-right a:active {-webkit-transform: translateY(3px);-ms-transform: translateY(3px);transform: translateY(3px);}
-.header-inner .header-right a .fab,.header-inner .header-right a .far {position: relative;display: inline-block;top: 1px;font-size: 18px;margin-right: 5px;}
+.header-inner .header-right a.active {background-color: #2980b9;color: #fff;}
 /*open list*/
 .header-inner .header-right .header-list.open ul {opacity: 1;visibility: visible;top: 25px;}
 .header-inner .header-right .header-list.open p {color: #2980b9;}
