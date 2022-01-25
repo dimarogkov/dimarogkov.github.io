@@ -37,6 +37,23 @@ $(document).ready(function() {
 		_functions.closePriority();
 	}
 
+	_functions.timeTotalCalc = () => {
+		let totalTimeTracked = 0,
+			totalTimeEstimate = 0;
+
+		$('.todos-item').each(function() {
+			let th = $(this);
+				thTimeTracked = +th.find('.time-tracked').val(),
+				thTimeEstimate = +th.find('.time-estimate').val();
+
+			totalTimeTracked = totalTimeTracked + thTimeTracked;
+			totalTimeEstimate = totalTimeEstimate + thTimeEstimate;
+
+			$('.total-time-tracked span').text(totalTimeTracked);
+			$('.total-time-estimate span').text(totalTimeEstimate);
+		});
+	}
+
 	_functions.disabledTodoItem = (el) => {
 		el.is(':checked') ? el.parent().attr('data-post-status', true).closest('.todos-item').addClass('disabled') : el.parent().attr('data-post-status', false).closest('.todos-item').removeClass('disabled');
 	}
@@ -59,6 +76,7 @@ $(document).ready(function() {
 		});
 
 		localStorage.setItem('tasks', JSON.stringify(tasks));
+		_functions.timeTotalCalc();
 	}
 
 	_functions.getData = () => {
@@ -101,6 +119,8 @@ $(document).ready(function() {
 				localTodo = '<div class="todos-item ' + disabledStatus + '"><div class="todos-col"><input class="task-input" type="text" name="task" placeholder="Write Task" value="' + task + '"></div><div class="todos-col"><div class="todo-priority-block"><span class="selected ' + priorityClass + '" data-name-priority="' + priority + '"><i class="far fa-flag"></i></span><ul class="todo-priority-list"><li data-class="red" class="red"><i class="far fa-flag"></i> Urgent</li><li data-class="yellow" class="yellow"><i class="far fa-flag"></i> Hight</li><li data-class="blue" class="blue"><i class="far fa-flag"></i> Normal</li><li data-class="grey" class="grey"><i class="far fa-flag"></i> Clear</li></ul></div></div><div class="todos-col"><input class="time-input time-tracked" type="number" min="0" step="1" name="timeTracked" placeholder="hour" value="' + timeTracked + '"></div><div class="todos-col"><input class="time-input time-estimate" type="number" min="0" step="1" name="timeEstimate" placeholder="hour" value="' + timeEstimate + '"></div><div class="todos-col"><div class="todo-time-posted" data-post-status="' + timePost +'"><input type="checkbox" name="timePost" '+ timePostStatus +'><span></span></div><div class="todo-remove"><i class="fas fa-times"></i></div></div></div>';
 				$('.todos-body').append(localTodo);
 			});
+
+			_functions.timeTotalCalc();
 		}
 	}
 
@@ -155,6 +175,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		let th = $(this);
 
+		_functions.timeTotalCalc();
 		_functions.setData(th.closest('.todos-item'));
 	});
 
