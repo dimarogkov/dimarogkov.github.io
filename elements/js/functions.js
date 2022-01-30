@@ -137,22 +137,6 @@ $(document).ready(function() {
     	let swiper = new Swiper(item[0], _functions.getSwOptions(item));
   	};
 
-  	_functions.swiperThumbs = () => {
-  		$('.swiper-thumbs').each(function () {
-			let top = $(this).find('.swiper-container.swiper-thumbs-top')[0].swiper,
-        		bottom = $(this).find('.swiper-container.swiper-thumbs-bottom')[0].swiper,
-        		bottomSlideLenth = $(this).find('.swiper-thumbs-bottom .swiper-slide').length;
-
-    		top.thumbs.swiper = bottom;
-    		top.thumbs.init();
-    		top.thumbs.update();
-
-    		if (bottomSlideLenth < 2) {
-      			$('.prod-detail-slide-small').addClass('hide');
-    		}
-  		});
-  	}
-
   	_functions.moreText = (item) => {
   		item.parents('.more-text').toggleClass('open');
     	item.parent().find('.text').slideToggle(500);

@@ -57,9 +57,17 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appea
 .todos-bottom .total-time-tracked,.todos-bottom .total-time-estimate {position: relative;display: block;width: 100%;font-size: 18px;line-height: 1.4em;font-style: italic;color: var(--color-black);}
 .todos-bottom .total-time-tracked {margin-bottom: 8px;}
 .todos-bottom .total-time-tracked span,.todos-bottom .total-time-estimate span {font-size: 20px;font-weight: 500;color: var(--color-blue);padding-left: 5px;}
+/*navigation*/
+.todos-navigation {position: absolute;content: '';top: 50%;left: -75px;cursor: pointer;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
+.todos-item.disabled .todos-navigation {opacity: 0.6;}
+.todos-navigation span {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 30px;height: 30px;border-radius: 4px;background-color: var(--color-blue);margin-right: 5px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todos-navigation span:last-child {margin-right: 0;}
+.todos-navigation span:active {-webkit-transform: translateY(5px);-ms-transform: translateY(5px);transform: translateY(5px);}
+.todos-navigation span .fas {font-size: 15px;color: var(--color-white);}
 /*media*/
 @media(min-width: 1200px){
   .todo-priority-list li:hover {background-color: var(--color-light);}
   .todos-empty:hover {opacity: 0.8;}
   .todo-remove:hover {color: #e74c3c;}
+  .todos-navigation span:hover {opacity: 0.8;}
 }

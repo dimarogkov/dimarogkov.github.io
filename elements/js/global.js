@@ -99,7 +99,6 @@ $(document).ready(function() {
   	$('.swiper-entry .swiper-container').each(function() {
     	_functions.initSwiper($(this));
   	});
-  	_functions.swiperThumbs();
 
 
   	// =============================

@@ -3,7 +3,7 @@ let _functions = {};
 $(document).ready(function() {
 
 	_functions.addTodo = () => {
-		let item = '<div class="todos-item"><div class="todos-col"><input class="task-input" type="text" name="task" placeholder="Write Task"></div><div class="todos-col"><div class="todo-priority-block"><span class="selected grey" data-name-priority="Clear"><i class="far fa-flag"></i></span><ul class="todo-priority-list"><li data-class="red" class="red"><i class="far fa-flag"></i> Urgent</li><li data-class="yellow" class="yellow"><i class="far fa-flag"></i> Hight</li><li data-class="blue" class="blue"><i class="far fa-flag"></i> Normal</li><li data-class="grey" class="grey"><i class="far fa-flag"></i> Clear</li></ul></div></div><div class="todos-col"><input class="time-input time-tracked" type="number" min="0" step="1" name="timeTracked" placeholder="hour"></div><div class="todos-col"><input class="time-input time-estimate" type="number" min="0" step="1" name="timeEstimate" placeholder="hour"></div><div class="todos-col"><div class="todo-time-posted" data-post-status="false"><input type="checkbox" name="timePost"><span></span></div><div class="todo-remove"><i class="fas fa-times"></i></div></div></div>';
+		let item = '<div class="todos-item"><div class="todos-col"><div class="todos-navigation"><span class="top"><i class="fas fa-arrow-up"></i></span><span class="bottom"><i class="fas fa-arrow-down"></i></span></div><input class="task-input" type="text" name="task" placeholder="Write Task"></div><div class="todos-col"><div class="todo-priority-block"><span class="selected grey" data-name-priority="Clear"><i class="far fa-flag"></i></span><ul class="todo-priority-list"><li data-class="red" class="red"><i class="far fa-flag"></i> Urgent</li><li data-class="yellow" class="yellow"><i class="far fa-flag"></i> Hight</li><li data-class="blue" class="blue"><i class="far fa-flag"></i> Normal</li><li data-class="grey" class="grey"><i class="far fa-flag"></i> Clear</li></ul></div></div><div class="todos-col"><input class="time-input time-tracked" type="number" min="0" step="1" name="timeTracked" placeholder="hour"></div><div class="todos-col"><input class="time-input time-estimate" type="number" min="0" step="1" name="timeEstimate" placeholder="hour"></div><div class="todos-col"><div class="todo-time-posted" data-post-status="false"><input type="checkbox" name="timePost"><span></span></div><div class="todo-remove"><i class="fas fa-times"></i></div></div></div>';
 		$('.todos-body').append(item);
 	}
 
@@ -57,6 +57,14 @@ $(document).ready(function() {
 	_functions.disabledTodoItem = (el) => {
 		el.is(':checked') ? el.parent().attr('data-post-status', true).closest('.todos-item').addClass('disabled') : el.parent().attr('data-post-status', false).closest('.todos-item').removeClass('disabled');
 	}
+
+	_functions.navigateTodos = (item) => {
+		if (item.hasClass('top')) {
+			item.closest('.todos-item').insertBefore(item.closest('.todos-item').prev());
+		} else if(item.hasClass('bottom')) {
+			item.closest('.todos-item').insertAfter(item.closest('.todos-item').next());
+		}
+	}	
 
 	_functions.setData = (item) => {
 		let tasks = [];
@@ -116,7 +124,7 @@ $(document).ready(function() {
 					timePostStatus = '';
 				}
 
-				localTodo = '<div class="todos-item ' + disabledStatus + '"><div class="todos-col"><input class="task-input" type="text" name="task" placeholder="Write Task" value="' + task + '"></div><div class="todos-col"><div class="todo-priority-block"><span class="selected ' + priorityClass + '" data-name-priority="' + priority + '"><i class="far fa-flag"></i></span><ul class="todo-priority-list"><li data-class="red" class="red"><i class="far fa-flag"></i> Urgent</li><li data-class="yellow" class="yellow"><i class="far fa-flag"></i> Hight</li><li data-class="blue" class="blue"><i class="far fa-flag"></i> Normal</li><li data-class="grey" class="grey"><i class="far fa-flag"></i> Clear</li></ul></div></div><div class="todos-col"><input class="time-input time-tracked" type="number" min="0" step="1" name="timeTracked" placeholder="hour" value="' + timeTracked + '"></div><div class="todos-col"><input class="time-input time-estimate" type="number" min="0" step="1" name="timeEstimate" placeholder="hour" value="' + timeEstimate + '"></div><div class="todos-col"><div class="todo-time-posted" data-post-status="' + timePost +'"><input type="checkbox" name="timePost" '+ timePostStatus +'><span></span></div><div class="todo-remove"><i class="fas fa-times"></i></div></div></div>';
+				localTodo = '<div class="todos-item ' + disabledStatus + '"><div class="todos-col"><div class="todos-navigation"><span class="top"><i class="fas fa-arrow-up"></i></span><span class="bottom"><i class="fas fa-arrow-down"></i></span></div><input class="task-input" type="text" name="task" placeholder="Write Task" value="' + task + '"></div><div class="todos-col"><div class="todo-priority-block"><span class="selected ' + priorityClass + '" data-name-priority="' + priority + '"><i class="far fa-flag"></i></span><ul class="todo-priority-list"><li data-class="red" class="red"><i class="far fa-flag"></i> Urgent</li><li data-class="yellow" class="yellow"><i class="far fa-flag"></i> Hight</li><li data-class="blue" class="blue"><i class="far fa-flag"></i> Normal</li><li data-class="grey" class="grey"><i class="far fa-flag"></i> Clear</li></ul></div></div><div class="todos-col"><input class="time-input time-tracked" type="number" min="0" step="1" name="timeTracked" placeholder="hour" value="' + timeTracked + '"></div><div class="todos-col"><input class="time-input time-estimate" type="number" min="0" step="1" name="timeEstimate" placeholder="hour" value="' + timeEstimate + '"></div><div class="todos-col"><div class="todo-time-posted" data-post-status="' + timePost +'"><input type="checkbox" name="timePost" '+ timePostStatus +'><span></span></div><div class="todo-remove"><i class="fas fa-times"></i></div></div></div>';
 				$('.todos-body').append(localTodo);
 			});
 
@@ -176,6 +184,22 @@ $(document).ready(function() {
 		let th = $(this);
 
 		_functions.timeTotalCalc();
+		_functions.setData(th.closest('.todos-item'));
+	});
+
+	$(document).on('click', '.todos-navigation .top', function(e) {
+		e.preventDefault();
+		let th = $(this);
+
+		_functions.navigateTodos(th);
+		_functions.setData(th.closest('.todos-item'));
+	});
+
+	$(document).on('click', '.todos-navigation .bottom', function(e) {
+		e.preventDefault();
+		let th = $(this);
+
+		_functions.navigateTodos(th);
 		_functions.setData(th.closest('.todos-item'));
 	});
 
