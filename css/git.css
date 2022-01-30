@@ -1,0 +1,40 @@
+:root {
+    --color-white: #fff;
+    --color-black: #001E3C;
+    --color-blue: #0984e3;
+    --color-grey: #cbcbcb;
+    --color-red: #f53b57;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* GIT COMMAND */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.git-command-block {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.git-command-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.4em;
+    padding-left: 16px;
+    margin-bottom: 10px;
+}
+.git-command-item::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-top: -3px;
+    border-radius: 50%;
+    background-color: var(--color-red);
+}
+.git-command {font-weight: 500;color: var(--color-red);padding-right: 5px;}
+.git-command-desk {color: var(--color-black);}
