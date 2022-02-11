@@ -1,0 +1,46 @@
+:root {
+  --color-white: #fff;
+  --color-black: #001E3C;
+  --color-blue: #0984e3;
+  --color-grey: #cbcbcb;
+  --color-light: #f3f3f3;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* TODOS LABELS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.todos-labels {position: relative;  z-index: 3;  display: inline-block;  margin-right: 20px;  cursor: pointer;}
+.todos-labels span {position: relative;display: inline-block;font-size: 11px;font-weight: 500;text-transform: uppercase;letter-spacing: 0.5px;padding: 3px 7px;border-radius: 3px;white-space: nowrap;color: var(--color-white);background-color: var(--color-black);}
+.todos-labels-list {position: absolute;z-index: 3;top: 2px;left: 110%;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;text-align: left;box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);background-color: var(--color-white);opacity: 0;visibility: hidden;padding: 0 8px;border-radius: 3px;-webkit-transform: translateX(-40px);-ms-transform: translateX(-40px);transform: translateX(-40px);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todos-labels-list.has-labels {padding-top: 6px;}
+.todos-labels-list.active {opacity: 1;visibility: visible;-webkit-transform: translateX(0);-ms-transform: translateX(0);transform: translateX(0);}
+.todos-labels-list li {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;width: 100%;margin-bottom: 5px;}
+.todos-labels-list li.add:first-child {border-top: none;}
+.todos-labels-list li:last-child {margin-bottom: 0;}
+.todos-labels-list li.add {position: relative;display: block;white-space: nowrap;width: calc(100% + 16px);text-align: center;font-size: 11px;font-weight: 500;text-transform: uppercase;letter-spacing: 0.5px;padding: 6px 10px;color: var(--color-grey);border-top: 1px solid var(--color-light);background-color: transparent;margin-left: -8px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todos-labels-list li span {position: relative;display: inline-block;cursor: pointer;font-size: 11px;font-weight: 500;text-transform: uppercase;letter-spacing: 0.5px;padding: 4px 8px;border-radius: 3px;color: var(--color-white);background-color: var(--color-black);overflow: hidden;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;} 
+.todos-labels-list li span i {position: absolute;z-index: 1;top: 0;right: 0;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;width: 24px;height: 100%;background-color: rgba(0, 0, 0, 0.7);opacity: 0;visibility: hidden;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todos-labels-list li span i::before {position: absolute;content: '\00d7';display: inline-block;font-size: 20px;font-weight: 300;line-height: 0;color: var(--color-white);padding-top: 1px;}
+/*popup*/
+.todos-labels-popup {position: fixed;z-index: 1000;top: 0;left: 0;display: block;width: 100%;height: 100%;opacity: 0;visibility: hidden;-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
+.todos-labels-popup.active {opacity: 1;visibility: visible;}
+.todos-labels-popup-layer {position: absolute;top: 0;left: 0;display: block;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.4);}
+.todos-labels-popup-wrapper {position: absolute;top: 50%;left: 50%;display: inline-block;width: 30%;padding: 30px 20px 20px 20px;border-radius: 10px;background-color: var(--color-white);-webkit-transform: translate(-50%, 0);-ms-transform: translate(-50%, 0);transform: translate(-50%, 0);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todos-labels-popup.active .todos-labels-popup-wrapper {-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+.todos-labels-popup-wrapper form {position: relative;display: block;width: 100%;}
+.todos-labels-popup-wrapper input {position: relative;display: block;width: 100%;height: 45px;font-size: 16px;color: var(--color-black);border-bottom: 1px solid var(--color-grey);margin-bottom: 15px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todos-labels-popup-wrapper input:focus {border-color: var(--color-black);}
+.todos-labels-popup-wrapper input::placeholder {color: var(--color-grey);transition: all 0.3s;}
+.todos-labels-popup-wrapper input:focus::placeholder {color: var(--color-black);}
+.todos-labels-popup-wrapper input:last-child {margin-bottom: 0;}
+.todos-labels-popup-wrapper button {position: relative;display: block;width: 100%;text-align: center;font-size: 16px;font-weight: 500;color: var(--color-white);letter-spacing: 0.5px;padding: 10px 20px;background-color: var(--color-blue);border-radius: 5px;margin-top: 20px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todos-labels-popup-close {position: absolute;z-index: 1;top: 15px;right: 15px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 18px;height: 18px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.todos-labels-popup-close::before,.todos-labels-popup-close::after {position: absolute;content: '';left: 0;display: block;width: 100%;height: 2px;background-color: var(--color-black);}
+.todos-labels-popup-close::before {-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
+.todos-labels-popup-close::after {-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}
+/*media*/
+@media(min-width: 1200px){
+  .todos-labels-list li span:hover,.todos-labels-list li.add,.todos-labels-popup-close:hover,.todos-labels-popup-wrapper button:hover {opacity: 0.8;}
+  .todos-labels-list li.add:hover {background-color: var(--color-light);color: var(--color-black);opacity: 1;}
+  .todos-labels-list li span:hover i {opacity: 1;visibility: visible;}
+}

@@ -17,6 +17,7 @@
 		<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
 		<!-- todos -->
 		<link href="css/todos.css" rel="stylesheet" type="text/css">
+		<link href="css/todos_labels.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div id="content-block">
@@ -64,6 +65,12 @@
 													<div class="todos-navigation">
 														<span class="top"><i class="fas fa-arrow-up"></i></span>
 														<span class="bottom"><i class="fas fa-arrow-down"></i></span>
+													</div>
+													<div class="todos-labels">
+														<span class="todos-label-selected" data-label-color="#cbcbcb">other</span>
+														<ul class="todos-labels-list">
+															<li class="add todos-labels-popup-open">add new</li>
+														</ul>
 													</div>
 													<input class="task-input" type="text" name="task" placeholder="Write Task">
 												</div>
@@ -119,6 +126,19 @@
 
 			</main>
 
+			<!-- todos-labels-popup -->
+			<div class="todos-labels-popup">
+				<div class="todos-labels-popup-layer"></div>
+				<div class="todos-labels-popup-wrapper">
+					<a href="#" class="todos-labels-popup-close"></a>
+					<form>
+						<input id="name" type="text" name="name" placeholder="New Label" required>
+						<input id="color" type="text" name="color" placeholder="Label Color" required>
+						<button type="submit">Add Label</button>
+					</form>
+				</div>
+			</div>
+
 			<!-- footer -->
 			<footer>
 				<div class="container">
@@ -150,5 +170,6 @@
 		<script src="js/main.js" defer></script>
 		<!-- todos -->
 		<script src="js/todos/todos.js" defer></script>
+		<script src="js/todos/todos_labels.js" defer></script>
 	</body>
 </html>
