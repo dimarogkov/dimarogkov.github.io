@@ -85,7 +85,15 @@ $(document).ready(function() {
 	}
 
 	_functions.removeLabel = (item, list) => {
-		let labels = [];
+		let labels = [],
+			itemName = item.closest('.added-label').text(),
+			selectedName = item.closest('.todos-labels').find('.todos-label-selected').text();
+
+		if (selectedName === itemName) {
+			item.closest('.todos-labels').find('.todos-label-selected').text('other').attr('data-label-color', '#cbcbcb');
+		}
+
+		_functions.labelsSetColor();
 		item.closest('.added-label').remove();
 
 		list.find('.added-label').each(function() {
