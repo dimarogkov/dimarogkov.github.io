@@ -90,7 +90,7 @@ $(document).ready(function() {
 			selectedName = item.closest('.todos-labels').find('.todos-label-selected').text();
 
 		if (selectedName === itemName) {
-			item.closest('.todos-labels').find('.todos-label-selected').text('other').attr('data-label-color', '#cbcbcb');
+			item.closest('.todos-body').find('.todos-label-selected').text('other').attr('data-label-color', '#cbcbcb');
 		}
 
 		_functions.labelsSetColor();
@@ -102,7 +102,7 @@ $(document).ready(function() {
 					id: th.index(),
 					label_name: th.text().replace(/ /g,''),
 					label_color: th.attr('data-label-color').replace(/ /g,'')
-				}
+				};
 
 			labels.push(label);
 		});
