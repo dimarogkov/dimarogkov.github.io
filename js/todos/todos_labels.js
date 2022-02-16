@@ -87,11 +87,15 @@ $(document).ready(function() {
 	_functions.removeLabel = (item, list) => {
 		let labels = [],
 			itemName = item.closest('.added-label').text(),
-			selectedName = item.closest('.todos-labels').find('.todos-label-selected').text();
+			selectedNames = item.closest('.todos-body').find('.todos-label-selected');
 
-		if (selectedName === itemName) {
-			item.closest('.todos-body').find('.todos-label-selected').text('other').attr('data-label-color', '#cbcbcb');
-		}
+		selectedNames.each(function() {
+			let name = $(this).text();
+			
+			if (name === itemName) {
+				item.closest('.todos-body').find('.todos-label-selected').text('other').attr('data-label-color', '#cbcbcb');
+			}
+		});
 
 		_functions.labelsSetColor();
 		item.closest('.added-label').remove();
