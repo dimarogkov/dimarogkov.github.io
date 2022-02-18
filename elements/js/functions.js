@@ -1,8 +1,6 @@
 var _functions = {};
 
 $(document).ready(function() {
-	let popupTop = 0;
-
 	_functions.siteReady = () => {
 		$('body').addClass('site-ready');
 	}
@@ -40,7 +38,6 @@ $(document).ready(function() {
   	}
 
   	_functions.removeScroll = () => {
-      	popupTop = $(window).scrollTop();
       	$('body').addClass('lock');
   	}
 
@@ -69,15 +66,6 @@ $(document).ready(function() {
     	};
     	xhttp.open("GET", "inc/popups/_popup.php", true);
     	xhttp.send();
-  	}
-
-  	_functions.sumoselectInit = () => {
-  		$('.SelectBox').each(function () {
-          	$(this).SumoSelect({
-            	floatWidth: 0,
-            	nativeOnDevice: []
-          	});
-        });
   	}
 
   	_functions.inputInvalid = (item) => {
@@ -136,25 +124,5 @@ $(document).ready(function() {
   	_functions.initSwiper = (item) => {
     	let swiper = new Swiper(item[0], _functions.getSwOptions(item));
   	};
-
-  	_functions.moreText = (item) => {
-  		item.parents('.more-text').toggleClass('open');
-    	item.parent().find('.text').slideToggle(500);
-
-    	if($('.more-text').hasClass('open')){
-      		$('.more-text .read-more span').text(item.data('read-less'));
-    	} else {
-      		$('.more-text .read-more span').text(item.data('read-more'));
-    	}
-  	}
-
-  	_functions.rellaxInit = () => {
-		let rellax = new Rellax('.rellax');
-  	}
-
-  	_functions.accordeonInit = (item, itemActive) => {
-    	item.siblings(itemActive).toggleClass('active').next().slideToggle();
-    	item.toggleClass('active').next().slideToggle();
-  	}
 
 });

@@ -6,10 +6,6 @@
 // - AJAX POPUP
 // - SWIPER
 // - INPUTMASK
-// - MORE TEXT
-// - RELLAX
-// - SUMOSELECT
-// - ACCORDEON
 // ==============
 
 $(document).ready(function() {
@@ -70,12 +66,6 @@ $(document).ready(function() {
     	let dataRel = $(this).attr('data-rel');
 
 	    setTimeout( function() {
-	      if ($('.SelectBox').length) {
-	        _functions.sumoselectInit();
-	      }
-	    }, 100);
-
-	    setTimeout( function() {
 	     	_functions.inputMaskInit();
 	    }, 100);
 
@@ -111,42 +101,5 @@ $(document).ready(function() {
   	if ($(".inputmask").length) {
 		_functions.inputMaskInit();
   	};
-
-
-  	// =============================
-  	// MORE TEXT
-  	// =============================
-  	$(document).on('click', '.more-text .read-more', function() {
-  		let item = $(this);
-    	_functions.moreText(item);
-  	});
-
-
-  	// =============================
-  	// RELLAX
-  	// =============================
-  	if($('.rellax').length && winWidth > 1199){
-  		_functions.rellaxInit();
-  	}
-
-
-  	// =============================
-  	// SUMOSELECT
-  	// =============================
-  	if ($('.SelectBox').length) {
-    	_functions.sumoselectInit();
-  	}
-
-
-  	// =============================
-  	// ACCORDEON
-  	// =============================
-  	$(document).on('click', '.accordeon-title', function(e) {
-  		e.preventDefault();
-  		let item = $(this),
-  			itemActive = $('.accordeon-title.active');
-
-		_functions.accordeonInit(item,itemActive);
-  	});
 
 });
