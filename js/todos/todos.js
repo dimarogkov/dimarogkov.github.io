@@ -69,7 +69,16 @@ $(document).ready(function() {
 		} else if(item.hasClass('bottom')) {
 			item.closest('.todos-item').insertAfter(item.closest('.todos-item').next());
 		}
-	}	
+	}
+
+	_functions.showRemoveBtn = () => {
+		let removeBtn = $('.remove-all-todos');
+		$('.todos-item').length > 0 ? removeBtn.addClass('active') : removeBtn.removeClass('active');
+	}
+
+	_functions.removeAllTodos = () => {
+		$('.todos-item').remove();
+	}
 
 	_functions.setData = () => {
 		let tasks = [];
@@ -137,6 +146,7 @@ $(document).ready(function() {
 			});
 
 			_functions.timeTotalCalc();
+			_functions.showRemoveBtn();
 		}
 	}
 
@@ -145,6 +155,7 @@ $(document).ready(function() {
 
 		_functions.addTodo();
 		_functions.labelsSetColor();
+		_functions.showRemoveBtn();
 		_functions.setData();
 		_functions.getLabels();
 	});
@@ -154,6 +165,7 @@ $(document).ready(function() {
 		let th = $(this);
 
 		_functions.removeTodo(th);
+		_functions.showRemoveBtn();
 		_functions.setData();
 	});
 
@@ -211,6 +223,14 @@ $(document).ready(function() {
 		_functions.navigateTodos(th);
 		_functions.setData();
 	});
+
+	$(document).on('click', '.remove-all-todos', function(e) {
+		e.preventDefault();
+		
+		_functions.removeAllTodos();
+		_functions.showRemoveBtn();
+		_functions.setData();
+	})
 
 	_functions.getData();
 });
