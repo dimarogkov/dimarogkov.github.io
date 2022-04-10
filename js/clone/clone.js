@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	$(document).on('click', '.clone-add', function(event) {
-		event.preventDefault();
+	$(document).on('click', '.clone-add', function(e) {
+		e.preventDefault();
 
 		const form = $('.clone-forms').find('form:last').clone();
 
@@ -10,8 +10,9 @@ $(document).ready(function() {
 		$(this).closest('.clone-block').find('.clone-forms form:last input').val('');
 	});
 
-	$(document).on('click', '.clone-remove', function(event) {
-		event.preventDefault();
+	$(document).on('click', '.clone-remove', function(e) {
+		e.preventDefault();
+		
 		$(this).closest('.clone-block').find('.clone-forms form:last').remove();
 
 		if ($('.clone-forms form').length === 1) {

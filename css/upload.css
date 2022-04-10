@@ -7,6 +7,7 @@
 .upload .upload-imgs::before {position: absolute;content: '';right: 0;top: 0;display: inline-block;width: 1px;height: 100%;background-color: #E0E0E0;}
 .upload .upload-imgs div {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;width: 100%;height: 100%;border-radius: 50%;background-color: #F7F7F7;overflow: hidden;}
 .upload .upload-imgs img {position: relative;display: inline-block;width: auto;}
+.upload .upload-imgs.img-added img {position: absolute;top: 0;left: 0;display: block;width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;-o-object-position: center;object-position: center;}
 .upload .text {position: relative;padding-left: 20px;text-align: center;font-size: 16px;line-height: 1.6em;color: #737B7D;}
 /*media*/
 @media(max-width: 1640px){

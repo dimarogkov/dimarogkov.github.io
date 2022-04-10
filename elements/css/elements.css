@@ -136,10 +136,6 @@ h6,.h6 {font-size: 20px;line-height: 1.3em;letter-spacing: 1px;}
 .elements-item .title {font-style: italic;color: var(--color-blue);margin-bottom: 20px;text-decoration: underline;cursor: pointer;}
 .elements-item .elements-title {margin-bottom: 10px;}
 .elements-item .elements-btns {position: relative;display: block;width: 100%;margin-top: 20px;}
-/*popup*/
-.copy-popup {position: fixed;bottom: 0;left: 50%;display: inline-block;width: 200px;padding: 20px;border-radius: 3px;opacity: 0;visibility: hidden;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);-webkit-transform: translate(-50%, 30px);-ms-transform: translate(-50%, 30px);transform: translate(-50%, 30px);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
-.copy-popup.active {opacity: 1;visibility: visible;-webkit-transform: translate(-50%, -30px);-ms-transform: translate(-50%, -30px);transform: translate(-50%, -30px);}
-.copy-popup .btn-close {right: 20px;}
 /*media*/
 @media(min-width: 1200px){
   .elements-menu-head a:hover {opacity: 0.8;}
