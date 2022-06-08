@@ -1,0 +1,58 @@
+/*=============================*/
+/* SUMOSELECT */
+/*=============================*/
+.sumoselect {position: relative;display: block;width: 100%;height: 46px;margin-bottom: 16px;}
+.sumoselect:last-child {margin-bottom: 0;}
+.SumoSelect {position: relative;display: block;width: 100%;height: 100%;cursor: pointer;}
+.SumoSelect > .CaptionCont {position: relative;display: block;width: 100%;height: 100%;cursor: pointer;padding: 0;border-radius: 3px;overflow: hidden;border: 1px solid var(--color-grey);background-color: var(--color-white);-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.SumoSelect > .CaptionCont > span,.SumoSelect > .CaptionCont > span.placeholder {position: relative;display: block;font-style: normal;font-size: 16px;line-height: 46px;color: var(--color-black);padding: 0 50px 0 15px;cursor: pointer;backface-visibility: hidden;-webkit-backface-visibility: hidden;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.SumoSelect > .CaptionCont > span {color: var(--color-black);}
+.SumoSelect > .CaptionCont > label {right: 0;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;cursor: pointer;width: 50px;height: 100%;}
+.SumoSelect > .CaptionCont > label > i {top: auto;left: auto;right: auto;bottom: auto;width: 8px;height: 8px;border-right: 2px solid var(--color-black);border-bottom: 2px solid var(--color-black);background-image: none;opacity: 1;margin: 0;margin-top: -2px;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.SumoSelect.open > .CaptionCont,.SumoSelect:focus > .CaptionCont {border-color: var(--color-grey);box-shadow: none;}
+.SumoSelect.open > .CaptionCont {border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
+.SumoSelect.open > .CaptionCont > span,.SumoSelect.open > .CaptionCont > span.placeholder {color: var(--color-black);}
+.SumoSelect:hover > .CaptionCont {box-shadow: none;border-color: var(--color-grey);}
+.SumoSelect.open > .CaptionCont > span.placeholder {opacity: 1;}
+.SumoSelect.open > .CaptionCont > label > i {margin-top: 4px;-webkit-transform: rotate(-135deg);-ms-transform: rotate(-135deg);transform: rotate(-135deg);}
+/*options*/
+.SumoSelect > .optWrapper {top: 100%;z-index: 2;display: block;border-radius: 0 0 3px 3px;border: none;overflow: auto;padding: 0;-webkit-box-shadow: none;box-shadow: none;-webkit-transform-origin: top center;-ms-transform-origin: top center;transform-origin: top center;-webkit-transform: scaleY(0);-ms-transform: scaleY(0);transform: scaleY(0);-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.SumoSelect.open > .optWrapper {top: 100%;-webkit-transform: scaleY(1);-ms-transform: scaleY(1);transform: scaleY(1);}
+.SumoSelect > .optWrapper > .options {border: 1px solid var(--color-grey);border-top: none;max-height: calc(46px * 4);}
+.SumoSelect > .optWrapper > .options li.opt {border-bottom: 1px solid var(--color-grey);padding: 0;height: 46px;line-height: 46px;margin-bottom: 0;}
+.SumoSelect > .optWrapper > .options li.opt:last-child {border-bottom: none;border-radius: 0;margin-bottom: 0;}
+.SumoSelect > .optWrapper > .options li label {padding: 0 15px;font-size: 16px;color: var(--color-black);-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.options > .opt.disabled:first-child {display: none;}
+/*with icon*/
+.sumoselect-imgs {position: absolute;z-index: 1;top: 0;left: 0;display: flex;align-items: center;justify-content: center;width: 50px;height: 100%;}
+.sumoselect-imgs .las {position: relative;display: inline-block;font-size: 22px;color: var(--color-black);}
+.sumoselect-with-icon .SumoSelect > .CaptionCont > span,
+.sumoselect-with-icon .SumoSelect > .CaptionCont > span.placeholder {padding-left: 50px;}
+/*media*/
+@media(min-width: 1200px){
+	.SumoSelect > .optWrapper > .options li.opt:hover {background-color: transparent;}
+	.SumoSelect > .optWrapper > .options li.opt:hover label {color: var(--color-green);}
+}
+@media(max-width: 1440px){
+	.sumoselect {height: 42px;margin-bottom: 12px;}
+	.SumoSelect > .CaptionCont > span,.SumoSelect > .CaptionCont > span.placeholder {line-height: 42px;}
+	.SumoSelect > .optWrapper > .options {max-height: calc(42px * 4);}
+	.SumoSelect > .optWrapper > .options li.opt {height: 42px;line-height: 42px;}
+}
+@media(max-width: 767px){
+	.sumoselect {height: 40px;margin-bottom: 10px;}
+	.SumoSelect > .CaptionCont > span,.SumoSelect > .CaptionCont > span.placeholder {font-size: 15px;line-height: 40px;padding: 0 40px 0 12px;}
+	.SumoSelect > .optWrapper > .options {max-height: calc(40px * 4);}
+	.SumoSelect > .optWrapper > .options li.opt {height: 40px;line-height: 40px;}
+	.sumoselect-imgs {width: 40px;}
+	.sumoselect-imgs .las {font-size: 20px;}
+	.sumoselect-with-icon .SumoSelect > .CaptionCont > span,
+	.sumoselect-with-icon .SumoSelect > .CaptionCont > span.placeholder {padding-left: 40px;}
+	.SumoSelect > .CaptionCont > label {width: 40px;}
+	.SumoSelect > .optWrapper > .options li label {font-size: 15px;padding: 0 12px;}
+}
+@media(max-width: 480px){
+	.sumoselect-imgs {display: none;}
+	.sumoselect-with-icon .SumoSelect > .CaptionCont > span,
+	.sumoselect-with-icon .SumoSelect > .CaptionCont > span.placeholder {padding-left: 12px;}
+}
