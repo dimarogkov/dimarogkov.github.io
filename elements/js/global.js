@@ -3,7 +3,6 @@
 // - SITE READY
 // - ANCHOR
 // - POPUP
-// - AJAX POPUP
 // - SWIPER
 // - INPUTMASK
 // - SUMOSELECT
@@ -53,77 +52,40 @@ $(document).ready(function() {
 	// =============================
 	// POPUP
 	// =============================
-	_functions.removeScroll = () => {
+	function removeScroll() {
   	$('body').addClass('lock');
 	}
 
-	_functions.addScroll = () => {
-  	$('body').removeClass('lock');
+	function addScroll(){
+		$('body').removeClass('lock');
 	}
 
-	_functions.openPopup = (popup) => {
+	_functions.openPopup = function(popup){
 		$('.popup-content').removeClass('active');
 		$(popup + ', .popup-wrapper').addClass('active');
-		_functions.removeScroll();
+		removeScroll();
 	};
 
-	_functions.closePopup = () => {
+	_functions.closePopup = function(){
 		$('.popup-wrapper, .popup-content').removeClass('active');
-		_functions.addScroll();
+		addScroll();
 	};
 
-	// open popup
-	$(document).on('click', '.open-popup', function(e) {
+	$(document).on('click', '.open-popup', function(e){
 		e.preventDefault();
 		_functions.openPopup('.popup-content[data-rel="' + $(this).data('rel') +'"]');
 	});
 
-	// close popup
-	$(document).on('click', '.popup-wrapper .btn-close, .popup-wrapper .layer-close, .popup-wrapper .close-popup, .popup-align .popup-btn-close', function(e) {
+	$(document).on('click', '.popup-wrapper .btn-close, .popup-wrapper .layer-close', function(e){
 		e.preventDefault();
 		_functions.closePopup();
 	});
 
-	// close popup on ESC
-	$(document).keyup(function(e) {
-		if (e.keyCode === 27){
+	//close popup with ESCAPE key
+	$(document).keyup(function(e){
+		if (e.keyCode === 27 ){
 			_functions.closePopup();
 		}
-	});
-
-
-	// =============================
-	// AJAX POPUP
-	// =============================
-	$(document).on('click', '.open-popup', function(e){
-		e.preventDefault();
-		let xhttp = new XMLHttpRequest();
-
-		xhttp.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200){
-	  		document.getElementById("popups").innerHTML = this.responseText;
-			}
-		};
-		xhttp.open("GET", "inc/popups/_popups.php", true);
-		xhttp.send();
-
-		$('.popup-wrapper').addClass('active');
-		let dataRel = $(this).attr('data-rel');
-
-		// reload mask
-	  setTimeout( function() {
-	   	$(".inputmask").inputmask({
-	  		showMaskOnHover: false
-			});
-	  }, 100);
-
-	  // open popup
-	  setTimeout( function() {
-	  	$('.popup-wrapper .popup-content').each(function() {
-	    	const thisPopup = $(this).attr('data-rel');
-	    	dataRel === thisPopup ? $(this).addClass('active') : $(this).removeClass('active');
-	  	});
-	  }, 100);
 	});
 
 

@@ -343,8 +343,94 @@
         </div>
         <div class="spacer-md"></div>
       </div>
+
+      <!-- POPUPS -->
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-10">
+              <div class="btns-block">
+                <a href="#" class="btn open-popup" data-rel="thank"><span>thank popup</span></a>
+                <a href="#" class="btn open-popup" data-rel="send"><span>send popup</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacer-md"></div>
+      </div>
 			
 		</main>
+
+    <!-- popups -->
+    <div class="popup-wrapper">
+      <div class="bg-layer"></div>
+      <!-- thank popup -->
+      <div class="popup-content" data-rel="thank">
+        <div class="layer-close"></div>
+        <div class="popup-container">
+          <div class="popup-align">
+            <div class="popup-cont">
+              <div class="h2 title bold text-line-2">Thank you for your message!</div>
+              <div class="text size-2">
+                <p>Your message has been sent successfully.</p>
+                <p>Our managers will be sure to contact you</p>
+              </div>
+            </div>
+          </div>
+          <div class="btn-close">
+            <i class="las la-times"></i>
+          </div>
+        </div>
+      </div>
+      <!-- send popup -->
+      <div class="popup-content" data-rel="send">
+        <div class="layer-close"></div>
+        <div class="popup-container">
+          <div class="popup-align">
+            <div class="popup-cont">
+              <div class="h2 title bold text-line-2">Send Popup</div>
+            </div>
+            <form class="form">
+              <div class="input-wrapper">
+                <div class="input-block">
+                  <input class="input" type="text" name="name" placeholder="Name" required>
+                  <label class="input-invalid-message">Your Name is Invalid</label>
+                </div>
+                <div class="input-block">
+                  <input class="input inputmask" type="text" name="phone" data-inputmask="'mask': '+38 (999) 999 99 99'" data-inputmask-placeholder="x" placeholder="Phone" required>
+                  <label class="input-invalid-message">Your Phone is Invalid</label>
+                </div>
+              </div>
+              <div class="sumoselect">
+                <select class="SelectBox">
+                  <option selected disabled>Choose Option</option>
+                  <option value="value_one">Option 1</option>
+                  <option value="value_two">Option 2</option>
+                  <option value="value_tree">Option 3</option>
+                  <option value="value_foure">Option 4</option>
+                  <option value="value_five">Option 5</option>
+                  <option value="value_six">Option 6</option>
+                  <option value="value_seven">Option 7</option>
+                </select>
+              </div>
+              <div class="input-block">
+                <input class="input" type="email" name="email" placeholder="Email" required>
+                <label class="input-invalid-message">Your Email is Invalid</label>
+              </div>
+              <div class="input-block textarea">
+                <textarea class="input" placeholder="Comment"></textarea>
+              </div>
+              <div class="form-bottom">
+                <button type="submit" class="btn"><span>Send Form</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="btn-close">
+            <i class="las la-times"></i>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- css -->
     <link href="css/sumoselect.min.css" rel="stylesheet" type="text/css">
