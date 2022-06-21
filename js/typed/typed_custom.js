@@ -16,12 +16,12 @@ $(document).ready(function() {
 			$(function(){
 				thElement.typed({
 	        strings: thStr ? thStr.split(',') : ['Test One', 'Test Two', 'Test Tree'], // текст
-	        typeSpeed: thTypeSpeed ? thTypeSpeed : 80, // скорость набора
-	        backSpeed: thTypeBackSpeed ? thTypeBackSpeed : 20, // скорость удаления текста
-	        startDelay: thStartDelay ? thStartDelay : 1500, // начальная задержка перед набором
-	        backDelay: thBackDelay ? thBackDelay : 500, // пауза перед удалением текста
-	        loop: thLoop ? thLoop : true, // повтор (true или false)
-	        showCursor: thShowCursor ? thShowCursor : true, // отображение курсора
+	        typeSpeed: thTypeSpeed || 80, // скорость набора
+	        backSpeed: thTypeBackSpeed || 20, // скорость удаления текста
+	        startDelay: thStartDelay || 1500, // начальная задержка перед набором
+	        backDelay: thBackDelay || 500, // пауза перед удалением текста
+	        loop: thLoop || true, // повтор (true или false)
+	        showCursor: thShowCursor || true, // отображение курсора
 		    });
 			});
 
