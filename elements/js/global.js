@@ -81,7 +81,6 @@ $(document).ready(function() {
 		_functions.closePopup();
 	});
 
-	//close popup with ESCAPE key
 	$(document).keyup(function(e){
 		if (e.keyCode === 27 ){
 			_functions.closePopup();
