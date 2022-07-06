@@ -9,7 +9,8 @@
 		<meta name='robots' content='noindex,nofollow'>
 		<link rel="shortcut icon" href="../img/favicon.ico">
 		<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
-		<link href="css/elements.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/elements.css" rel="stylesheet" type="text/css">
 		<!-- font -->
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 		<!-- icons -->
@@ -26,15 +27,23 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="header-block">
-							<a href="../index.html" class="header-back">
-								<i class="las la-arrow-left"></i>
-								<span>Home</span>
-							</a>
+							<a href="elements.html" class="header-logo">Dmitriy Rogkov <span>Elements</span></a>
+              <div class="header-right">
+                <a href="../todos.html" class="btn active"><span>Todos</span></a>
+                <a href="../elements/elements.html" class="btn"><span>Elements</span></a>
+                <div class="header-version">v1.0.9</div>
+              </div>
+              <div class="header-burger">
+                <div class="header-burger-btn">
+                  <span></span>
+                </div>
+              </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+    <div class="header-layer"></div>
 		<div class="header-margin"></div>
 
 		<!-- BANNER -->
@@ -43,6 +52,10 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="banner-block">
+              <ul class="banner-block-breadcrumbs">
+                <li><a href="../index.html">Home</a></li>
+                <li><span>Elements</span></li>
+              </ul>
 							<div class="h1 title bold color-white">Elements</div>
 							<div class="text color-white">Example of the main things of thee every projects</div>
 							<div class="banner-block-btns">
@@ -358,6 +371,102 @@
         </div>
         <div class="spacer-md"></div>
       </div>
+
+      <!-- SWIPER -->
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="h2 bold text-line-2 text-center" style="margin-bottom: 20px;">Swiper With Pagination</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+              <div class="swiper-entry">
+                <div class="swiper-button-prev">
+                  <i class="las la-arrow-left"></i>
+                </div>
+                <div class="swiper-button-next">
+                  <i class="las la-arrow-right"></i>
+                </div>
+                <div class="swiper-container" data-options='{ 
+                  "slidesPerView":1,
+                  "autoHeight": true,
+                  "speed": 700,
+                  "spaceBetween": 20,
+                  "breakpoints": {
+                    "767": {"spaceBetween": 15}
+                  }}'>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="test-slide"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="test-slide"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="test-slide"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="test-slide"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacer-md"></div>
+      </div>
+
+      <!-- SWIPER -->
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="h2 bold text-line-2 text-center" style="margin-bottom: 20px;">Swiper Without Pagination</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+              <div class="swiper-entry without-pagination">
+                <div class="swiper-button-prev">
+                  <i class="las la-arrow-left"></i>
+                </div>
+                <div class="swiper-button-next">
+                  <i class="las la-arrow-right"></i>
+                </div>
+                <div class="swiper-container" data-options='{ 
+                  "slidesPerView":1,
+                  "autoHeight": true,
+                  "speed": 700,
+                  "spaceBetween": 20,
+                  "breakpoints": {
+                    "767": {"spaceBetween": 15}
+                  }}'>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="test-slide"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="test-slide"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="test-slide"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="test-slide"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacer-md"></div>
+      </div>
 			
 		</main>
 
@@ -436,11 +545,45 @@
     <link href="css/sumoselect.min.css" rel="stylesheet" type="text/css">
     <link href="css/sumoselect-custom.css" rel="stylesheet" type="text/css">
 
-		<!-- jquery and js-->
+		<!-- js -->
 		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 		<script src="../js/smooth-scroll.js" defer></script>
     <script defer src="js/inputmask.min.js"></script>
     <script defer src="js/sumoselect.min.js"></script>
+    <script defer src="js/swiper.min.js"></script>
 		<script defer src="js/global.js" defer></script>
+
+    <script defer>
+      $(document).ready(function() {
+
+        $(document).on('click', '.header-burger-btn', function(e) {
+          e.preventDefault();
+          let th = $(this),
+              body = $('body'),
+              menu = $('.header-right'),
+              layer = $('.header-layer');
+          
+          body.addClass('lock');
+          th.addClass('active');
+          menu.addClass('active');
+          layer.addClass('active');
+        });
+
+        $(document).on('click', '.header-burger-btn.active, .header-layer', function(e) {
+          e.preventDefault();
+          let body = $('body'),
+              btn = $('.header-burger-btn'),
+              menu = $('.header-right'),
+              layer = $('.header-layer');
+          
+          body.removeClass('lock');
+          btn.removeClass('active');
+          menu.removeClass('active');
+          layer.removeClass('active');
+        });
+
+      });
+    </script>
+
 	</body>
 </html>
