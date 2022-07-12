@@ -1,0 +1,43 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* ROOT */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+:root {
+  --color-white: #fff;
+  --color-black: #2d3436;
+  --color-text: #4a535e;
+  --color-green: #16a085;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* CHANGELOG */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+html:not(.touch-screen)::-webkit-scrollbar-track,html:not(.touch-screen) *::-webkit-scrollbar-track{background: rgba(0,0,0,0.2);}
+html:not(.touch-screen)::-webkit-scrollbar-thumb,html:not(.touch-screen) *::-webkit-scrollbar-thumb{background: var(--color-green);}
+body *::selection {color: var(--color-white);background-color: var(--color-green);}
+/*header & footer*/
+.changelog-page .header-inner .header-logo span,
+.changelog-page .header-inner .header-right .header-version,
+.changelog-page .footer-inner .footer-logo span {background-color: var(--color-green);}
+.changelog-page .header-inner .header-right a {border-color: var(--color-green);}
+.changelog-page .header-inner .header-right a.active {background-color: var(--color-green);}
+.changelog-page .anchor {background-color: var(--color-green);border-color: var(--color-green);}
+/*block*/
+.changelog-block,.changelog-block-change,.changelog-block-changes {position: relative;display: block;width: 100%;}
+.changelog-block-title {position: relative;display: block;width: 100%;font-size: 54px;font-weight: 700;color: var(--color-black);}
+.changelog-block-change {padding-top: 40px;margin-top: 40px;border-top: 1px solid rgba(0,0,0,0.1);}
+.changelog-block-ver {position: relative;display: block;width: 100%;font-size: 24px;line-height: 1.4em;font-weight: 700;color: var(--color-black);margin-bottom: 20px;}
+.changelog-block-changes {margin-bottom: 20px;}
+.changelog-block-changes:last-child {margin-bottom: 0;}
+.changelog-block-status {position: relative;display: block;width: 100%;font-size: 16px;line-height: 1.4em;font-weight: 700;color: var(--color-text);text-transform: uppercase;margin-bottom: 15px;}
+.changelog-block-list {position: relative;display: block;width: 100%;padding-left: 30px;}
+.changelog-block-list li {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 100%;font-size: 16px;line-height: 1.4em;color: var(--color-black);padding-left: 15px;margin-bottom: 10px;}
+.changelog-block-list li:last-child {margin-bottom: 0;}
+.changelog-block-list li::before {position: absolute;content: '';left: 0;display: inline-block;width: 5px;height: 5px;border-radius: 50%;background-color: var(--color-black);}
+.changelog-block-list li a {position: relative;display: inline-block;padding: 2px 6px;border-radius: 2px;background-color: rgba(22, 160, 133, 0.2);margin-left: 5px;}
+/*media*/
+@media(min-width: 1200px){
+	.changelog-page .header-inner .header-right a:hover {background-color: var(--color-green);}
+	.changelog-block-list li a:hover {text-decoration: underline;}
+	.changelog-page .anchor:hover {background-color: transparent;}
+	.changelog-page .anchor:hover .fas {color: var(--color-green);}
+}
