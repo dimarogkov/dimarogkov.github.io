@@ -37,7 +37,7 @@
 						<a href="todos.html">Todos</a>
 						<a href="elements/elements.html">Elements</a>
 						<a href="changelog.html" class="active">Changelog</a>
-						<div class="header-version">v1.0.9</div>
+						<div class="header-version">v1.0.10</div>
 					</div>
 				</div>
 			</header>
@@ -57,8 +57,44 @@
 							<div class="col-8 offset-2">
 								<div class="changelog-block">
 									<div class="changelog-block-title">Changelog</div>
+									<!-- search -->
+									<div class="changelog-block-search">
+										<i class="las la-search"></i>
+										<input type="text" name="search" placeholder="Search by Version or Date">
+									</div>
+									<!-- not found -->
+									<div class="search-not-found">
+										<div class="changelog-block-ver">No result found for "<span></span>"</div>
+									</div>
 
 									<!-- change -->
+									<div class="changelog-block-change">
+										<div class="changelog-block-ver">[1.0.10] - 01.08.22</div>
+										<div class="changelog-block-changes">
+											<div class="changelog-block-status">Added</div>
+											<ul class="changelog-block-list">
+												<li>Create <a href="basic-scroll.html" target="_blank">Basic Scroll</a></li>
+											</ul>
+										</div>
+										<div class="changelog-block-changes">
+											<div class="changelog-block-status">Changed</div>
+											<ul class="changelog-block-list">
+												<li>Changed <a href="index.html" target="_blank">Main Page</a></li>
+												<li>Changed <a href="odometr.html" target="_blank">Odometr JS</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="changelog-block-change">
+										<div class="changelog-block-ver">[1.0.9] - 17.07.22</div>
+										<div class="changelog-block-changes">
+											<div class="changelog-block-status">Added</div>
+											<ul class="changelog-block-list">
+												<li>Add Search by Date for <a href="changelog.html" target="_blank">Changelog</a></li>
+											</ul>
+										</div>
+									</div>
+
 									<div class="changelog-block-change">
 										<div class="changelog-block-ver">[1.0.9] - 12.07.22</div>
 										<div class="changelog-block-changes">
@@ -117,6 +153,6 @@
 		<script src="js/main.js" defer></script>
 
 		<!-- js -->
-		<!-- <script src="js/changelog/changelog.js" defer></script> -->
+		<script src="js/changelog/changelog.js" defer></script>
 	</body>
 </html>

@@ -278,7 +278,7 @@ header.scrolled .header-inner .header-right .header-list p::before {border-color
 .main {position: relative;display: block;width: 100%;}
 .main-block {position: relative;display: block;width: 100%;}
 .main-section {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;width: 100%;}
-.main-section .main-link {position: relative;display: block;width: calc(24% - 8px);margin-right: 1.333%;margin-top: 30px;padding: 20px;border-radius: 5px;box-shadow: 0 2px 5px rgba(0,0,0,0.2);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.main-section .main-link {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;width: calc(24% - 8px);margin-right: 1.333%;margin-top: 30px;padding: 20px;border-radius: 5px;box-shadow: 0 2px 5px rgba(0,0,0,0.2);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
 .main-section .main-link:nth-child(4n) {margin-right: 0;}
 .main-section .main-link:nth-child(1),
 .main-section .main-link:nth-child(2),.main-section .main-link:nth-child(3),.main-section .main-link:nth-child(4) {margin-top: 0;}

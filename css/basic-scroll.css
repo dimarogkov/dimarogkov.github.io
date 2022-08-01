@@ -1,0 +1,41 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* ROOT */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+:root {
+  --color-white: #fff;
+  --color-black: #2d3436;
+  --color-blue: #2980b9;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* BASIC SCROLL */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.basic-scroll-block,.figure-item {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.figure-item {
+  margin-bottom: 30px;
+}
+.figure-item:last-child {
+  margin-bottom: 0;
+}
+.figure {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: var(--color-blue);
+  will-change: transform;
+}
+.figure.animate-style-1 {
+  transform: translateX(var(--right));
+}
+.figure.animate-style-2 {
+  transform: rotate(var(--rotate));
+}
+.figure.animate-style-3 {
+  transform: scale(var(--scale));
+}

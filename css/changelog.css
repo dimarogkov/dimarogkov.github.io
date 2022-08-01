@@ -6,6 +6,7 @@
   --color-black: #2d3436;
   --color-text: #4a535e;
   --color-green: #16a085;
+  --color-border: rgba(0,0,0,0.1);
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -14,6 +15,8 @@
 html:not(.touch-screen)::-webkit-scrollbar-track,html:not(.touch-screen) *::-webkit-scrollbar-track{background: rgba(0,0,0,0.2);}
 html:not(.touch-screen)::-webkit-scrollbar-thumb,html:not(.touch-screen) *::-webkit-scrollbar-thumb{background: var(--color-green);}
 body *::selection {color: var(--color-white);background-color: var(--color-green);}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+input[type=number] {-moz-appearance: textfield;}
 /*header & footer*/
 .changelog-page .header-inner .header-logo span,
 .changelog-page .header-inner .header-right .header-version,
@@ -34,6 +37,14 @@ body *::selection {color: var(--color-white);background-color: var(--color-green
 .changelog-block-list li:last-child {margin-bottom: 0;}
 .changelog-block-list li::before {position: absolute;content: '';left: 0;display: inline-block;width: 5px;height: 5px;border-radius: 50%;background-color: var(--color-black);}
 .changelog-block-list li a {position: relative;display: inline-block;padding: 2px 6px;border-radius: 2px;background-color: rgba(22, 160, 133, 0.2);margin-left: 5px;}
+/*search*/
+.changelog-block-search {position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width: 100%;height: 56px;margin-top: 15px;}
+.changelog-block-search .las {position: absolute;z-index: 1;left: 15px;display: inline-block;font-size: 24px;color: var(--color-black);}
+.changelog-block-search input {position: relative;display: block;width: 100%;height: 100%;font-size: 18px;color: var(--color-black);border: 1px solid var(--color-border);border-radius: 5px;padding: 0 20px 0 54px;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.changelog-block-search input:focus {border-color: var(--color-black);}
+.changelog-block-search input:focus::placeholder {color: var(--color-black);}
+.search-result {background-color: var(--color-green);color: var(--color-white);padding: 0 4px;border-radius: 3px;}
+.search-not-found {position: relative;display: none;width: 100%;margin-top: 30px;}
 /*media*/
 @media(min-width: 1200px){
 	.changelog-page .header-inner .header-right a:hover {background-color: var(--color-green);}
