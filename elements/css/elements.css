@@ -537,9 +537,7 @@ h6,.h6 {position: relative;font-size: 24px;line-height: 1.3em;color: var(--color
   .header-burger {display: -webkit-box;display: -ms-flexbox;display: flex;}
   .header-logo {font-size: 16px;}
   .header-logo span,.header-version {font-size: 13px;}
-  .header-right {position: fixed;top: var(--header-height);right: -60%;display: block;width: 60%;
-    height: calc(100% - var(--header-height));background-color: var(--color-white);padding: 20px;
-    overflow-y: auto;overflow-x: hidden;opacity: 0;visibility: hidden;-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
+  .header-right {position: fixed;top: var(--header-height);right: -60%;display: block;width: 60%;height: calc(100% - var(--header-height));background-color: var(--color-white);padding: 20px;overflow-y: auto;overflow-x: hidden;opacity: 0;visibility: hidden;-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
   .header-right.active {right: 0;opacity: 1;visibility: visible;}
   .header-layer {position: fixed;z-index: 3;top: 0;left: 0;display: block;width: 100%;height: 100%;background-color: rgba(0,0,0,0.3);opacity: 0;visibility: hidden;-webkit-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
   .header-layer.active {opacity: 1;visibility: visible;}

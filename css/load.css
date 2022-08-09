@@ -1,0 +1,28 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* ROOT */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+:root {
+  --color-white: #fff;
+  --color-grey: #f7f7f7;
+  --color-label: #ccc;
+  --color-black: #2d3436;
+  --color-blue: #2980b9;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* LOAD BLOCK */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.load-block {position: relative;display: grid;grid-template-columns: repeat(3, 1fr);grid-gap: 20px;width: 100%;}
+.load-block-card {position: relative;display: none;width: 100%;border-radius: 5px;overflow: hidden;background-color: var(--color-white);border: 1px solid var(--color-grey);-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.load-block-imgs {position: relative;display: block;width: 100%;height: 0;padding-bottom: 50%;overflow: hidden;}
+.load-block-imgs img {position: absolute;top: 0;left: 0;display: block;width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;-o-object-position: center;object-position: center;-webkit-backface-visibility: hidden;backface-visibility: hidden;will-change: transform;-webkit-transition: all 0.7s;-o-transition: all 0.7s;transition: all 0.7s;}
+.load-block-cont {position: relative;display: block;width: 100%;padding: 15px;}
+.load-block-label {position: relative;display: block;width: 100%;font-size: 12px;font-weight: 500;color: var(--color-label);text-transform: uppercase;margin-bottom: 5px;}
+.load-block-cont .title {font-weight: 500;color: var(--color-black);margin-bottom: 10px;}
+.load-block-cont .text {color: var(--color-black);}
+.load-more-btns {position: relative;display: block;width: 100%;text-align: center;margin-top: 30px;}
+/*media*/
+@media(min-width: 1200px){
+  .load-block-card:hover {background-color: var(--color-grey);}
+  .load-block-card:hover .load-block-imgs img {-webkit-transform: scale(1.05);-ms-transform: scale(1.05);transform: scale(1.05);}
+}
