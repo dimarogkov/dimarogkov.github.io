@@ -1,9 +1,14 @@
 $(document).ready(function() {
 
+	function upload(item, img) {
+		item.closest('.upload').find('.upload-imgs').addClass('img-added');
+    item.closest('.upload').find('.upload-imgs img').attr('src', img);
+	}
+
 	$(document).on('change', '.upload input', function (e){
-    	let img = URL.createObjectURL(e.target.files[0]);
-    	$(this).closest('.upload').find('.upload-imgs').addClass('img-added');
-	    $(this).closest('.upload').find('.upload-imgs img').attr('src', img);
-  	});
+		const th = $(this);
+  	const img = URL.createObjectURL(e.target.files[0]);
+  	upload(th, img);
+	});
 
 });

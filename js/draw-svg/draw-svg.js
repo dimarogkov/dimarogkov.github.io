@@ -1,15 +1,15 @@
 $(document).ready(function() {
-	let drawSvgBtn = $('#drawSvgBtn'),
-		deleteSvgBtn = $('#deleteSvgBtn'),
-		drawSvgArea = $('.draw-svg-area');
 
-	$(drawSvgBtn).on('click', function(event) {
-		event.preventDefault();
-		$(drawSvgArea).addClass('animate');
+	const drawSvgArea = $('.draw-svg-area');
+
+	$(document).on('click', '#drawSvgBtn', function(e) {
+		e.preventDefault();
+		drawSvgArea.addClass('animate');
 	});
 
-	$(deleteSvgBtn).on('click', function(event) {
-		event.preventDefault();
-		$(drawSvgArea).removeClass('animate');
+	$(document).on('click', '#deleteSvgBtn', function(e) {
+		e.preventDefault();
+		drawSvgArea.removeClass('animate');
 	});
+
 });

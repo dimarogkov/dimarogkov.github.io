@@ -1,8 +1,13 @@
 $(document).ready(function() {
 
-	$('.accordeon-title').on('click', function () {
-		$(this).siblings('.accordeon-title.active').toggleClass('active').next().slideToggle();
-		$(this).toggleClass('active').next().slideToggle();
+	function accordeonInit(title) {
+		title.siblings('.accordeon-title.active').toggleClass('active').next().slideToggle();
+		title.toggleClass('active').next().slideToggle();
+	}
+
+	$(document).on('click', '.accordeon-title', function () {
+		const th = $(this);
+		accordeonInit(th);
 	});
 
 })

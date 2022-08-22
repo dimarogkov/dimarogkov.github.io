@@ -1,29 +1,44 @@
 $(document).ready(function() {
+
+    // functions
+    function changeTabTitleClass(title) {
+        title.parent().toggleClass('active');
+    }
+
+    function tabInit(item, tab, tabNav) {
+        const i = item.index();
+
+        item.addClass('active').siblings().removeClass('active');
+        tab.eq(i).show().siblings().hide();
+        tabNav.removeClass('active').find('.tab-title').text(item.text());
+    }
+
     // tab simple block
-	$('.tab-one .tab-title').on('click', function() {
-        $(this).parent().toggleClass('active');
+	$(document).on('click', '.tab-one .tab-title', function() {
+        const th = $(this);
+        changeTabTitleClass(th);
     });
-    $('.tab-toggle div').on('click', function() {
-        var tab = $(this).closest('.tabs').find('.tab');
-        var i = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-        tab.eq(i).siblings('.tab:visible').fadeOut(function() {
-            tab.eq(i).fadeIn();
-        });
-        $(this).closest('.tab-one .tab-nav').removeClass('active').find('.tab-title').text($(this).text());
+
+    $(document).on('click', '.tab-toggle div', function() {
+        const th = $(this);
+        const tab = th.closest('.tabs').find('.tab');
+        const tabNav = th.closest('.tab-one .tab-nav');
+
+        tabInit(th, tab, tabNav);
     });
 
     // tab block on left
-    $(' .tab-two .tab-title').on('click', function() {
-        $(this).parent().toggleClass('active');
+    $(document).on('click', ' .tab-two .tab-title', function() {
+        const th = $(this);
+        changeTabTitleClass(th);
     });
-    $('.tab-toggle div').on('click', function() {
-        var tab = $(this).closest('.tab-two').find('.tab');
-        var i = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-        tab.eq(i).siblings('.tab:visible').fadeOut(function() {
-            tab.eq(i).fadeIn();
-        });
-        $(this).closest('.tab-two .tab-nav').removeClass('active').find('.tab-title').text($(this).text());
+
+    $(document).on('click', '.tab-toggle div', function() {
+        const th = $(this);
+        const tab = th.closest('.tab-two').find('.tab');
+        const tabNav = th.closest('.tab-nav');
+        
+        tabInit(th, tab, tabNav);
     });
+
 });

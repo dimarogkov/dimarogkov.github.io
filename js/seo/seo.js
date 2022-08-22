@@ -1,14 +1,18 @@
 $(document).ready(function() {
 
-	$('.more-text .read-more').on('click', function(){
-		let seoBtn = $('.more-text .read-more'); 
-		let more = seoBtn.attr('data-read-more');
-		let less = seoBtn.attr('data-read-less');
+	function seoInit(item, moreText, lessText) {
+		item.parents('.more-text').toggleClass('open');
+		item.parent().find('.text').slideToggle(300);
+    $('.more-text').hasClass('open') ? item.text(lessText) : item.text(moreText);
+	}
 
-		$(this).parents('.more-text').toggleClass('open');
-		$(this).parent().find('.text').slideToggle(300);
+	$(document).on('click', '.more-text .read-more', function(){
+		let th = $(this),
+				seoBtn = $('.more-text .read-more'),
+				moreText = seoBtn.attr('data-read-more'),
+				lessText = seoBtn.attr('data-read-less');
 
-	    $('.more-text').hasClass('open') ? $(this).text(less) : $(this).text(more);
+		seoInit(th, moreText, lessText);
 	});
 
 })

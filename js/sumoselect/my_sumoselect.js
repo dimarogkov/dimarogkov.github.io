@@ -1,13 +1,18 @@
 $(document).ready(function() {
 
-	//sumoselect
-  	if ($('.SelectBox').length) {
-      	$('.SelectBox').each(function () {
-          	$(this).SumoSelect({
-              	floatWidth: 0,
-              	nativeOnDevice: []
-          	});
-      	});
-  	}
+	const selectBox = $('.SelectBox');
+
+	if (selectBox.length) {
+
+  	selectBox.each(function () {
+  		const th = $(this);
+
+    	th.SumoSelect({
+      	floatWidth: 0,
+      	nativeOnDevice: []
+    	});
+  	});
+
+	}
 
 });

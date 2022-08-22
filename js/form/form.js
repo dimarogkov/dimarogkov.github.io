@@ -1,16 +1,25 @@
 $(document).ready(function() {
 
-	$(document).on('blur', '.input[required]', function(){
-	    if($(this).val().trim()){
-        	$(this).removeClass('invalid');
-	    } else {
-	        $(this).addClass('invalid');
-	    }
-  	});
+	// functions
+	const inputMaskInit = () => {
+		$(".inputmask").inputmask({
+  		showMaskOnHover: false
+    });
+	}
 
-  	if ($(".inputmask").length) {
-    	$(".inputmask").inputmask({
-      		showMaskOnHover: false
-	    });
-  	};
+	const inputValid = (input) => {
+		input.val().trim() ? input.removeClass('invalid') : input.addClass('invalid');
+	}
+	
+	// init inputmask
+	if ($(".inputmask").length) {
+  	inputMaskInit();
+	};
+
+	// blur
+	$(document).on('blur', '.input[required]', function(){
+		const input = $(this);
+    inputValid(input);
+	});
+	
 });

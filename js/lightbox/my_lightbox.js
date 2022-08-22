@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	// lightbox
+	
 	let lightBoxOptions = {
 	  	disableScroll: false,
 	  	captionSelector: 'self',
@@ -12,12 +12,17 @@ $(document).ready(function() {
   	lightboxSelector = $('.lightbox-wrapper'),
   	lightboxLength = lightboxSelector.length,
   	lightbox = [];
-  	for(var i = 0; i < lightboxLength; i++){
-  		lightbox[i] = $(lightboxSelector[i]).find('.lightbox').simpleLightbox(lightBoxOptions);
+
+	for(let i = 0; i < lightboxLength; i++){
+		lightbox[i] = $(lightboxSelector[i]).find('.lightbox').simpleLightbox(lightBoxOptions);
+	}
+
+	$(document).on('click', '.lightbox', function () {
+		const th = $(this);
+
+  	if ($(".lightbox-wrapper").find('.photo-title').length) {
+  		$('.sl-wrapper').prepend('<div class="lightbox-title">'+ th.closest('.lightbox-wrapper').find('.photo-title').html() +'</div>');
   	}
-  	$('.lightbox').on('click', function () {
-    	if ($(".lightbox-wrapper").find('.photo-title').length) {
-      		$('.sl-wrapper').prepend('<div class="lightbox-title">'+ $(this).closest('.lightbox-wrapper').find('.photo-title').html() +'</div>');
-    	}
-  	});
+	});
+
 });
