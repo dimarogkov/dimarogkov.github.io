@@ -48,6 +48,6 @@ $(document).ready(function() {
  	});
  	$('.header-inner .header-right .header-list').on('mouseleave', function() {
  		$(this).removeClass('open');
- 	})
+ 	});
 
 });
